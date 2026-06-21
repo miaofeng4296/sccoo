@@ -1,0 +1,17 @@
+{
+  "name": "sccoo",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "db:push": "pnpm --filter @sccoo/db db:push",
+    "db:generate": "pnpm --filter @sccoo/db db:generate",
+    "db:seed": "pnpm --filter @sccoo/db db:seed"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.5.0"
+  },
+  "packageManager": "pnpm@9.0.0"
+}

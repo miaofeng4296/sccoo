@@ -1,14 +1,13 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-export function middleware(request: NextRequest) {
+export default function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Protected routes
   const protectedPaths = ['/post/', '/user/', '/admin/'];
   const isProtected = protectedPaths.some((p) => pathname.startsWith(p));
 
-  // For protected pages, check for session token cookie
   if (isProtected) {
     const sessionToken =
       request.cookies.get('authjs.session-token')?.value ||

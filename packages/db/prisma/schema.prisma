@@ -3,7 +3,7 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "sqlite"
   url      = env("DATABASE_URL")
 }
 
@@ -69,7 +69,7 @@ model Category {
 model Post {
   id             Int       @id @default(autoincrement())
   title          String
-  content        String    @db.Text
+  content        String
   type           String
   categoryId     Int       @map("category_id")
   cityId         Int       @map("city_id")
@@ -84,7 +84,7 @@ model Post {
   pinType        String?   @map("pin_type")
   pinExpiresAt   DateTime? @map("pin_expires_at")
   viewCount      Int       @default(0) @map("view_count")
-  status         String    @default("PENDING") @map("status")
+  status         String    @default("PENDING")
   expiresAt      DateTime  @map("expires_at")
   createdAt      DateTime  @default(now()) @map("created_at")
   updatedAt      DateTime  @updatedAt @map("updated_at")
@@ -123,7 +123,7 @@ model Business {
   phone       String?
   address     String?
   cityId      Int       @map("city_id")
-  description String?   @db.Text
+  description String?
   website     String?
   isVerified  Boolean   @default(false) @map("is_verified")
   createdAt   DateTime  @default(now()) @map("created_at")
@@ -160,7 +160,7 @@ model Artist {
 model Article {
   id          Int       @id @default(autoincrement())
   title       String
-  content     String    @db.Text
+  content     String
   categoryId  Int       @map("category_id")
   coverImage  String?   @map("cover_image")
   author      String?
@@ -178,7 +178,7 @@ model Article {
 model QaQuestion {
   id          Int       @id @default(autoincrement())
   title       String
-  content     String    @db.Text
+  content     String
   userId      String    @map("user_id")
   viewCount   Int       @default(0) @map("view_count")
   answerCount Int       @default(0) @map("answer_count")
@@ -196,7 +196,7 @@ model QaQuestion {
 model QaAnswer {
   id         Int       @id @default(autoincrement())
   questionId Int       @map("question_id")
-  content    String    @db.Text
+  content    String
   userId     String    @map("user_id")
   isAccepted Boolean   @default(false) @map("is_accepted")
   createdAt  DateTime  @default(now()) @map("created_at")
@@ -225,7 +225,7 @@ model Payment {
   orderNo   String    @unique @map("order_no")
   amount    Int
   payMethod String?   @map("pay_method")
-  status    String    @default("PENDING") @map("status")
+  status    String    @default("PENDING")
   postId    Int       @map("post_id")
   userId    String    @map("user_id")
   pinType   String    @map("pin_type")

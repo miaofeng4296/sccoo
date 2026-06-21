@@ -1,74 +1,35 @@
 @echo off
-chcp 65001 >nul
-title 秀酷纹身之家 - 开发服务器
-
-echo.
-echo ╔══════════════════════════════════════════════╗
-echo ║       秀酷纹身之家 (sccoo.cn) 开发服务器       ║
-echo ╚══════════════════════════════════════════════╝
-echo.
-
+chcp 65001 >nul 2>&1
+title SCCoo Dev Server
 cd /d "%~dp0"
+echo SCCoo Tattoo Portal - Dev Server
+echo http://localhost:3000
+echo.
 
-:: 检查 Node.js
-where node >nul 2>&1
-if %errorlevel% neq 0 (
-    echo [错误] 未找到 Node.js，请先安装 Node.js
-    pause
-    exit /b 1
-)
+:: Kill old server
+for /f "tokens=5" %%a in ('netstat -ano ^| findstr ":3000.*LISTENING" 2^>nul') do taskkill /F /PID %%a >nul 2>&1
 
-:: 检查 pnpm
-where pnpm >nul 2>&1
-if %errorlevel% neq 0 (
-    echo [信息] 正在安装 pnpm...
-    npm install -g pnpm
-)
+:: Install
+if not exist "node_modules\" pnpm install
 
-:: 安装依赖
-if not exist "node_modules" (
-    echo [1/4] 正在安装依赖，请稍候...
-    call pnpm install
-) else (
-    echo [1/4] 依赖已安装 ✓
-)
+:: DB push + seed
+pnpm --filter @sccoo/db db:push --skip-generate >nul 2>&1
+pnpm db:seed >nul 2>&1
 
-:: 推送数据库 Schema
-echo [2/4] 同步数据库...
-call pnpm --filter @sccoo/db db:push
-if %errorlevel% neq 0 (
-    echo [错误] 数据库同步失败
-    pause
-    exit /b 1
-)
-
-:: 填充种子数据
-echo [3/4] 填充种子数据...
-call pnpm db:seed
-if %errorlevel% neq 0 (
-    echo [警告] 种子数据可能已存在，继续启动...
-)
-
-:: 创建 .env（如果不存在）
+:: Create .env if missing
 if not exist "apps\web\.env" (
-    echo DATABASE_URL="file:D:/DingDan/sccoo/packages/db/prisma/dev.db" > apps\web\.env
-    echo NEXTAUTH_SECRET="dev-secret-change-in-production-123456789" >> apps\web\.env
-    echo NEXTAUTH_URL="http://localhost:3000" >> apps\web\.env
+  echo DATABASE_URL^=file:D:/DingDan/sccoo/packages/db/prisma/dev.db > apps\web\.env
+  echo NEXTAUTH_SECRET^=dev-secret >> apps\web\.env
+  echo NEXTAUTH_URL^=http://localhost:3000 >> apps\web\.env
 )
 
-:: 启动开发服务器
-echo [4/4] 启动开发服务器...
 echo.
-echo ╔══════════════════════════════════════════════╗
-echo ║ 测试账号                                     ║
-echo ║   管理员: admin@sccoo.cn / 123456            ║
-echo ║   普通用户: artist1@test.com / 123456        ║
-echo ║                                             ║
-echo ║ 浏览器打开: http://localhost:3000            ║
-echo ║ 按 Ctrl+C 停止服务器                         ║
-echo ╚══════════════════════════════════════════════╝
+echo Test Accounts:
+echo   Admin : admin@sccoo.cn / 123456
+echo   User  : artist1@test.com / 123456
+echo.
+echo Starting at http://localhost:3000 ...
 echo.
 
-call pnpm dev --filter web
-
+pnpm dev --filter web
 pause

@@ -1,0 +1,252 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String     @id @default(cuid())
+  email         String?    @unique
+  phone         String?    @unique
+  passwordHash  String?
+  name          String?
+  avatar        String?
+  role          String     @default("USER")
+  wechatUnionid String?    @unique
+  qqOpenid      String?    @unique
+  createdAt     DateTime   @default(now()) @map("created_at")
+  updatedAt     DateTime   @updatedAt @map("updated_at")
+
+  posts      Post[]
+  businesses Business[]
+  favorites  Favorite[]
+  questions  QaQuestion[]
+  answers    QaAnswer[]
+  payments   Payment[]
+  artists    Artist[]
+
+  @@map("users")
+}
+
+model City {
+  id        Int       @id @default(autoincrement())
+  name      String
+  slug      String    @unique
+  subdomain String    @unique
+  parentId  Int?      @map("parent_id")
+  sortOrder Int       @default(0) @map("sort_order")
+  isActive  Boolean   @default(true) @map("is_active")
+
+  parent    City?     @relation("CityHierarchy", fields: [parentId], references: [id])
+  children  City[]    @relation("CityHierarchy")
+  posts     Post[]
+  businesses Business[]
+  artists   Artist[]
+
+  @@map("cities")
+}
+
+model Category {
+  id        Int       @id @default(autoincrement())
+  name      String
+  slug      String    @unique
+  parentId  Int?      @map("parent_id")
+  sortOrder Int       @default(0) @map("sort_order")
+  icon      String?
+  postCount Int       @default(0) @map("post_count")
+
+  parent   Category?  @relation("CategoryHierarchy", fields: [parentId], references: [id])
+  children Category[] @relation("CategoryHierarchy")
+  posts    Post[]
+  articles Article[]
+
+  @@map("categories")
+}
+
+model Post {
+  id             Int       @id @default(autoincrement())
+  title          String
+  content        String    @db.Text
+  type           String
+  categoryId     Int       @map("category_id")
+  cityId         Int       @map("city_id")
+  userId         String    @map("user_id")
+  businessId     Int?      @map("business_id")
+  priceMin       Int?      @map("price_min")
+  priceMax       Int?      @map("price_max")
+  contactName    String?   @map("contact_name")
+  contactPhone   String?   @map("contact_phone")
+  contactWechat  String?   @map("contact_wechat")
+  isPinned       Boolean   @default(false) @map("is_pinned")
+  pinType        String?   @map("pin_type")
+  pinExpiresAt   DateTime? @map("pin_expires_at")
+  viewCount      Int       @default(0) @map("view_count")
+  status         String    @default("PENDING") @map("status")
+  expiresAt      DateTime  @map("expires_at")
+  createdAt      DateTime  @default(now()) @map("created_at")
+  updatedAt      DateTime  @updatedAt @map("updated_at")
+
+  user     User        @relation(fields: [userId], references: [id])
+  city     City        @relation(fields: [cityId], references: [id])
+  category Category    @relation(fields: [categoryId], references: [id])
+  business Business?   @relation(fields: [businessId], references: [id])
+  images   PostImage[]
+  favorites Favorite[]
+  payments  Payment[]
+
+  @@index([cityId, type, status, createdAt])
+  @@index([categoryId, status])
+  @@index([userId, status])
+  @@index([isPinned, pinExpiresAt])
+  @@map("posts")
+}
+
+model PostImage {
+  id        Int    @id @default(autoincrement())
+  postId    Int    @map("post_id")
+  url       String
+  sortOrder Int    @default(0) @map("sort_order")
+
+  post Post @relation(fields: [postId], references: [id], onDelete: Cascade)
+
+  @@map("post_images")
+}
+
+model Business {
+  id          Int       @id @default(autoincrement())
+  userId      String    @map("user_id")
+  name        String
+  logo        String?
+  phone       String?
+  address     String?
+  cityId      Int       @map("city_id")
+  description String?   @db.Text
+  website     String?
+  isVerified  Boolean   @default(false) @map("is_verified")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+
+  user    User     @relation(fields: [userId], references: [id])
+  city    City     @relation(fields: [cityId], references: [id])
+  posts   Post[]
+  artists Artist[]
+
+  @@index([cityId, isVerified])
+  @@map("businesses")
+}
+
+model Artist {
+  id              Int       @id @default(autoincrement())
+  userId          String    @map("user_id")
+  name            String
+  avatar          String?
+  cityId          Int       @map("city_id")
+  businessId      Int?      @map("business_id")
+  specialty       String?
+  experienceYears Int?      @map("experience_years")
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+
+  user     User      @relation(fields: [userId], references: [id])
+  city     City      @relation(fields: [cityId], references: [id])
+  business Business? @relation(fields: [businessId], references: [id])
+
+  @@map("artists")
+}
+
+model Article {
+  id          Int       @id @default(autoincrement())
+  title       String
+  content     String    @db.Text
+  categoryId  Int       @map("category_id")
+  coverImage  String?   @map("cover_image")
+  author      String?
+  viewCount   Int       @default(0) @map("view_count")
+  isPublished Boolean   @default(false) @map("is_published")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+
+  category Category @relation(fields: [categoryId], references: [id])
+
+  @@index([categoryId, isPublished, createdAt])
+  @@map("articles")
+}
+
+model QaQuestion {
+  id          Int       @id @default(autoincrement())
+  title       String
+  content     String    @db.Text
+  userId      String    @map("user_id")
+  viewCount   Int       @default(0) @map("view_count")
+  answerCount Int       @default(0) @map("answer_count")
+  isResolved  Boolean   @default(false) @map("is_resolved")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+
+  user    User        @relation(fields: [userId], references: [id])
+  answers QaAnswer[]
+
+  @@index([isResolved, createdAt])
+  @@map("qa_questions")
+}
+
+model QaAnswer {
+  id         Int       @id @default(autoincrement())
+  questionId Int       @map("question_id")
+  content    String    @db.Text
+  userId     String    @map("user_id")
+  isAccepted Boolean   @default(false) @map("is_accepted")
+  createdAt  DateTime  @default(now()) @map("created_at")
+
+  question QaQuestion @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  user     User       @relation(fields: [userId], references: [id])
+
+  @@map("qa_answers")
+}
+
+model Favorite {
+  id        Int      @id @default(autoincrement())
+  userId    String   @map("user_id")
+  postId    Int      @map("post_id")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id])
+  post Post @relation(fields: [postId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, postId])
+  @@map("favorites")
+}
+
+model Payment {
+  id        Int       @id @default(autoincrement())
+  orderNo   String    @unique @map("order_no")
+  amount    Int
+  payMethod String?   @map("pay_method")
+  status    String    @default("PENDING") @map("status")
+  postId    Int       @map("post_id")
+  userId    String    @map("user_id")
+  pinType   String    @map("pin_type")
+  pinDays   Int       @map("pin_days")
+  paidAt    DateTime? @map("paid_at")
+  createdAt DateTime  @default(now()) @map("created_at")
+
+  post Post @relation(fields: [postId], references: [id])
+  user User @relation(fields: [userId], references: [id])
+
+  @@map("payments")
+}
+
+model Banner {
+  id        Int      @id @default(autoincrement())
+  title     String
+  imageUrl  String   @map("image_url")
+  linkUrl   String?  @map("link_url")
+  sortOrder Int      @default(0) @map("sort_order")
+  isActive  Boolean  @default(true) @map("is_active")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("banners")
+}

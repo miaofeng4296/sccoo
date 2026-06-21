@@ -1,0 +1,196 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "秀酷纹身之家" [ref=e5] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e6]:
+        - textbox "搜索纹身信息、店铺、纹身师..." [ref=e7]
+        - button [ref=e8]:
+          - img
+      - generic [ref=e9]:
+        - link "发布信息" [ref=e10] [cursor=pointer]:
+          - /url: /post
+          - button "发布信息" [ref=e11]:
+            - img
+            - text: 发布信息
+        - link "商家入驻" [ref=e12] [cursor=pointer]:
+          - /url: /login?jump=/user/biz
+          - button "商家入驻" [ref=e13]:
+            - img
+            - text: 商家入驻
+  - navigation [ref=e14]:
+    - list [ref=e16]:
+      - listitem [ref=e17]:
+        - link "首页" [ref=e18] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e19]:
+        - link "招聘求职" [ref=e20] [cursor=pointer]:
+          - /url: /info122
+      - listitem [ref=e21]:
+        - link "我行我秀" [ref=e22] [cursor=pointer]:
+          - /url: /info153
+      - listitem [ref=e23]:
+        - link "纹身店转让" [ref=e24] [cursor=pointer]:
+          - /url: /info4
+      - listitem [ref=e25]:
+        - link "二手转让" [ref=e26] [cursor=pointer]:
+          - /url: /info1
+      - listitem [ref=e27]:
+        - link "纹身问答" [ref=e28] [cursor=pointer]:
+          - /url: /wenda
+      - listitem [ref=e29]:
+        - link "我要纹身" [ref=e30] [cursor=pointer]:
+          - /url: /info149
+      - listitem [ref=e31]:
+        - link "纹身培训" [ref=e32] [cursor=pointer]:
+          - /url: /info20
+      - listitem [ref=e33]:
+        - link "纹身店大全" [ref=e34] [cursor=pointer]:
+          - /url: /biz119
+      - listitem [ref=e35]:
+        - link "纹身师大全" [ref=e36] [cursor=pointer]:
+          - /url: /biz123
+  - generic [ref=e38]:
+    - strong [ref=e39]: 快速导航：
+    - link "本站公告" [ref=e40] [cursor=pointer]:
+      - /url: /news/news_s6_t0_p1.html
+    - link "纹身大师" [ref=e41] [cursor=pointer]:
+      - /url: /news/news_s4_t0_p1.html
+    - link "纹身资讯" [ref=e42] [cursor=pointer]:
+      - /url: /news/news_s1_t0_p1.html
+    - link "纹身周边服务" [ref=e43] [cursor=pointer]:
+      - /url: /info28
+    - link "加入微信群" [ref=e44] [cursor=pointer]:
+      - /url: /about/join.html
+    - link "加入纹身两千人QQ群" [ref=e45] [cursor=pointer]:
+      - /url: "#"
+  - main [ref=e46]:
+    - generic [ref=e47]:
+      - generic [ref=e49]:
+        - heading "欢迎来到秀酷纹身之家" [level=1] [ref=e50]
+        - paragraph [ref=e51]: 纹身行业信息平台 — 招聘求职 · 店铺转让 · 二手交易 · 培训学习
+      - generic [ref=e52]:
+        - link "招聘求职" [ref=e53] [cursor=pointer]:
+          - /url: /info122
+          - generic [ref=e54]: 招聘求职
+        - link "我行我秀" [ref=e55] [cursor=pointer]:
+          - /url: /info153
+          - generic [ref=e56]: 我行我秀
+        - link "纹身店转让" [ref=e57] [cursor=pointer]:
+          - /url: /info4
+          - generic [ref=e58]: 纹身店转让
+        - link "二手设备" [ref=e59] [cursor=pointer]:
+          - /url: /info1
+          - generic [ref=e60]: 二手设备
+        - link "纹身问答" [ref=e61] [cursor=pointer]:
+          - /url: /wenda
+          - generic [ref=e62]: 纹身问答
+        - link "我要纹身" [ref=e63] [cursor=pointer]:
+          - /url: /info149
+          - generic [ref=e64]: 我要纹身
+        - link "纹身培训" [ref=e65] [cursor=pointer]:
+          - /url: /info20
+          - generic [ref=e66]: 纹身培训
+        - link "纹身店大全" [ref=e67] [cursor=pointer]:
+          - /url: /biz119
+          - generic [ref=e68]: 纹身店大全
+        - link "纹身师大全" [ref=e69] [cursor=pointer]:
+          - /url: /biz123
+          - generic [ref=e70]: 纹身师大全
+        - link "发布信息" [ref=e71] [cursor=pointer]:
+          - /url: /post
+          - generic [ref=e72]: 发布信息
+      - generic [ref=e73]:
+        - generic [ref=e75]:
+          - generic [ref=e77]:
+            - generic [ref=e78]: 最新信息
+            - generic [ref=e79]:
+              - generic [ref=e80] [cursor=pointer]: 全部
+              - generic [ref=e81] [cursor=pointer]: 招聘
+              - generic [ref=e82] [cursor=pointer]: 转让
+              - generic [ref=e83] [cursor=pointer]: 培训
+          - generic [ref=e84]:
+            - generic [ref=e91]: 城市
+            - generic [ref=e102]: 城市
+            - generic [ref=e113]: 城市
+            - generic [ref=e124]: 城市
+            - generic [ref=e135]: 城市
+        - generic [ref=e140]:
+          - generic [ref=e141]:
+            - generic [ref=e143]: 网站公告
+            - generic [ref=e144]:
+              - paragraph [ref=e145]: 本站主要提供：纹身手稿、纹身店介绍、纹身师招聘、纹身设备转让、 纹身店转让、纹身店推荐等纹身行业相关信息！
+              - paragraph [ref=e146]: 加入纹身店大全请联系客服微信：sccoocn 或致电 0730-8280318
+          - generic [ref=e149]: 热门商家
+  - contentinfo [ref=e176]:
+    - generic [ref=e177]:
+      - generic [ref=e178]:
+        - generic [ref=e179]:
+          - heading "关于我们" [level=4] [ref=e180]
+          - list [ref=e181]:
+            - listitem [ref=e182]:
+              - link "关于我们" [ref=e183] [cursor=pointer]:
+                - /url: /about/about.html
+            - listitem [ref=e184]:
+              - link "联系我们" [ref=e185] [cursor=pointer]:
+                - /url: /about/contact.html
+            - listitem [ref=e186]:
+              - link "广告服务" [ref=e187] [cursor=pointer]:
+                - /url: /about/guanggao.html
+            - listitem [ref=e188]:
+              - link "友情链接" [ref=e189] [cursor=pointer]:
+                - /url: /about/links.html
+            - listitem [ref=e190]:
+              - link "合作加盟" [ref=e191] [cursor=pointer]:
+                - /url: /about/join.html
+        - generic [ref=e192]:
+          - heading "商家服务" [level=4] [ref=e193]
+          - list [ref=e194]:
+            - listitem [ref=e195]:
+              - link "商家入驻" [ref=e196] [cursor=pointer]:
+                - /url: /login?jump=/user/biz
+            - listitem [ref=e197]:
+              - link "企业建站服务" [ref=e198] [cursor=pointer]:
+                - /url: /login?jump=/user/mywebsite
+        - generic [ref=e199]:
+          - heading "信息服务" [level=4] [ref=e200]
+          - list [ref=e201]:
+            - listitem [ref=e202]:
+              - link "发布信息" [ref=e203] [cursor=pointer]:
+                - /url: /post
+            - listitem [ref=e204]:
+              - link "信息置顶/加红" [ref=e205] [cursor=pointer]:
+                - /url: /about/infopay.html
+            - listitem [ref=e206]:
+              - link "删除信息" [ref=e207] [cursor=pointer]:
+                - /url: /about/infodel.html
+        - generic [ref=e208]:
+          - heading "联系方式" [level=4] [ref=e209]
+          - list [ref=e210]:
+            - listitem [ref=e211]: QQ：4883699
+            - listitem [ref=e212]: 微信：sccoocn
+            - listitem [ref=e213]: 电话：0730-8280318
+        - generic [ref=e214]:
+          - heading "关注我们" [level=4] [ref=e215]
+          - generic [ref=e216]:
+            - generic [ref=e217]:
+              - text: 公众号
+              - text: 二维码
+            - generic [ref=e218]:
+              - text: 小程序
+              - text: 二维码
+      - generic [ref=e219]:
+        - paragraph [ref=e220]:
+          - text: Copyright © 2026
+          - link "秀酷纹身之家" [ref=e221] [cursor=pointer]:
+            - /url: /
+          - text: 版权所有
+        - paragraph [ref=e222]:
+          - link "湘ICP备18003118号-5" [ref=e223] [cursor=pointer]:
+            - /url: https://beian.miit.gov.cn
+          - text: "| 湘公网安备 43060202000114号"
+        - paragraph [ref=e224]:
+          - text: 网页内的所有信息均为用户自由发布，交易时请注意识别信息的虚假，交易风险自负！
+          - text: 网站内容如有侵犯您权益请联系我们删除，举报信息、删除信息联系客服。
+  - button "Open Next.js Dev Tools" [ref=e230] [cursor=pointer]:
+    - img [ref=e231]

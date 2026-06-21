@@ -1,65 +1,114 @@
-import Image from "next/image";
+import Link from 'next/link';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Skeleton } from '@/components/ui/skeleton';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="max-w-7xl mx-auto px-4 py-6 space-y-8">
+      {/* Hero Banner Placeholder */}
+      <div className="bg-gradient-to-r from-red-500 to-red-700 rounded-xl h-48 md:h-64 flex items-center justify-center text-white">
+        <div className="text-center">
+          <h1 className="text-2xl md:text-4xl font-bold mb-2">欢迎来到秀酷纹身之家</h1>
+          <p className="text-red-100">纹身行业信息平台 — 招聘求职 · 店铺转让 · 二手交易 · 培训学习</p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </div>
+
+      {/* Category Quick Links */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+        {[
+          { href: '/info122/', label: '招聘求职', color: 'bg-blue-50 text-blue-700 hover:bg-blue-100' },
+          { href: '/info153/', label: '我行我秀', color: 'bg-purple-50 text-purple-700 hover:bg-purple-100' },
+          { href: '/info4/', label: '纹身店转让', color: 'bg-orange-50 text-orange-700 hover:bg-orange-100' },
+          { href: '/info1/', label: '二手设备', color: 'bg-green-50 text-green-700 hover:bg-green-100' },
+          { href: '/wenda/', label: '纹身问答', color: 'bg-teal-50 text-teal-700 hover:bg-teal-100' },
+          { href: '/info149/', label: '我要纹身', color: 'bg-pink-50 text-pink-700 hover:bg-pink-100' },
+          { href: '/info20/', label: '纹身培训', color: 'bg-amber-50 text-amber-700 hover:bg-amber-100' },
+          { href: '/biz119/', label: '纹身店大全', color: 'bg-indigo-50 text-indigo-700 hover:bg-indigo-100' },
+          { href: '/biz123/', label: '纹身师大全', color: 'bg-rose-50 text-rose-700 hover:bg-rose-100' },
+          { href: '/post/', label: '发布信息', color: 'bg-red-50 text-red-700 hover:bg-red-100 font-bold' },
+        ].map((cat) => (
+          <Link key={cat.href} href={cat.href}>
+            <div className={`${cat.color} rounded-lg p-4 text-center transition-colors font-medium`}>
+              {cat.label}
+            </div>
+          </Link>
+        ))}
+      </div>
+
+      {/* Main Content Area — Placeholder */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* Post List Area */}
+        <div className="lg:col-span-2 space-y-4">
+          <Card>
+            <CardHeader>
+              <div className="flex items-center justify-between">
+                <CardTitle className="text-lg">最新信息</CardTitle>
+                <div className="flex gap-2">
+                  <Badge variant="secondary" className="cursor-pointer">全部</Badge>
+                  <Badge variant="outline" className="cursor-pointer">招聘</Badge>
+                  <Badge variant="outline" className="cursor-pointer">转让</Badge>
+                  <Badge variant="outline" className="cursor-pointer">培训</Badge>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <div key={i} className="flex items-center gap-4 border-b pb-3 last:border-0">
+                  <Skeleton className="w-20 h-16 rounded" />
+                  <div className="flex-1 space-y-1.5">
+                    <Skeleton className="h-4 w-3/4" />
+                    <Skeleton className="h-3 w-1/2" />
+                    <div className="flex gap-2">
+                      <Badge variant="secondary" className="text-xs">城市</Badge>
+                      <Skeleton className="h-3 w-16" />
+                    </div>
+                  </div>
+                  <div className="text-right">
+                    <Skeleton className="h-4 w-20" />
+                    <Skeleton className="h-3 w-12 mt-1" />
+                  </div>
+                </div>
+              ))}
+            </CardContent>
+          </Card>
         </div>
-      </main>
+
+        {/* Sidebar */}
+        <div className="space-y-4">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">网站公告</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-gray-600">
+                本站主要提供：纹身手稿、纹身店介绍、纹身师招聘、纹身设备转让、
+                纹身店转让、纹身店推荐等纹身行业相关信息！
+              </p>
+              <p className="text-sm text-gray-600 mt-2">
+                加入纹身店大全请联系客服微信：sccoocn 或致电 0730-8280318
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">热门商家</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-3">
+                {Array.from({ length: 6 }).map((_, i) => (
+                  <div key={i} className="text-center">
+                    <Skeleton className="w-16 h-16 rounded-full mx-auto" />
+                    <Skeleton className="h-3 w-16 mx-auto mt-2" />
+                    <Skeleton className="h-3 w-20 mx-auto mt-1" />
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
     </div>
   );
 }

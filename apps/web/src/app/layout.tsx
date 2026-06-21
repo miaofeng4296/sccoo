@@ -6,6 +6,8 @@ import { Header } from '@/components/layout/Header';
 import { MainNav } from '@/components/layout/MainNav';
 import { SubNav } from '@/components/layout/SubNav';
 import { Footer } from '@/components/layout/Footer';
+import { SessionProvider } from '@/components/providers/SessionProvider';
+import { Toaster } from '@/components/ui/sonner';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -38,7 +40,10 @@ export default function RootLayout({
         <Header />
         <MainNav />
         <SubNav />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1">
+          <SessionProvider>{children}</SessionProvider>
+        </main>
+        <Toaster richColors />
         <Footer />
       </body>
     </html>

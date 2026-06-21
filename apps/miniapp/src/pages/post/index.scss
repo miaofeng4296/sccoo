@@ -1,0 +1,8 @@
+.page { padding: 16px; background: #f5f5f5; min-height: 100vh; }
+.page-title { font-size: 20px; font-weight: bold; margin-bottom: 16px; display: block; }
+.form { background: #fff; border-radius: 12px; padding: 16px; }
+.form-item { padding: 14px 0; border-bottom: 1px solid #f0f0f0; font-size: 15px; }
+.form-textarea { width: 100%; padding: 14px 0; border-bottom: 1px solid #f0f0f0; font-size: 15px; min-height: 100px; }
+.form-row { display: flex; gap: 12px; border-bottom: 1px solid #f0f0f0; }
+.form-half { flex: 1; padding: 14px 0; font-size: 15px; }
+.submit-btn { margin-top: 24px; background: #dc2626; color: #fff; border-radius: 8px; font-size: 16px; padding: 14px; }

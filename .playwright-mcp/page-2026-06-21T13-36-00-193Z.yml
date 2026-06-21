@@ -1,0 +1,1869 @@
+- generic [ref=e2]:
+  - link [ref=e4] [cursor=pointer]:
+    - /url: tencent://Message/?Uin=4883699&websiteName=www.sccoo.cn=&Menu=yes
+  - generic [ref=e7]:
+    - generic:
+      - iframe [ref=e9]:
+        - link "今天： 06/21 星期日 多云17~29℃ | 明天： 多云20~30℃" [ref=f2e2] [cursor=pointer]:
+          - /url: /services/?s=weather&style=7
+          - strong [ref=f2e3]: 今天：
+          - text: 06/21 星期日
+          - img [ref=f2e4]
+          - strong [ref=f2e5]: 多云
+          - text: 17~29℃ |
+          - strong [ref=f2e6]: 明天：
+          - img [ref=f2e7]
+          - strong [ref=f2e8]: 多云
+          - text: 20~30℃
+      - list [ref=e10]:
+        - listitem [ref=e11]:
+          - link "注册" [ref=e12] [cursor=pointer]:
+            - /url: /reg/
+          - text: /
+          - link "登录" [ref=e13] [cursor=pointer]:
+            - /url: /login/
+        - listitem [ref=e14]
+        - listitem [ref=e15]:
+          - link "QQ登录" [ref=e16] [cursor=pointer]:
+            - /url: /qqlogin/
+          - link "微信登录" [ref=e17] [cursor=pointer]:
+            - /url: /wxLogin/
+      - list [ref=e18]:
+        - listitem [ref=e19]:
+          - link "保存桌面" [ref=e20] [cursor=pointer]:
+            - /url: /services/?s=shortcut
+        - listitem [ref=e21]
+        - listitem [ref=e22]:
+          - link "我的收藏" [ref=e23] [cursor=pointer]:
+            - /url: /user/favorite
+        - listitem [ref=e24]
+        - listitem [ref=e25]:
+          - link "手机版" [ref=e26] [cursor=pointer]:
+            - /url: javascript:void(0);
+            - text: 手机版
+        - listitem [ref=e28]
+        - listitem [ref=e29]:
+          - link "微信平台" [ref=e31] [cursor=pointer]:
+            - /url: /about/weixin.html
+        - listitem [ref=e32]
+  - generic [ref=e33]:
+    - generic [ref=e34]:
+      - link "秀酷纹身之家" [ref=e36] [cursor=pointer]:
+        - /url: https://www.sccoo.cn/
+        - img "秀酷纹身之家" [ref=e37]
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - generic [ref=e41] [cursor=pointer]: 信息 
+          - textbox [ref=e42]
+          - button "" [ref=e43] [cursor=pointer]
+        - strong [ref=e45]: 热门搜索：
+      - generic [ref=e46]:
+        - link " 发布信息" [ref=e47] [cursor=pointer]:
+          - /url: /post/
+        - link " 商家入驻" [ref=e48] [cursor=pointer]:
+          - /url: /login/?jump=/user/biz
+    - list [ref=e51]:
+      - listitem [ref=e52]:
+        - link "首页" [ref=e53] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e54]:
+        - link "招聘求职" [ref=e55] [cursor=pointer]:
+          - /url: /info122/
+      - listitem [ref=e56]:
+        - link "我行我秀" [ref=e57] [cursor=pointer]:
+          - /url: /info153/
+      - listitem [ref=e58]:
+        - link "纹身店转让" [ref=e59] [cursor=pointer]:
+          - /url: /info4/
+      - listitem [ref=e60]:
+        - link "二手转让" [ref=e61] [cursor=pointer]:
+          - /url: /info1/
+      - listitem [ref=e62]:
+        - link "纹身问答" [ref=e63] [cursor=pointer]:
+          - /url: /wenda/
+      - listitem [ref=e64]:
+        - link "我要纹身" [ref=e65] [cursor=pointer]:
+          - /url: /info149/s150/
+      - listitem [ref=e66]:
+        - link "纹身培训" [ref=e67] [cursor=pointer]:
+          - /url: /info20/
+      - listitem [ref=e68]:
+        - link "纹身店大全" [ref=e69] [cursor=pointer]:
+          - /url: /biz119/s122/
+      - listitem [ref=e70]:
+        - link "纹身师大全" [ref=e71] [cursor=pointer]:
+          - /url: /biz123/
+  - list [ref=e73]:
+    - listitem [ref=e74]:
+      - strong [ref=e75]: 快速导航：
+    - listitem [ref=e76]:
+      - link "本站公告" [ref=e77] [cursor=pointer]:
+        - /url: /news/news_s6_t0_p1.html
+    - listitem [ref=e78]:
+      - link "纹身大师" [ref=e79] [cursor=pointer]:
+        - /url: /news/news_s4_t0_p1.html
+    - listitem [ref=e80]:
+      - link "纹身资讯" [ref=e81] [cursor=pointer]:
+        - /url: /news/news_s1_t0_p1.html
+    - listitem [ref=e82]:
+      - link "纹身店百度推广" [ref=e83] [cursor=pointer]:
+        - /url: /xinxi/2269.html
+    - listitem [ref=e84]:
+      - link "纹身周边服务" [ref=e85] [cursor=pointer]:
+        - /url: /info28/
+    - listitem [ref=e86]:
+      - link "加入微信群>>" [ref=e87] [cursor=pointer]:
+        - /url: /about/join.html
+    - listitem [ref=e88]:
+      - link "加入纹身两千人QQ群>>" [ref=e89] [cursor=pointer]:
+        - /url: http://shang.qq.com/wpa/qunwpa?idkey=cd7afc44347150f56e0e205af900d2db8a56284e5597c45d8f8660deb4d5e421
+  - link [ref=e93] [cursor=pointer]:
+    - /url: /news/ad.aspx?id=3
+    - img [ref=e94]
+  - generic [ref=e96]:
+    - generic [ref=e99]:
+      - generic [ref=e100]:
+        - link [ref=e102] [cursor=pointer]:
+          - /url: "/Post/\n"
+          - img [ref=e103]
+        - link [ref=e105] [cursor=pointer]:
+          - /url: "/Post/\n"
+          - img [ref=e106]
+        - link [ref=e108] [cursor=pointer]:
+          - /url: "/Post/\n"
+          - img [ref=e109]
+      - button "Go to slide 1" [ref=e111]
+    - generic [ref=e112]:
+      - generic [ref=e113]:
+        - link "赶快进每个省的纹身师群（优质群）…" [ref=e115] [cursor=pointer]:
+          - /url: /news/107.html
+        - generic [ref=e116]: 为了方便每个省的纹身店、纹身师相互交流，秀酷纹身之家整合全网纹身师资源，邀请全国纹身师入群，请选择自己所在的省份入群，每个省仅建一个群！需要进的请联系下方客服微信二维码，付费入群！注意：为避免某些人恶
+      - list [ref=e118]:
+        - listitem [ref=e119]:
+          - link "[纹身知识]如何区分不同的菩萨纹身手稿？…" [ref=e120] [cursor=pointer]:
+            - /url: /news/103.html
+          - generic [ref=e121]: 2021年6月16日
+        - listitem [ref=e122]:
+          - link "[本站公告]2020年关于百度对新站收录问题的研究…" [ref=e123] [cursor=pointer]:
+            - /url: /news/101.html
+          - generic [ref=e124]: 2020年10月8日
+        - listitem [ref=e125]:
+          - link "[纹身知识]洗纹身多少钱…" [ref=e126] [cursor=pointer]:
+            - /url: /news/99.html
+          - generic [ref=e127]: 2020年6月22日
+        - listitem [ref=e128]:
+          - link "[纹身趣闻]九龙拉棺纹身含义…" [ref=e129] [cursor=pointer]:
+            - /url: /news/98.html
+          - generic [ref=e130]: 2020年6月22日
+        - listitem [ref=e131]:
+          - link "[纹身趣闻]纹身师三不纹…" [ref=e132] [cursor=pointer]:
+            - /url: /news/97.html
+          - generic [ref=e133]: 2020年6月22日
+        - listitem [ref=e134]:
+          - link "[纹身趣闻]纹身老了后的恶心图片…" [ref=e135] [cursor=pointer]:
+            - /url: /news/96.html
+          - generic [ref=e136]: 2020年6月22日
+        - listitem [ref=e137]:
+          - link "[纹身知识]纹身的忌讳和讲究…" [ref=e138] [cursor=pointer]:
+            - /url: /news/95.html
+          - generic [ref=e139]: 2020年2月26日
+        - listitem [ref=e140]:
+          - link "[纹身知识]纹身能彻底洗掉吗…" [ref=e141] [cursor=pointer]:
+            - /url: /news/94.html
+          - generic [ref=e142]: 2020年1月2日
+    - generic [ref=e143]:
+      - generic [ref=e144]: 网站公告
+      - generic [ref=e145]:
+        - paragraph [ref=e146]: 本站主要提供：纹身手稿、纹身店介绍、纹身师招聘、纹身设备转让、纹身店转让、纹身店推荐、纹身店网站建设、网站百度排名优化等纹身行业相关信息！
+        - paragraph [ref=e147]: 加入纹身店大全请联系客服微信：sccoocn 或致电 0730-8280318。让网友在网上就可以查找到您的信息。
+  - generic [ref=e149]:
+    - generic [ref=e150]:
+      - generic [ref=e151]: 热门商家
+      - list [ref=e153]:
+        - listitem [ref=e154]: 分类：
+        - listitem [ref=e155]:
+          - link "纹身店大全" [ref=e156] [cursor=pointer]:
+            - /url: /biz119/
+        - listitem [ref=e157]:
+          - link "纹身师大全" [ref=e158] [cursor=pointer]:
+            - /url: /biz123/
+        - listitem [ref=e159]:
+          - link "更多…" [ref=e160] [cursor=pointer]:
+            - /url: /biz/
+    - generic [ref=e161]:
+      - generic [ref=e162]:
+        - link "新余流灵纹身的图标" [ref=e164] [cursor=pointer]:
+          - /url: /biz/343.html
+          - img "新余流灵纹身的图标" [ref=e165]
+        - link "新余流灵纹身" [ref=e167] [cursor=pointer]:
+          - /url: /biz/343.html
+        - generic [ref=e168]: 电话13755575110
+      - generic [ref=e169]:
+        - link "二正纹身馆的图标" [ref=e171] [cursor=pointer]:
+          - /url: /biz/13860.html
+          - img "二正纹身馆的图标" [ref=e172]
+        - link "二正纹身馆" [ref=e174] [cursor=pointer]:
+          - /url: /biz/13860.html
+        - generic [ref=e175]: 电话18013056114
+      - generic [ref=e176]:
+        - link "鸡西小松刺青的图标" [ref=e178] [cursor=pointer]:
+          - /url: /biz/886.html
+          - img "鸡西小松刺青的图标" [ref=e179]
+        - link "鸡西小松刺青" [ref=e181] [cursor=pointer]:
+          - /url: /biz/886.html
+        - generic [ref=e182]: 电话15810110021
+      - generic [ref=e183]:
+        - link "烈火堂纹身机构的图标" [ref=e185] [cursor=pointer]:
+          - /url: /biz/419.html
+          - img "烈火堂纹身机构的图标" [ref=e186]
+        - link "烈火堂纹身机构" [ref=e188] [cursor=pointer]:
+          - /url: /biz/419.html
+        - generic [ref=e189]: 电话13355313500
+      - generic [ref=e190]:
+        - link "怀化明界纹身的图标" [ref=e192] [cursor=pointer]:
+          - /url: /biz/376.html
+          - img "怀化明界纹身的图标" [ref=e193]
+        - link "怀化明界纹身" [ref=e195] [cursor=pointer]:
+          - /url: /biz/376.html
+        - generic [ref=e196]: 电话15580652828
+      - generic [ref=e197]:
+        - link "宣城永义堂的图标" [ref=e199] [cursor=pointer]:
+          - /url: /biz/370.html
+          - img "宣城永义堂的图标" [ref=e200]
+        - link "宣城永义堂" [ref=e202] [cursor=pointer]:
+          - /url: /biz/370.html
+        - generic [ref=e203]: 电话18119929188
+      - generic [ref=e204]:
+        - link "芜湖永义堂的图标" [ref=e206] [cursor=pointer]:
+          - /url: /biz/369.html
+          - img "芜湖永义堂的图标" [ref=e207]
+        - link "芜湖永义堂" [ref=e209] [cursor=pointer]:
+          - /url: /biz/369.html
+        - generic [ref=e210]: 电话0553-3015848
+      - generic [ref=e211]:
+        - link "岳阳新刺客的图标" [ref=e213] [cursor=pointer]:
+          - /url: /biz/353.html
+          - img "岳阳新刺客的图标" [ref=e214]
+        - link "岳阳新刺客" [ref=e216] [cursor=pointer]:
+          - /url: /biz/353.html
+        - generic [ref=e217]: 电话18182001713
+  - generic [ref=e220]:
+    - generic [ref=e221]:
+      - generic [ref=e222]: "分类:"
+      - list [ref=e223]:
+        - listitem [ref=e224]:
+          - link "全部" [ref=e225] [cursor=pointer]:
+            - /url: /xinxi/
+        - listitem [ref=e226]:
+          - link "我行我秀" [ref=e227] [cursor=pointer]:
+            - /url: /info153/
+        - listitem [ref=e228]:
+          - link "我要招聘" [ref=e229] [cursor=pointer]:
+            - /url: /info122/
+        - listitem [ref=e230]:
+          - link "我要求职" [ref=e231] [cursor=pointer]:
+            - /url: /info161/
+        - listitem [ref=e232]:
+          - link "纹身店转让" [ref=e233] [cursor=pointer]:
+            - /url: /info4/
+        - listitem [ref=e234]:
+          - link "纹身模特" [ref=e235] [cursor=pointer]:
+            - /url: /info165/
+        - listitem [ref=e236]:
+          - link "预约纹身" [ref=e237] [cursor=pointer]:
+            - /url: /info149/
+        - listitem [ref=e238]:
+          - link "纹身培训" [ref=e239] [cursor=pointer]:
+            - /url: /info20/
+        - listitem [ref=e240]:
+          - link "二手设备转让" [ref=e241] [cursor=pointer]:
+            - /url: /info1/
+        - listitem [ref=e242]:
+          - link "周边服务" [ref=e243] [cursor=pointer]:
+            - /url: /info28/
+        - listitem [ref=e244]:
+          - link "发布信息" [ref=e245] [cursor=pointer]:
+            - /url: /post/
+    - generic [ref=e246]:
+      - generic [ref=e247]: "地区:"
+      - list [ref=e248]:
+        - listitem [ref=e249]:
+          - link "全部" [ref=e250] [cursor=pointer]:
+            - /url: /xinxi/
+        - listitem [ref=e251]:
+          - link "直辖市" [ref=e252] [cursor=pointer]:
+            - /url: /xinxi/a558/
+        - listitem [ref=e253]:
+          - link "山东" [ref=e254] [cursor=pointer]:
+            - /url: /xinxi/a120/
+        - listitem [ref=e255]:
+          - link "江苏" [ref=e256] [cursor=pointer]:
+            - /url: /xinxi/a119/
+        - listitem [ref=e257]:
+          - link "浙江" [ref=e258] [cursor=pointer]:
+            - /url: /xinxi/a118/
+        - listitem [ref=e259]:
+          - link "安徽" [ref=e260] [cursor=pointer]:
+            - /url: /xinxi/a117/
+        - listitem [ref=e261]:
+          - link "广东" [ref=e262] [cursor=pointer]:
+            - /url: /xinxi/a121/
+        - listitem [ref=e263]:
+          - link "广西" [ref=e264] [cursor=pointer]:
+            - /url: /xinxi/a122/
+        - listitem [ref=e265]:
+          - link "海南" [ref=e266] [cursor=pointer]:
+            - /url: /xinxi/a124/
+        - listitem [ref=e267]:
+          - link "河南" [ref=e268] [cursor=pointer]:
+            - /url: /xinxi/a123/
+        - listitem [ref=e269]:
+          - link "湖北" [ref=e270] [cursor=pointer]:
+            - /url: /xinxi/a125/
+        - listitem [ref=e271]:
+          - link "福建" [ref=e272] [cursor=pointer]:
+            - /url: /xinxi/a269/
+        - listitem [ref=e273]:
+          - link "青海" [ref=e274] [cursor=pointer]:
+            - /url: /xinxi/a126/
+        - listitem [ref=e275]:
+          - link "湖南" [ref=e276] [cursor=pointer]:
+            - /url: /xinxi/a127/
+        - listitem [ref=e277]:
+          - link "江西" [ref=e278] [cursor=pointer]:
+            - /url: /xinxi/a128/
+        - listitem [ref=e279]:
+          - link "辽宁" [ref=e280] [cursor=pointer]:
+            - /url: /xinxi/a129/
+        - listitem [ref=e281]:
+          - link "黑龙江" [ref=e282] [cursor=pointer]:
+            - /url: /xinxi/a130/
+        - listitem [ref=e283]:
+          - link "吉林" [ref=e284] [cursor=pointer]:
+            - /url: /xinxi/a131/
+        - listitem [ref=e285]:
+          - link "四川" [ref=e286] [cursor=pointer]:
+            - /url: /xinxi/a132/
+        - listitem [ref=e287]:
+          - link "云南" [ref=e288] [cursor=pointer]:
+            - /url: /xinxi/a133/
+        - listitem [ref=e289]:
+          - link "贵州" [ref=e290] [cursor=pointer]:
+            - /url: /xinxi/a134/
+        - listitem [ref=e291]:
+          - link "西藏" [ref=e292] [cursor=pointer]:
+            - /url: /xinxi/a135/
+        - listitem [ref=e293]:
+          - link "河北" [ref=e294] [cursor=pointer]:
+            - /url: /xinxi/a136/
+        - listitem [ref=e295]:
+          - link "山西" [ref=e296] [cursor=pointer]:
+            - /url: /xinxi/a137/
+        - listitem [ref=e297]:
+          - link "内蒙古" [ref=e298] [cursor=pointer]:
+            - /url: /xinxi/a138/
+        - listitem [ref=e299]:
+          - link "陕西" [ref=e300] [cursor=pointer]:
+            - /url: /xinxi/a139/
+        - listitem [ref=e301]:
+          - link "新疆" [ref=e302] [cursor=pointer]:
+            - /url: /xinxi/a140/
+        - listitem [ref=e303]:
+          - link "甘肃" [ref=e304] [cursor=pointer]:
+            - /url: /xinxi/a141/
+        - listitem [ref=e305]:
+          - link "宁夏" [ref=e306] [cursor=pointer]:
+            - /url: /xinxi/a142/
+        - listitem [ref=e307]:
+          - link "其他地区" [ref=e308] [cursor=pointer]:
+            - /url: /xinxi/a143/
+    - generic [ref=e309]:
+      - generic [ref=e310]: 显示：
+      - list [ref=e311]:
+        - listitem [ref=e312] [cursor=pointer]: 方框
+        - listitem [ref=e313] [cursor=pointer]: 列表
+  - generic [ref=e315]:
+    - generic [ref=e316]:
+      - generic [ref=e317]:
+        - generic [ref=e318]:
+          - text: 超大格置顶
+          - link "纹身店线上获客，坐拥百度 + AI 双重流量" [ref=e319] [cursor=pointer]:
+            - /url: /xinxi/2269.html
+        - generic [ref=e321]:
+          - generic [ref=e322]:
+            - img [ref=e323]
+            - generic [ref=e324]: 图11
+          - generic [ref=e325]:
+            - generic [ref=e326]: 纹身店线上获客，坐拥百度 + AI 双重流量
+            - generic [ref=e327]: 秀酷纹身之家-专业做纹身店全网推广 百度首页排名优化，套餐低至 1000 元全包。 纹身门店线上拓客利器 千元一站式建站排名服务 电脑、手机、微信多端站点全覆盖 搭乘 AI 流量红利，官网优先获得智能曝光 客源自动找上门，堪比全年在线推广专员 有意添加微信：sccoocn 咨询详情 入驻即可享受平台长期门店推荐，快速打响店铺知名度。 知名成功客户案例： 岳阳新刺客 www.xincike.cn 济南烈火堂 www.hailintattoo.cn
+        - generic [ref=e329]:
+          - strong [ref=e330]: ￥
+          - text: 1000 - 3000
+        - generic [ref=e331]: 有效期335天
+      - generic [ref=e332]:
+        - generic [ref=e333]:
+          - text: 超大格置顶
+          - link "钛合金饰品厂家" [ref=e334] [cursor=pointer]:
+            - /url: /xinxi/42864.html
+        - generic [ref=e336]:
+          - generic [ref=e337]:
+            - img [ref=e338]
+            - generic [ref=e339]: 图8
+          - generic [ref=e340]:
+            - generic [ref=e341]: 钛合金饰品厂家
+            - generic [ref=e342]: 钛合金穿刺饰品批发，满1000一律9折，免费发样品，锆石产品，钛合金基础钉批发零售，产品订制，各类穿孔饰品现货现发，支持散装批发，2个起批，cnc工艺饰品，大家可以添加下面企业微信看产品图册，1688也有店铺 联系我时，请说明在秀酷纹身之家看到的，谢谢！
+        - generic [ref=e344]: 有效期30天
+      - generic [ref=e345]:
+        - generic [ref=e346]:
+          - text: 超大格置顶
+          - link "山西太原老牌纹身店高薪诚聘成熟纹身师" [ref=e347] [cursor=pointer]:
+            - /url: /xinxi/55232.html
+        - generic [ref=e349]:
+          - generic [ref=e350]:
+            - img [ref=e351]
+            - generic [ref=e352]: 图5
+          - generic [ref=e353]:
+            - generic [ref=e354]: 山西太原老牌纹身店高薪诚聘成熟纹身师
+            - generic [ref=e355]: 本店《太原玖幺刺青》成立于2018年，在太原当地纹身爱好者和网络自媒体同城频道中均有广泛的粉丝群体和品牌影响力。本店定位中端年轻人市场，主做新老传统、小清新、欧美等风格。店内面积120平拥有6处独立纹身工位（每处工位均有独立空调和独立床位、手臂支架等工具），纹身作业中所有耗材店里均免费提供（除纹身机），免费提供住宿。店内氛围融洽，老板管理得当，纹身师之间可互相沟通学习进步，不定期老板组织团建或公费外地进修。现扩大市场需招聘成熟纹身师要求：23岁以上，人品端正、吃苦耐劳，能独立自主的完成老传统纹身作品，线条流畅稳定，雾面干净工整。
+        - generic [ref=e357]:
+          - strong [ref=e358]: ￥
+          - text: 8000 - 2万
+        - generic [ref=e359]: 有效期14天
+      - generic [ref=e360]:
+        - generic [ref=e361]:
+          - text: 超大格置顶
+          - link "成都 重庆 招聘纹身师" [ref=e362] [cursor=pointer]:
+            - /url: /xinxi/55189.html
+        - generic [ref=e364]:
+          - generic [ref=e365]:
+            - img [ref=e366]
+            - generic [ref=e367]: 图6
+          - generic [ref=e368]:
+            - generic [ref=e369]: 成都 重庆 招聘纹身师
+            - generic [ref=e370]: 成都 重庆 招聘纹身师数名 ，要求线实雾匀，会构图 新手勿扰 眼高手低勿扰 需要流量店经精英 不需要自己找客源 耗材全部店里提供 能熬夜加班的来 只要技术够硬 保底1w 都是年轻人 好相处 每月都有团建 事少活多 联系我时请说明在绣酷看到的 加微信 看作品
+        - generic [ref=e372]:
+          - strong [ref=e373]: ￥
+          - text: 1万 - 3.5万
+        - generic [ref=e374]: 有效期12天
+      - generic [ref=e375]:
+        - generic [ref=e376]:
+          - text: 超大格置顶
+          - link "昆明 贵阳招聘纹身师" [ref=e377] [cursor=pointer]:
+            - /url: /xinxi/55124.html
+        - generic [ref=e379]:
+          - generic [ref=e380]:
+            - img [ref=e381]
+            - generic [ref=e382]: 图3
+          - generic [ref=e383]:
+            - generic [ref=e384]: 昆明 贵阳招聘纹身师
+            - generic [ref=e385]: 昆明、贵阳招师傅，提供住宿，有保底薪资，无需坐班。时间自由，待遇丰厚，技术熟练者优先。欢迎来电咨询
+        - generic [ref=e387]:
+          - strong [ref=e388]: ￥
+          - text: 1万 - 2万
+        - generic [ref=e389]: 有效期10天
+      - generic [ref=e391]:
+        - generic [ref=e393]: 置顶信息随机展示
+        - generic [ref=e394]:
+          - generic [ref=e395]:
+            - img [ref=e397]
+            - generic [ref=e398]:
+              - link "[周边服务]纹身店线上获客，坐拥百度 + AI 双重流量 ￥1000 - 3000" [ref=e400] [cursor=pointer]:
+                - /url: /xinxi/2269.html
+              - generic [ref=e401]: 秀酷纹身之家-专业做纹身店全网推广百度首页排名优化，套餐低至 1000 元全包。纹身门店线上拓客利器千元一站式建站排名服务电脑、手机、微信多端站点全覆盖搭乘 AI 流量红利，官网优先获得智能曝光客源自动找上门，堪比全年在线推广专员有意添加微信：sccoocn 咨询详情入驻即可享受平台长期门店推荐，快速打响店铺知名度。知名成功客户案例：岳阳新刺客 www.xincike.cn 济南烈火堂 www.hailintattoo.cn
+              - generic [ref=e402]: 湖南有效期335天
+          - generic [ref=e403]:
+            - img [ref=e405]
+            - generic [ref=e406]:
+              - link "[我要招聘]东莞招纹身师 ￥5000 - 1.6万" [ref=e408] [cursor=pointer]:
+                - /url: /xinxi/13089.html
+                - text: "[我要招聘]东莞招纹身师"
+                - generic [ref=e409]: ￥5000 - 1.6万
+              - generic [ref=e410]: 东莞招纹身师，要求纹身师要有３年以上经验，善于交谈，人品端正，无不良嗜好，能独立完成各种大小图案，提成40，一般工资10０００－１６０００左右，多劳多得，提供住宿，有意可添加微信私聊13827214465，新手勿扰。
+              - generic [ref=e411]: 广东有效期2天
+          - generic [ref=e412]:
+            - img [ref=e414]
+            - generic [ref=e415]:
+              - link "[我要招聘]保活有保底！！辽宁大连，招聘纹身师6到10名 ￥8000 - 2万" [ref=e417] [cursor=pointer]:
+                - /url: /xinxi/51513.html
+                - text: "[我要招聘]保活有保底！！辽宁大连，招聘纹身师6到10名"
+                - generic [ref=e418]: ￥8000 - 2万
+              - generic [ref=e419]: 保活有保底！！辽宁大连，招聘纹身师6到10名待遇：不用顾虑，大胆咨询，每天都有活，不拖欠工资，不压押金，干满1个月报销路费。外地来的师父，可以日结，到了就可以直接干活，免费入住，有地方，住宿不需要花钱，方便外地来的师父，不必担忧没有活干，还得自己租房子，保底工资➕提成，还有格外的产品提成，能加班熬夜，轻松万➕，店里提供所有耗材（只需要自己带机器）店里提供客源，不需要自己找客人。要求：品行端正，无不良嗜好，能独立完成作品，有审美，顾客服务好，迎接，送客，不挑活，有团对精神，多干多的，我只要求服务好客人，老板事少，不画饼！
+              - generic [ref=e420]: 辽宁有效期181天
+        - generic [ref=e422]: 信息置顶 - 让您的信息始终保持超高关注！
+      - generic [ref=e423]:
+        - generic [ref=e424]:
+          - text: 超大格置顶
+          - link "广州佛山急招两名驻店纹身师2名（本地附近同行纹身师均可兼职合作）" [ref=e425] [cursor=pointer]:
+            - /url: /xinxi/54538.html
+        - generic [ref=e427]:
+          - generic [ref=e428]:
+            - img [ref=e429]
+            - generic [ref=e430]: 图1
+          - generic [ref=e431]:
+            - generic [ref=e432]: 广州佛山急招两名驻店纹身师2名（本地附近同行纹身师均可兼职合作）
+            - generic [ref=e433]: 广州佛山急招两名驻店纹身师2名（本地附近同行纹身师均可兼职合作） 要求： 📍有绘画基础 有设计能力 能独立完成大小各种纹身。 📍要求从业五年以上，讲卫生，无不良嗜好。 📍必须会PS设计基本操作、 并使用VPN且熟悉pinterest应用、新老传统 写实 全能型优先考虑。 📍要求刺功扎实，有审美，有情商，会构图，能独立完成大图，形象好，注重卫生，听从工作安排。 要求线实雾匀的老手，愿意认真对待自己作品的。 📍 不是传统走量店(具备走量店工作经验的老师傅优先考虑)，无需自己拓客，需守店驻店，不是走量店，店里艺术气氛不错。人品di 一，作品第二，老板人随和，耍心眼的别来，大家有钱一起挣。 📍美术院校毕业的纹身师且30岁+优先考虑。 📍活多事少，每月8000-2万左右不画饼 ，吃住自理 ，日结，可随时到店试活， 能吃苦熬夜优先(预计每月通宵1周)。需要长期合作的伙伴，要老手，能快速适应工作状态，事多的就不用来了，拿活说话。 应聘者请准备好近期约十个案例作品和简历添加微信13729045464或致电。学徒勿扰，眼高手低 耍心眼的勿扰。期待有能力的你加入我们的团队！
+        - generic [ref=e435]:
+          - strong [ref=e436]: ￥
+          - text: 8000 - 2万
+        - generic [ref=e437]: 有效期8天
+      - generic [ref=e438]:
+        - generic [ref=e439]:
+          - text: 超大格置顶
+          - link "河北廊坊招聘纹身师！" [ref=e440] [cursor=pointer]:
+            - /url: /xinxi/50446.html
+        - generic [ref=e442]:
+          - generic [ref=e443]:
+            - img [ref=e444]
+            - generic [ref=e445]: 图3
+          - generic [ref=e446]:
+            - generic [ref=e447]: 河北廊坊招聘纹身师！
+            - generic [ref=e448]: 河北廊坊招聘纹身师，基本功扎实 线条流畅 雾面均匀，高提成 师傅拿6成左右，活多事少，管住，来了就是挣钱，可开保底1万-1.8万，咱家定位中高端，不做低端走量。微信：13920728077 联系我时，请说明在秀酷纹身之家看到的，谢谢！
+        - generic [ref=e450]:
+          - strong [ref=e451]: ￥
+          - text: 1.5万 - 3万
+        - generic [ref=e452]: 有效期10天
+      - generic [ref=e453]:
+        - generic [ref=e454]:
+          - text: 超大格置顶
+          - link "昆明招聘纹身师薪资1万以上" [ref=e455] [cursor=pointer]:
+            - /url: /xinxi/45331.html
+        - generic [ref=e457]:
+          - generic [ref=e458]:
+            - img [ref=e459]
+            - generic [ref=e460]: 图2
+          - generic [ref=e461]:
+            - generic [ref=e462]: 昆明招聘纹身师薪资1万以上
+            - generic [ref=e463]: 昆明急招：驻店 打野纹身师 纯互联网门店不用自己找客人 门店流量赋能 抖音~小红书~快手每月获客1000+ 你还在为门店没有活而烦恼吗？ 坐等客人上门 客人转介绍这样不仅慢还没效果 我们有获客能力让门店客量源源不断的爆满 而且都是高客单 从此不在为门店没有客人而烦恼 咨询方式：13913468431微信同号
+        - generic [ref=e465]:
+          - strong [ref=e466]: ￥
+          - text: 8000 - 5万
+        - generic [ref=e467]: 有效期16天
+      - generic [ref=e468]:
+        - generic [ref=e469]:
+          - text: 大格置顶
+          - link "急招**首席纹身师1名坐标河南商丘" [ref=e470] [cursor=pointer]:
+            - /url: /xinxi/55264.html
+        - generic [ref=e472]:
+          - generic [ref=e473]:
+            - img [ref=e474]
+            - generic [ref=e475]: 图8
+          - generic [ref=e476]:
+            - generic [ref=e477]: 急招**首席纹身师1名坐标河南商丘
+            - generic [ref=e478]: 急招首席纹身师一位 主要就是做技术顶替我本人 包住洗漱任何东西都全包 吃基本也不花钱跟着我吃 工资 提成百分之35～80 起步工资8000～20000w因店内师傅因家庭原因离职 急需一位顶替保证能挣到钱 技术不行事多没团队意识的不用联系我 谢谢🙏微电：17698966696
+        - generic [ref=e480]:
+          - strong [ref=e481]: ￥
+          - text: 8000 - 2万
+        - generic [ref=e482]: 有效期30天
+      - generic [ref=e483]:
+        - generic [ref=e484]:
+          - text: 大格置顶
+          - link "苏州招聘纹身师" [ref=e485] [cursor=pointer]:
+            - /url: /xinxi/53287.html
+        - generic [ref=e487]:
+          - generic [ref=e488]:
+            - img [ref=e489]
+            - generic [ref=e490]: 图6
+          - generic [ref=e491]:
+            - generic [ref=e492]: 苏州招聘纹身师
+            - generic [ref=e493]: 苏州1万5以上活多 招成手驻店师傅 保底12000 月月1.5w+江苏苏州 日结不压不扣 急招驻店 平均一天俩活 名额有限 没删就是在招 干满半年安排住宿 一个月划拉1.5w+不是问题 挑活 不要 日结日结 自己客人80% 1.爱干净 人品好 优先 2.走量包天店 有活打电话 没活自己耍 3.线不抖 打雾过渡皮损能控制 背景能画合理 快来加我 17681688180
+        - generic [ref=e495]:
+          - strong [ref=e496]: ￥
+          - text: 1.2万 - 1.8万
+        - generic [ref=e497]: 有效期15天
+      - generic [ref=e498]:
+        - generic [ref=e499]:
+          - text: 大格置顶
+          - link "山东济南烈火堂招聘驻店高手！2026年最新招聘！" [ref=e500] [cursor=pointer]:
+            - /url: /xinxi/12704.html
+        - generic [ref=e502]:
+          - generic [ref=e503]:
+            - img [ref=e504]
+            - generic [ref=e505]: 图7
+          - generic [ref=e506]:
+            - generic [ref=e507]: 山东济南烈火堂招聘驻店高手！2026年最新招聘！
+            - generic [ref=e508]: 烈火堂纹身2026年最新招聘！～一个近二十年的非著名纹身品牌，诚招有个性、有技术、有形象、有想法的朋友加入我们战队！这里除了丰厚待遇还有海外驻店交流的发展空间！期待与优秀的您一路前行！ 烈火堂面向全国招聘纹身师5名男女不限！ 1.男性纹身师要求： A.形象良好，耐压能力强 B.从业经验多，大图作品多，有成熟的风格定位 C.性格不孤僻，能与同事融洽相处 D.学习能力强，不固步自封，跟上快速变化的市场 E.无不良嗜好 2.女纹身师要求： A.形象好！ B.表达能力强，思路清晰 C.技术成熟，有较高审美 D.性格良好，善与团队合作 E.无不良嗜好！ 有意请加微信：hailintattoo06(注明应聘)
+        - generic [ref=e510]: 有效期29天
+      - generic [ref=e511]:
+        - generic [ref=e512]:
+          - text: 大格置顶
+          - link "保活有保底！！辽宁大连，招聘纹身师6到10名" [ref=e513] [cursor=pointer]:
+            - /url: /xinxi/51513.html
+        - generic [ref=e515]:
+          - generic [ref=e516]:
+            - img [ref=e517]
+            - generic [ref=e518]: 图5
+          - generic [ref=e519]:
+            - generic [ref=e520]: 保活有保底！！辽宁大连，招聘纹身师6到10名
+            - generic [ref=e521]: 保活有保底！！辽宁大连，招聘纹身师6到10名 待遇：不用顾虑，大胆咨询，每天都有活，不拖欠工资，不压押金，干满1个月报销路费。 外地来的师父，可以日结，到了就可以直接干活，免费入住，有地方，住宿不需要花钱，方便外地来的师父，不必担忧没有活干，还得自己租房子，保底工资➕提成，还有格外的产品提成，能加班熬夜，轻松万➕，店里提供所有耗材（只需要自己带机器）店里提供客源，不需要自己找客人。 要求：品行端正，无不良嗜好，能独立完成作品，有审美，顾客服务好，迎接，送客，不挑活，有团对精神，多干多的，我只要求服务好客人，老板事少，不画饼！
+        - generic [ref=e523]:
+          - strong [ref=e524]: ￥
+          - text: 8000 - 2万
+        - generic [ref=e525]: 有效期181天
+      - generic [ref=e526]:
+        - generic [ref=e527]:
+          - text: 大格置顶
+          - link "广州急招新老传统纹身师" [ref=e528] [cursor=pointer]:
+            - /url: /xinxi/55140.html
+        - generic [ref=e530]:
+          - generic [ref=e531]:
+            - img [ref=e532]
+            - generic [ref=e533]: 图8
+          - generic [ref=e534]:
+            - generic [ref=e535]: 广州急招新老传统纹身师
+            - generic [ref=e536]: 广州急招新老传统纹身师，月工资1.2万-2万 24小时营业，要求线条流畅，雾面干净，目前主打包天 3年以上师傅优先，爱干净，干完活知道把工作台简单收拾一下 凭技术月工资12000万-20000万 保底12000+ 店里提供所有耗材，店内有客源，月结 有业绩随时可预支 不需要坐班，老板事少，不瞎哔哔。可相互学习进步，有团队精神更好。不是城中心生活成本低，有意者加微备注应聘 联系我时，请说明在秀酷纹身之家看到的，谢谢！
+        - generic [ref=e538]: 有效期26天
+      - generic [ref=e539]:
+        - generic [ref=e540]:
+          - text: 大格置顶
+          - link "江西南昌客源爆满 高薪招纹身师 高分成" [ref=e541] [cursor=pointer]:
+            - /url: /xinxi/55100.html
+        - generic [ref=e543]:
+          - generic [ref=e544]:
+            - img [ref=e545]
+            - generic [ref=e546]: 图1
+          - generic [ref=e547]:
+            - generic [ref=e548]: 江西南昌客源爆满 高薪招纹身师 高分成
+            - generic [ref=e549]: 江西南昌 ✅ 高比例分成，收入上不封顶，大单提成可观 ✅ 门店自带线上线下流量，不用外出跑单 ✅ 整洁独立工位，全套高端耗材免费使用 ✅ 营业时间自由协商，工作氛围简单纯粹 应聘方式 添加微信发送作品集+近期代表作品，合适直接约到店面试，非诚勿扰。
+        - generic [ref=e551]: 有效期9天
+      - generic [ref=e552]:
+        - generic [ref=e553]:
+          - text: 大格置顶
+          - link "苏州招聘作品有质量纹身师" [ref=e554] [cursor=pointer]:
+            - /url: /xinxi/54269.html
+        - generic [ref=e556]:
+          - generic [ref=e557]:
+            - img [ref=e558]
+            - generic [ref=e559]: 图1
+          - generic [ref=e560]:
+            - generic [ref=e561]: 苏州招聘作品有质量纹身师
+            - generic [ref=e562]: 苏州现招作品有质量纹身师，看作品应聘，学徒勿扰！ 要求：有良好的沟通能力，有团队意识！ 待遇：工资日结 提供住宿 提供耗材 提供资源！ 结语：要求对赚钱有欲望踏实稳定的师傅
+        - generic [ref=e564]:
+          - strong [ref=e565]: ￥
+          - text: 1.8万 - 2.3万
+        - generic [ref=e566]: 有效期9天
+      - generic [ref=e567]:
+        - generic [ref=e568]:
+          - text: 大格置顶
+          - link "福建漳州招聘纹身师" [ref=e569] [cursor=pointer]:
+            - /url: /xinxi/54958.html
+        - generic [ref=e571]:
+          - generic [ref=e572]:
+            - img [ref=e573]
+            - generic [ref=e574]: 图1
+          - generic [ref=e575]:
+            - generic [ref=e576]: 福建漳州招聘纹身师
+            - generic [ref=e577]: 福建漳州招个纹身师 人品第一，主要 包天活 可以日结 主做新老传统 没有押金 线直雾匀 没有什么套路 有寝室 干一个结一个 加班看你自己心情 不要新手 店内氛围好 事不多 都是年轻人没有什么套路 来了就当朋友相处 联系我时，请说明在秀酷纹身之家看到的，谢谢！
+        - generic [ref=e579]:
+          - strong [ref=e580]: ￥
+          - text: 9000 - 1.5万
+        - generic [ref=e581]: 有效期3天
+      - generic [ref=e582]:
+        - generic [ref=e583]:
+          - text: 大格置顶
+          - link "保底一万 青海西宁招聘纹身师" [ref=e584] [cursor=pointer]:
+            - /url: /xinxi/44153.html
+        - generic [ref=e586]:
+          - generic [ref=e587]:
+            - img [ref=e588]
+            - generic [ref=e589]: 图7
+          - generic [ref=e590]:
+            - generic [ref=e591]: 保底一万 青海西宁招聘纹身师
+            - generic [ref=e592]: 西宁招聘纹身师 来了就是哥们 工资待遇15000-25000 保底10000 工资每周一结算。55 分成 管住 淡季纹身师工资都随便上万。客源稳定 住宿环境好 可做饭 不催活 要求不多 踏实肯干 要会做新 老传统 独立完成作品 无需找客人 客人我提供 人品第一 来了 就一起好好干 觉得水平不足 十年老师傅可以免费指导 19997200123
+        - generic [ref=e594]:
+          - strong [ref=e595]: ￥
+          - text: 1.5万 - 2.5万
+        - generic [ref=e596]: 有效期1天
+      - generic [ref=e597]:
+        - generic [ref=e598]:
+          - text: 大格置顶
+          - link "急招成熟纹身师。保底1w" [ref=e599] [cursor=pointer]:
+            - /url: /xinxi/54866.html
+        - generic [ref=e601]:
+          - generic [ref=e602]:
+            - img [ref=e603]
+            - generic [ref=e604]: 图2
+          - generic [ref=e605]:
+            - generic [ref=e606]: 急招成熟纹身师。保底1w
+            - generic [ref=e607]: 河南驻马店急招聘成熟纹身师，要求线条流畅，颜色干净，能独立完成设计与操作。注重卫生。薪资保底一万。客源稳定，环境优越。有意者请带作品集联系。
+        - generic [ref=e609]: 有效期14天
+      - generic [ref=e610]:
+        - generic [ref=e611]:
+          - text: 大格置顶
+          - link "江苏南通12000招聘纹身师" [ref=e612] [cursor=pointer]:
+            - /url: /xinxi/54665.html
+        - generic [ref=e614]:
+          - generic [ref=e615]:
+            - img [ref=e616]
+            - generic [ref=e617]: 图4
+          - generic [ref=e618]:
+            - generic [ref=e619]: 江苏南通12000招聘纹身师
+            - generic [ref=e620]: 江苏南通诚招新老都会成手纹身师，基本功扎实，3年以上工作经验，大小图都能拿捏，没什么规矩，注意卫生，不用坐班，有活喊你，提供全部耗材，提供住宿，不压工资，日结，希望长期合作
+        - generic [ref=e622]:
+          - strong [ref=e623]: ￥
+          - text: 1.2万 - 1.5万
+        - generic [ref=e624]: 有效期8天
+      - generic [ref=e625]:
+        - generic [ref=e626]:
+          - text: 大格置顶
+          - link "郴州急召纹身驻店" [ref=e627] [cursor=pointer]:
+            - /url: /xinxi/50579.html
+        - generic [ref=e629]:
+          - generic [ref=e630]:
+            - img [ref=e631]
+            - generic [ref=e632]: 图8
+          - generic [ref=e633]:
+            - generic [ref=e634]: 郴州急召纹身驻店
+            - generic [ref=e635]: 郴州急召纹身驻店，活多的干不完我们这边就是888包天，可以日结也可以月结，提成4-5成，工作态度没问题质量没问题分成都可以长不画大饼，冬天你肯干，一个月8000没有问题，夏天更不要说了，带自己作品来网图来了也是走，线条流畅雾面均匀，来了就是兄弟没有上下层关系，没活随便你去干嘛。来活就回来干就行，工作时间自由，不挑活，
+        - generic [ref=e637]: 有效期6天
+      - generic [ref=e638]:
+        - generic [ref=e639]:
+          - text: 大格置顶
+          - link "纹身师求职驻店避雷昆山武刺青" [ref=e640] [cursor=pointer]:
+            - /url: /xinxi/54225.html
+        - generic [ref=e642]:
+          - generic [ref=e643]:
+            - img [ref=e644]
+            - generic [ref=e645]: 图1
+          - generic [ref=e646]:
+            - generic [ref=e647]: 纹身师求职驻店避雷昆山武刺青
+            - generic [ref=e648]: 纹身师同行们找工作一定要注意这家店，昆山武刺青。对纹身师全是套路，嘴上说得好听做得难看。百分之三十的提成告诉你一个月赚3到5万，纯骗。各种画大饼PUA，本人在这家店工作三年，**后提出辞职失去利用价值被克扣5万劳动报酬。上班时间被各种刁难辱骂，此人极度虚荣，在昆山武刺青上班，拿着百分之三十的提成还得天天给他当舔狗，否则就被穿小鞋。具体详情以及证据可以在其他平台了解。
+        - generic [ref=e650]: 有效期53天
+      - generic [ref=e651]:
+        - generic [ref=e652]:
+          - text: 大格置顶
+          - link "苏州招聘纹身师" [ref=e653] [cursor=pointer]:
+            - /url: /xinxi/52273.html
+        - generic [ref=e655]:
+          - generic [ref=e656]:
+            - img [ref=e657]
+            - generic [ref=e658]: 图5
+          - generic [ref=e659]:
+            - generic [ref=e660]: 苏州招聘纹身师
+            - generic [ref=e661]: 苏州招聘纹身师，工资日结 不压不扣 包住宿 保底10000 月底算不到10000我给补上，店里师傅平均工资15000，提供所有耗材 只需要带机器就行，要求线条流畅 雾面均匀 会构图，作品质量没问题即可，每天爆满 自由干活 不用坐班 有活会发信息给你 独立工位 24小时营业 冬天活同样很多 老板事少人随和！
+        - generic [ref=e663]:
+          - strong [ref=e664]: ￥
+          - text: 1.2万 - 2万
+        - generic [ref=e665]: 有效期265天
+      - generic [ref=e666]:
+        - link "陕西西安 招聘纹身师 图5" [ref=e667] [cursor=pointer]:
+          - /url: /xinxi/55269.html
+          - generic [ref=e668]:
+            - img "陕西西安 招聘纹身师" [ref=e669]
+            - generic [ref=e672]: 图5
+        - generic [ref=e673]:
+          - text: 小格置顶
+          - link "陕西西安 招聘纹身师" [ref=e674] [cursor=pointer]:
+            - /url: /xinxi/55269.html
+        - generic [ref=e675]: 西安店招聘长期纹身师。保底1万，提成制，客…
+        - generic [ref=e676]:
+          - strong [ref=e677]: ￥
+          - text: 1.2万 - 1.5万
+        - generic [ref=e678]: 有效期15天
+      - generic [ref=e679]:
+        - link "杭州招聘纹身师 图1" [ref=e680] [cursor=pointer]:
+          - /url: /xinxi/55236.html
+          - generic [ref=e681]:
+            - img "杭州招聘纹身师" [ref=e682]
+            - generic [ref=e685]: 图1
+        - generic [ref=e686]:
+          - text: 小格置顶
+          - link "杭州招聘纹身师" [ref=e687] [cursor=pointer]:
+            - /url: /xinxi/55236.html
+        - generic [ref=e688]: 杭州招聘纹身师，主要就是做688包间，浙江所…
+        - generic [ref=e689]: 有效期14天
+      - generic [ref=e690]:
+        - link "江苏（苏州，镇江），浙江（义乌，金华，台州）招纹身师 图3" [ref=e691] [cursor=pointer]:
+          - /url: /xinxi/55225.html
+          - generic [ref=e692]:
+            - img "江苏（苏州，镇江），浙江（义乌，金华，台州）招纹身师" [ref=e693]
+            - generic [ref=e696]: 图3
+        - generic [ref=e697]:
+          - text: 小格置顶
+          - link "江苏（苏州，镇江），浙江（义乌，金华，台州）招纹身师" [ref=e698] [cursor=pointer]:
+            - /url: /xinxi/55225.html
+        - generic [ref=e699]: 江苏（苏州，镇江），浙江（义乌，金华，台…
+        - generic [ref=e700]:
+          - strong [ref=e701]: ￥
+          - text: 1万 - 1.5万
+        - generic [ref=e702]: 有效期91天
+      - generic [ref=e703]:
+        - link "山东走量店招实习纹身师 图1" [ref=e704] [cursor=pointer]:
+          - /url: /xinxi/55094.html
+          - generic [ref=e705]:
+            - img "山东走量店招实习纹身师" [ref=e706]
+            - generic [ref=e709]: 图1
+        - generic [ref=e710]:
+          - text: 小格置顶
+          - link "山东走量店招实习纹身师" [ref=e711] [cursor=pointer]:
+            - /url: /xinxi/55094.html
+        - generic [ref=e712]: 青岛走量店招聘实习纹身师，能接受走量店的…
+        - generic [ref=e713]:
+          - strong [ref=e714]: ￥
+          - text: 3000 - 1.2万
+        - generic [ref=e715]: 有效期14天
+      - generic [ref=e716]:
+        - link "珠海招纹身师 图3" [ref=e717] [cursor=pointer]:
+          - /url: /xinxi/55186.html
+          - generic [ref=e718]:
+            - img "珠海招纹身师" [ref=e719]
+            - generic [ref=e722]: 图3
+        - generic [ref=e723]:
+          - text: 小格置顶
+          - link "珠海招纹身师" [ref=e724] [cursor=pointer]:
+            - /url: /xinxi/55186.html
+        - generic [ref=e725]: 招长期 兼职 打野 纹身师穿孔师 老板佛系友…
+        - generic [ref=e726]:
+          - strong [ref=e727]: ￥
+          - text: 4000 - 8000
+        - generic [ref=e728]: 有效期12天
+      - generic [ref=e729]:
+        - link "苏州招聘老传统师傅 图5" [ref=e730] [cursor=pointer]:
+          - /url: /xinxi/55178.html
+          - generic [ref=e731]:
+            - img "苏州招聘老传统师傅" [ref=e732]
+            - generic [ref=e735]: 图5
+        - generic [ref=e736]:
+          - text: 小格置顶
+          - link "苏州招聘老传统师傅" [ref=e737] [cursor=pointer]:
+            - /url: /xinxi/55178.html
+        - generic [ref=e738]: 招聘老传统师傅一名，要求，构图合理，线条…
+        - generic [ref=e739]:
+          - strong [ref=e740]: ￥
+          - text: 1万 - 2万
+        - generic [ref=e741]: 有效期12天
+      - generic [ref=e742]:
+        - link "厦门招聘纹身师 图3" [ref=e743] [cursor=pointer]:
+          - /url: /xinxi/55175.html
+          - generic [ref=e744]:
+            - img "厦门招聘纹身师" [ref=e745]
+            - generic [ref=e748]: 图3
+        - generic [ref=e749]:
+          - text: 小格置顶
+          - link "厦门招聘纹身师" [ref=e750] [cursor=pointer]:
+            - /url: /xinxi/55175.html
+        - generic [ref=e751]: 福建厦门招聘纹身师，24小时营业，新老传统…
+        - generic [ref=e752]:
+          - strong [ref=e753]: ￥
+          - text: 1万 - 2万
+        - generic [ref=e754]: 有效期26天
+      - generic [ref=e755]:
+        - link "深圳招聘老传统熟手师傅 图8" [ref=e756] [cursor=pointer]:
+          - /url: /xinxi/34212.html
+          - generic [ref=e757]:
+            - img "深圳招聘老传统熟手师傅" [ref=e758]
+            - generic [ref=e761]: 图8
+        - generic [ref=e762]:
+          - text: 小格置顶
+          - link "深圳招聘老传统熟手师傅" [ref=e763] [cursor=pointer]:
+            - /url: /xinxi/34212.html
+        - generic [ref=e764]: 深圳8度纹身总店，10年老店，位于中心地段的…
+        - generic [ref=e765]:
+          - strong [ref=e766]: ￥
+          - text: 9000 - 1.5万
+        - generic [ref=e767]: 有效期11天
+      - generic [ref=e768]:
+        - link "北京大兴急招纹身师 图3" [ref=e769] [cursor=pointer]:
+          - /url: /xinxi/53509.html
+          - generic [ref=e770]:
+            - img "北京大兴急招纹身师" [ref=e771]
+            - generic [ref=e774]: 图3
+        - generic [ref=e775]:
+          - text: 小格置顶
+          - link "北京大兴急招纹身师" [ref=e776] [cursor=pointer]:
+            - /url: /xinxi/53509.html
+        - generic [ref=e777]: 北京大兴急招纹身师，要求传统风格线直雾匀…
+        - generic [ref=e778]:
+          - strong [ref=e779]: ￥
+          - text: 1.2万 - 1.5万
+        - generic [ref=e780]: 有效期11天
+      - generic [ref=e781]:
+        - link "主要做老传统从业四年，感兴趣的老板看图私我 图8" [ref=e782] [cursor=pointer]:
+          - /url: /xinxi/55125.html
+          - generic [ref=e783]:
+            - img "主要做老传统从业四年，感兴趣的老板看图私我" [ref=e784]
+            - generic [ref=e787]: 图8
+        - generic [ref=e788]:
+          - text: 小格置顶
+          - link "主要做老传统从业四年，感兴趣的老板看图私我" [ref=e789] [cursor=pointer]:
+            - /url: /xinxi/55125.html
+        - generic [ref=e790]: 最好是在武汉汉阳区，不想跑太远，武汉以内…
+        - generic [ref=e791]:
+          - strong [ref=e792]: ￥
+          - text: "7000"
+        - generic [ref=e793]: 有效期25天
+      - generic [ref=e794]:
+        - link "广东汕头，招名驻店师傅，薪资8000➕ 图3" [ref=e795] [cursor=pointer]:
+          - /url: /xinxi/55123.html
+          - generic [ref=e796]:
+            - img "广东汕头，招名驻店师傅，薪资8000➕" [ref=e797]
+            - generic [ref=e800]: 图3
+        - generic [ref=e801]:
+          - text: 小格置顶
+          - link "广东汕头，招名驻店师傅，薪资8000➕" [ref=e802] [cursor=pointer]:
+            - /url: /xinxi/55123.html
+        - generic [ref=e803]: 广东汕头，招名驻店纹身师，包天店，质量过…
+        - generic [ref=e804]: 有效期10天
+      - generic [ref=e805]:
+        - link "广西南宁急招纹身师➕穿孔师 图3" [ref=e806] [cursor=pointer]:
+          - /url: /xinxi/51569.html
+          - generic [ref=e807]:
+            - img "广西南宁急招纹身师➕穿孔师" [ref=e808]
+            - generic [ref=e811]: 图3
+        - generic [ref=e812]:
+          - text: 小格置顶
+          - link "广西南宁急招纹身师➕穿孔师" [ref=e813] [cursor=pointer]:
+            - /url: /xinxi/51569.html
+        - generic [ref=e814]:
+          - strong [ref=e815]: "[商家]"
+          - text: 广西南宁急招纹身师➕穿孔师 纹身师急聘！…
+        - generic [ref=e816]:
+          - strong [ref=e817]: ￥
+          - text: 1.4万 - 1.6万
+        - generic [ref=e818]: 有效期10天
+      - generic [ref=e819]:
+        - link "山西太原招聘兼职纹身师 图5" [ref=e820] [cursor=pointer]:
+          - /url: /xinxi/55114.html
+          - generic [ref=e821]:
+            - img "山西太原招聘兼职纹身师" [ref=e822]
+            - generic [ref=e825]: 图5
+        - generic [ref=e826]:
+          - text: 小格置顶
+          - link "山西太原招聘兼职纹身师" [ref=e827] [cursor=pointer]:
+            - /url: /xinxi/55114.html
+        - generic [ref=e828]: 招聘纹身师，技术全面，主新老传统大面积风…
+        - generic [ref=e829]:
+          - strong [ref=e830]: ￥
+          - text: 5000 - 6000
+        - generic [ref=e831]: 有效期25天
+      - generic [ref=e832]:
+        - link "招聘纹身师合作 图4" [ref=e833] [cursor=pointer]:
+          - /url: /xinxi/55105.html
+          - generic [ref=e834]:
+            - img "招聘纹身师合作" [ref=e835]
+            - generic [ref=e838]: 图4
+        - generic [ref=e839]:
+          - text: 小格置顶
+          - link "招聘纹身师合作" [ref=e840] [cursor=pointer]:
+            - /url: /xinxi/55105.html
+        - generic [ref=e841]: 广州-佛山，招聘纹身师，店长，纹身师合作，…
+        - generic [ref=e842]:
+          - strong [ref=e843]: ￥
+          - text: 1万 - 2.5万
+        - generic [ref=e844]: 有效期25天
+      - generic [ref=e845]:
+        - link "深圳招纹身师 图3" [ref=e846] [cursor=pointer]:
+          - /url: /xinxi/55088.html
+          - generic [ref=e847]:
+            - img "深圳招纹身师" [ref=e848]
+            - generic [ref=e851]: 图3
+        - generic [ref=e852]:
+          - text: 小格置顶
+          - link "深圳招纹身师" [ref=e853] [cursor=pointer]:
+            - /url: /xinxi/55088.html
+        - generic [ref=e854]: 深圳招长期纹身师 保底5000 提供住宿 工作室…
+        - generic [ref=e855]:
+          - strong [ref=e856]: ￥
+          - text: 5000 - 8000
+        - generic [ref=e857]: 有效期9天
+      - generic [ref=e858]:
+        - link "招聘纹身师 图5" [ref=e859] [cursor=pointer]:
+          - /url: /xinxi/55048.html
+          - generic [ref=e860]:
+            - img "招聘纹身师" [ref=e861]
+            - generic [ref=e864]: 图5
+        - generic [ref=e865]:
+          - text: 小格置顶
+          - link "招聘纹身师" [ref=e866] [cursor=pointer]:
+            - /url: /xinxi/55048.html
+        - generic [ref=e867]: 江西省吉安市包天店 包住 招成手驻店师傅 …
+        - generic [ref=e868]:
+          - strong [ref=e869]: ￥
+          - text: 8000 - 1.3万
+        - generic [ref=e870]: 有效期7天
+      - generic [ref=e871]:
+        - link "江苏盐城招聘纹身师 图4" [ref=e872] [cursor=pointer]:
+          - /url: /xinxi/55023.html
+          - generic [ref=e873]:
+            - img "江苏盐城招聘纹身师" [ref=e874]
+            - generic [ref=e877]: 图4
+        - generic [ref=e878]:
+          - text: 小格置顶
+          - link "江苏盐城招聘纹身师" [ref=e879] [cursor=pointer]:
+            - /url: /xinxi/55023.html
+        - generic [ref=e880]: 江苏盐城招聘纹身师，要求那能够独立完成作…
+        - generic [ref=e881]: 有效期7天
+      - generic [ref=e882]:
+        - link "福建老狼纹身店，专业承接纹身行业视频拍摄 图8 视频" [ref=e883] [cursor=pointer]:
+          - /url: /xinxi/54986.html
+          - generic [ref=e884]:
+            - img "福建老狼纹身店，专业承接纹身行业视频拍摄" [ref=e885]
+            - generic [ref=e888]: 图8
+            - generic [ref=e889]: 视频
+        - generic [ref=e890]:
+          - text: 小格置顶
+          - link "福建老狼纹身店，专业承接纹身行业视频拍摄" [ref=e891] [cursor=pointer]:
+            - /url: /xinxi/54986.html
+        - generic [ref=e892]:
+          - generic "会员发布" [ref=e893]: 
+          - text: 开店、做短视频平台不想露脸、没有人拍视频…
+        - generic [ref=e894]: 有效期20天
+      - generic [ref=e895]:
+        - link "东莞招1-8年师傅 图3" [ref=e896] [cursor=pointer]:
+          - /url: /xinxi/54981.html
+          - generic [ref=e897]:
+            - img "东莞招1-8年师傅" [ref=e898]
+            - generic [ref=e901]: 图3
+        - generic [ref=e902]:
+          - text: 小格置顶
+          - link "东莞招1-8年师傅" [ref=e903] [cursor=pointer]:
+            - /url: /xinxi/54981.html
+        - generic [ref=e904]: 东莞诚招驻店.要求擅长老传统风格.有速有质…
+        - generic [ref=e905]:
+          - strong [ref=e906]: ￥
+          - text: 8000 - 2万
+        - generic [ref=e907]: 有效期20天
+      - generic [ref=e908]:
+        - link "浙江台州招聘纹身师 图2" [ref=e909] [cursor=pointer]:
+          - /url: /xinxi/54972.html
+          - generic [ref=e910]:
+            - img "浙江台州招聘纹身师" [ref=e911]
+            - generic [ref=e914]: 图2
+        - generic [ref=e915]:
+          - text: 小格置顶
+          - link "浙江台州招聘纹身师" [ref=e916] [cursor=pointer]:
+            - /url: /xinxi/54972.html
+        - generic [ref=e917]: 急招纹身师一名 活量管够。要求会老传统 线…
+        - generic [ref=e918]:
+          - strong [ref=e919]: ￥
+          - text: 9000 - 2万
+        - generic [ref=e920]: 有效期4天
+      - generic [ref=e921]:
+        - link "长沙维刺青招人 图8" [ref=e922] [cursor=pointer]:
+          - /url: /xinxi/43458.html
+          - generic [ref=e923]:
+            - img "长沙维刺青招人" [ref=e924]
+            - generic [ref=e927]: 图8
+        - generic [ref=e928]:
+          - text: 小格置顶
+          - link "长沙维刺青招人" [ref=e929] [cursor=pointer]:
+            - /url: /xinxi/43458.html
+        - generic [ref=e930]: 长沙维刺青 诚招驻店.要求擅长老传统风格.…
+        - generic [ref=e931]:
+          - strong [ref=e932]: ￥
+          - text: 1.2万 - 3.5万
+        - generic [ref=e933]: 有效期3天
+      - generic [ref=e934]:
+        - link "上海四店急招成手纹身师 图3" [ref=e935] [cursor=pointer]:
+          - /url: /xinxi/54936.html
+          - generic [ref=e936]:
+            - img "上海四店急招成手纹身师" [ref=e937]
+            - generic [ref=e940]: 图3
+        - generic [ref=e941]:
+          - text: 小格置顶
+          - link "上海四店急招成手纹身师" [ref=e942] [cursor=pointer]:
+            - /url: /xinxi/54936.html
+        - generic [ref=e943]: 上海四家客源成熟纹身店招聘五年以上成手老…
+        - generic [ref=e944]:
+          - strong [ref=e945]: ￥
+          - text: 1.2万 - 2万
+        - generic [ref=e946]: 有效期2天
+      - generic [ref=e947]:
+        - link "东莞招纹身师 图2" [ref=e948] [cursor=pointer]:
+          - /url: /xinxi/13089.html
+          - generic [ref=e949]:
+            - img "东莞招纹身师" [ref=e950]
+            - generic [ref=e953]: 图2
+        - generic [ref=e954]:
+          - text: 小格置顶
+          - link "东莞招纹身师" [ref=e955] [cursor=pointer]:
+            - /url: /xinxi/13089.html
+        - generic [ref=e956]: 东莞招纹身师，要求纹身师要有３年以上经验…
+        - generic [ref=e957]:
+          - strong [ref=e958]: ￥
+          - text: 5000 - 1.6万
+        - generic [ref=e959]: 有效期2天
+      - generic [ref=e960]:
+        - link "成都招聘纹身师 可接受初级纹身师 图1" [ref=e961] [cursor=pointer]:
+          - /url: /xinxi/54919.html
+          - generic [ref=e962]:
+            - img "成都招聘纹身师 可接受初级纹身师" [ref=e963]
+            - generic [ref=e966]: 图1
+        - generic [ref=e967]:
+          - text: 小格置顶
+          - link "成都招聘纹身师 可接受初级纹身师" [ref=e968] [cursor=pointer]:
+            - /url: /xinxi/54919.html
+        - generic [ref=e969]: 招师傅 可接受初级纹身师 包天走量。活多事…
+        - generic [ref=e970]:
+          - strong [ref=e971]: ￥
+          - text: 8000 - 1.5万
+        - generic [ref=e972]: 有效期2天
+      - generic [ref=e973]:
+        - link "昆山招聘纹身师 图4" [ref=e974] [cursor=pointer]:
+          - /url: /xinxi/54865.html
+          - generic [ref=e975]:
+            - img "昆山招聘纹身师" [ref=e976]
+            - generic [ref=e979]: 图4
+        - generic [ref=e980]:
+          - text: 小格置顶
+          - link "昆山招聘纹身师" [ref=e981] [cursor=pointer]:
+            - /url: /xinxi/54865.html
+        - generic [ref=e982]:
+          - generic "会员发布" [ref=e983]: 
+          - text: 招聘纹身师 月薪一万以上 不用坐班 ，店内氛…
+        - generic [ref=e984]:
+          - strong [ref=e985]: ￥
+          - text: 1万 - 2万
+        - generic [ref=e986]: 有效期14天
+      - generic [ref=e987]:
+        - link "西安招聘纹身师 图8" [ref=e988] [cursor=pointer]:
+          - /url: /xinxi/46932.html
+          - generic [ref=e989]:
+            - img "西安招聘纹身师" [ref=e990]
+            - generic [ref=e993]: 图8
+        - generic [ref=e994]:
+          - text: 小格置顶
+          - link "西安招聘纹身师" [ref=e995] [cursor=pointer]:
+            - /url: /xinxi/46932.html
+        - generic [ref=e996]: 大美西安欢迎各位纹身师！店里位置在西安中…
+        - generic [ref=e997]:
+          - strong [ref=e998]: ￥
+          - text: 1万 - 3万
+        - generic [ref=e999]: 有效期13天
+      - generic [ref=e1000]:
+        - link "汕头沿海城市急招师傅 图6" [ref=e1001] [cursor=pointer]:
+          - /url: /xinxi/54855.html
+          - generic [ref=e1002]:
+            - img "汕头沿海城市急招师傅" [ref=e1003]
+            - generic [ref=e1006]: 图6
+        - generic [ref=e1007]:
+          - text: 小格置顶
+          - link "汕头沿海城市急招师傅" [ref=e1008] [cursor=pointer]:
+            - /url: /xinxi/54855.html
+        - generic [ref=e1009]: 汕头急召三年以上纹身师驻店，活多的干不完…
+        - generic [ref=e1010]:
+          - strong [ref=e1011]: ￥
+          - text: 1万 - 1.5万
+        - generic [ref=e1012]: 有效期13天
+      - generic [ref=e1013]:
+        - link "广东中山招聘纹身师 图1" [ref=e1014] [cursor=pointer]:
+          - /url: /xinxi/54642.html
+          - generic [ref=e1015]:
+            - img "广东中山招聘纹身师" [ref=e1016]
+            - generic [ref=e1019]: 图1
+        - generic [ref=e1020]:
+          - text: 小格置顶
+          - link "广东中山招聘纹身师" [ref=e1021] [cursor=pointer]:
+            - /url: /xinxi/54642.html
+        - generic [ref=e1022]: 广东中山招聘驻店纹身师，老传统师傅优先，…
+        - generic [ref=e1023]:
+          - strong [ref=e1024]: ￥
+          - text: 6000 - 1.2万
+        - generic [ref=e1025]: 有效期7天
+      - generic [ref=e1026]:
+        - link "义乌招聘纹身师 图4" [ref=e1027] [cursor=pointer]:
+          - /url: /xinxi/53549.html
+          - generic [ref=e1028]:
+            - img "义乌招聘纹身师" [ref=e1029]
+            - generic [ref=e1032]: 图4
+        - generic [ref=e1033]:
+          - text: 小格置顶
+          - link "义乌招聘纹身师" [ref=e1034] [cursor=pointer]:
+            - /url: /xinxi/53549.html
+        - generic [ref=e1035]: 浙江义乌纹身店招聘纹身师，纹身师四提成包…
+        - generic [ref=e1036]:
+          - strong [ref=e1037]: ￥
+          - text: 1万 - 3万
+        - generic [ref=e1038]: 有效期42天
+      - generic [ref=e1039]:
+        - link "湖南长沙招纹身师 图2" [ref=e1040] [cursor=pointer]:
+          - /url: /xinxi/49731.html
+          - generic [ref=e1041]:
+            - img "湖南长沙招纹身师" [ref=e1042]
+            - generic [ref=e1045]: 图2
+        - generic [ref=e1046]:
+          - text: 小格置顶
+          - link "湖南长沙招纹身师" [ref=e1047] [cursor=pointer]:
+            - /url: /xinxi/49731.html
+        - generic [ref=e1048]: 湖南长沙星沙招纹身师，3万左右一月能吃苦耐…
+        - generic [ref=e1049]:
+          - strong [ref=e1050]: ￥
+          - text: 1万 - 3万
+        - generic [ref=e1051]: 有效期132天
+      - generic [ref=e1052]:
+        - link "上海招聘穿孔师傅 图2" [ref=e1053] [cursor=pointer]:
+          - /url: /xinxi/55259.html
+          - generic [ref=e1054]:
+            - img "上海招聘穿孔师傅" [ref=e1055]
+            - generic [ref=e1058]: 图2
+        - link "上海招聘穿孔师傅" [ref=e1060] [cursor=pointer]:
+          - /url: /xinxi/55259.html
+        - generic [ref=e1061]: 上海宝山区纹身工作室招全职穿孔师一名 要…
+        - generic [ref=e1062]: 1小时前
+      - generic [ref=e1063]:
+        - link "湖南衡阳招聘纹身师 图4" [ref=e1064] [cursor=pointer]:
+          - /url: /xinxi/53064.html
+          - generic [ref=e1065]:
+            - img "湖南衡阳招聘纹身师" [ref=e1066]
+            - generic [ref=e1069]: 图4
+        - link "湖南衡阳招聘纹身师" [ref=e1071] [cursor=pointer]:
+          - /url: /xinxi/53064.html
+        - generic [ref=e1072]: 衡阳招聘纹身师 ，纹身师工作五年以上，本店…
+        - generic [ref=e1073]:
+          - strong [ref=e1074]: ￥
+          - text: 1万 - 1.5万
+        - generic [ref=e1075]: 1小时前
+      - generic [ref=e1076]:
+        - link "湖北利川网红纹身店 图2" [ref=e1077] [cursor=pointer]:
+          - /url: /xinxi/55167.html
+          - generic [ref=e1078]:
+            - img "湖北利川网红纹身店" [ref=e1079]
+            - generic [ref=e1082]: 图2
+        - link "湖北利川网红纹身店" [ref=e1084] [cursor=pointer]:
+          - /url: /xinxi/55167.html
+        - generic [ref=e1085]: 湖北利川网红店急需驻店纹身师 包天走量店日…
+        - generic [ref=e1086]:
+          - strong [ref=e1087]: ￥
+          - text: 8000 - 1.5万
+        - generic [ref=e1088]: 1小时前
+      - generic [ref=e1089]:
+        - link "苏州活多包天店包住1.3万以上诚聘成手驻店师傅 图4" [ref=e1090] [cursor=pointer]:
+          - /url: /xinxi/52686.html
+          - generic [ref=e1091]:
+            - img "苏州活多包天店包住1.3万以上诚聘成手驻店师傅" [ref=e1092]
+            - generic [ref=e1095]: 图4
+        - link "苏州活多包天店包住1.3万以上诚聘成手驻店师傅" [ref=e1097] [cursor=pointer]:
+          - /url: /xinxi/52686.html
+        - generic [ref=e1098]: 苏州包天店 包住 招成手驻店师傅 月月1.5w…
+        - generic [ref=e1099]:
+          - strong [ref=e1100]: ￥
+          - text: 1.5万 - 5万
+        - generic [ref=e1101]: 1小时前
+      - generic [ref=e1102]:
+        - link "广州急需纹身师 图1" [ref=e1103] [cursor=pointer]:
+          - /url: /xinxi/55267.html
+          - generic [ref=e1104]:
+            - img "广州急需纹身师" [ref=e1105]
+            - generic [ref=e1108]: 图1
+        - link "广州急需纹身师" [ref=e1110] [cursor=pointer]:
+          - /url: /xinxi/55267.html
+        - generic [ref=e1111]:
+          - generic "会员发布" [ref=e1112]: 
+          - text: 广州白云地区招聘纹身师傅，（新手也可以 线…
+        - generic [ref=e1113]:
+          - strong [ref=e1114]: ￥
+          - text: 8000 - 2万
+        - generic [ref=e1115]: 2小时前
+      - generic [ref=e1116]:
+        - link "广州急需纹身师 图1" [ref=e1117] [cursor=pointer]:
+          - /url: /xinxi/55266.html
+          - generic [ref=e1118]:
+            - img "广州急需纹身师" [ref=e1119]
+            - generic [ref=e1122]: 图1
+        - link "广州急需纹身师" [ref=e1124] [cursor=pointer]:
+          - /url: /xinxi/55266.html
+        - generic [ref=e1125]:
+          - generic "会员发布" [ref=e1126]: 
+          - text: 广州白云地区招聘纹身师傅，（新手也可以 线…
+        - generic [ref=e1127]:
+          - strong [ref=e1128]: ￥
+          - text: 8000 - 2万
+        - generic [ref=e1129]: 2小时前
+      - generic [ref=e1130]:
+        - link "广州急需纹身师 图1" [ref=e1131] [cursor=pointer]:
+          - /url: /xinxi/55265.html
+          - generic [ref=e1132]:
+            - img "广州急需纹身师" [ref=e1133]
+            - generic [ref=e1136]: 图1
+        - link "广州急需纹身师" [ref=e1138] [cursor=pointer]:
+          - /url: /xinxi/55265.html
+        - generic [ref=e1139]:
+          - generic "会员发布" [ref=e1140]: 
+          - text: 广州白云地区招聘纹身师傅，（新手也可以 线…
+        - generic [ref=e1141]:
+          - strong [ref=e1142]: ￥
+          - text: 8000 - 2万
+        - generic [ref=e1143]: 2小时前
+      - generic [ref=e1144]:
+        - link "喀什走量店招聘纹身师店长 图3" [ref=e1145] [cursor=pointer]:
+          - /url: /xinxi/55263.html
+          - generic [ref=e1146]:
+            - img "喀什走量店招聘纹身师店长" [ref=e1147]
+            - generic [ref=e1150]: 图3
+        - link "喀什走量店招聘纹身师店长" [ref=e1152] [cursor=pointer]:
+          - /url: /xinxi/55263.html
+        - generic [ref=e1153]:
+          - generic "会员发布" [ref=e1154]: 
+          - text: 提供住宿，不需要出房租水电，活稳定 自己…
+        - generic [ref=e1155]:
+          - strong [ref=e1156]: ￥
+          - text: 6000 - 1.5万
+        - generic [ref=e1157]: 3小时前
+      - generic [ref=e1158]:
+        - link "武汉招全职纹身师 图6" [ref=e1159] [cursor=pointer]:
+          - /url: /xinxi/55262.html
+          - generic [ref=e1160]:
+            - img "武汉招全职纹身师" [ref=e1161]
+            - generic [ref=e1164]: 图6
+        - link "武汉招全职纹身师" [ref=e1166] [cursor=pointer]:
+          - /url: /xinxi/55262.html
+        - generic [ref=e1167]: 武汉刺青店招聘全能纹身穿孔师傅（待遇优厚…
+        - generic [ref=e1168]:
+          - strong [ref=e1169]: ￥
+          - text: 8000 - 1.2万
+        - generic [ref=e1170]: 3小时前
+      - generic [ref=e1171]:
+        - link "湖州招纹身师保底1.2W 图3" [ref=e1172] [cursor=pointer]:
+          - /url: /xinxi/55256.html
+          - generic [ref=e1173]:
+            - img "湖州招纹身师保底1.2W" [ref=e1174]
+            - generic [ref=e1177]: 图3
+        - link "湖州招纹身师保底1.2W" [ref=e1179] [cursor=pointer]:
+          - /url: /xinxi/55256.html
+        - generic [ref=e1180]:
+          - generic "会员发布" [ref=e1181]: 
+          - text: 湖州招新老传统纹身师傅，保底1.2。不做流水…
+        - generic [ref=e1182]:
+          - strong [ref=e1183]: ￥
+          - text: 1.5 - 2.6
+        - generic [ref=e1184]: 4小时前
+      - generic [ref=e1185]:
+        - link "湖州招纹身师 图3" [ref=e1186] [cursor=pointer]:
+          - /url: /xinxi/55255.html
+          - generic [ref=e1187]:
+            - img "湖州招纹身师" [ref=e1188]
+            - generic [ref=e1191]: 图3
+        - link "湖州招纹身师" [ref=e1193] [cursor=pointer]:
+          - /url: /xinxi/55255.html
+        - generic [ref=e1194]:
+          - generic "会员发布" [ref=e1195]: 
+          - text: 湖州招新老传统纹身师傅，保底1.2。不做流水…
+        - generic [ref=e1196]:
+          - strong [ref=e1197]: ￥
+          - text: 1.5 - 2.6
+        - generic [ref=e1198]: 4小时前
+      - generic [ref=e1199]:
+        - link "太原急招成熟纹身师保底6000 图7" [ref=e1200] [cursor=pointer]:
+          - /url: /xinxi/46962.html
+          - generic [ref=e1201]:
+            - img "太原急招成熟纹身师保底6000" [ref=e1202]
+            - generic [ref=e1205]: 图7
+        - link "太原急招成熟纹身师保底6000" [ref=e1207] [cursor=pointer]:
+          - /url: /xinxi/46962.html
+        - generic [ref=e1208]: 太原急招成熟驻店师傅，保底6000-12000，工…
+        - generic [ref=e1209]:
+          - strong [ref=e1210]: ￥
+          - text: 6000 - 1.2万
+        - generic [ref=e1211]: 4小时前
+      - generic [ref=e1212]:
+        - link "苏州同城来打野兄弟 图5" [ref=e1213] [cursor=pointer]:
+          - /url: /xinxi/55253.html
+          - generic [ref=e1214]:
+            - img "苏州同城来打野兄弟" [ref=e1215]
+            - generic [ref=e1218]: 图5
+        - link "苏州同城来打野兄弟" [ref=e1220] [cursor=pointer]:
+          - /url: /xinxi/55253.html
+        - generic [ref=e1221]: 苏州同城招募打野兄弟，团队扩充名额有限。…
+        - generic [ref=e1222]: 5小时前
+      - generic [ref=e1223]:
+        - link "乌鲁木齐走量店招聘纹身师 图2" [ref=e1224] [cursor=pointer]:
+          - /url: /xinxi/55252.html
+          - generic [ref=e1225]:
+            - img "乌鲁木齐走量店招聘纹身师" [ref=e1226]
+            - generic [ref=e1229]: 图2
+        - link "乌鲁木齐走量店招聘纹身师" [ref=e1231] [cursor=pointer]:
+          - /url: /xinxi/55252.html
+        - generic [ref=e1232]:
+          - generic "会员发布" [ref=e1233]: 
+          - text: 提供住宿，不需要出房租水电，活稳定，接受…
+        - generic [ref=e1234]:
+          - strong [ref=e1235]: ￥
+          - text: 5000 - 1.2万
+        - generic [ref=e1236]: 5小时前
+      - generic [ref=e1237]:
+        - link "西双版纳招聘纹身师店长 图3" [ref=e1238] [cursor=pointer]:
+          - /url: /xinxi/55250.html
+          - generic [ref=e1239]:
+            - img "西双版纳招聘纹身师店长" [ref=e1240]
+            - generic [ref=e1243]: 图3
+        - link "西双版纳招聘纹身师店长" [ref=e1245] [cursor=pointer]:
+          - /url: /xinxi/55250.html
+        - generic [ref=e1246]:
+          - generic "会员发布" [ref=e1247]: 
+          - text: 提供住宿，不需要出房租水电，活稳定，接受…
+        - generic [ref=e1248]:
+          - strong [ref=e1249]: ￥
+          - text: 6000 - 1.5万
+        - generic [ref=e1250]: 8小时前
+      - generic [ref=e1251]:
+        - link "东莞招聘纹身师 新店保底10000包住宿 图3" [ref=e1252] [cursor=pointer]:
+          - /url: /xinxi/55247.html
+          - generic [ref=e1253]:
+            - img "东莞招聘纹身师 新店保底10000包住宿" [ref=e1254]
+            - generic [ref=e1257]: 图3
+        - link "东莞招聘纹身师 新店保底10000包住宿" [ref=e1259] [cursor=pointer]:
+          - /url: /xinxi/55247.html
+        - generic [ref=e1260]:
+          - generic "会员发布" [ref=e1261]: 
+          - text: 新店活不太多 保底10000日结不压不扣 月底算…
+        - generic [ref=e1262]:
+          - strong [ref=e1263]: ￥
+          - text: 1万 - 3000
+        - generic [ref=e1264]: 12小时前
+      - generic [ref=e1265]:
+        - link "武汉招聘纹身师 图8" [ref=e1266] [cursor=pointer]:
+          - /url: /xinxi/55245.html
+          - generic [ref=e1267]:
+            - img "武汉招聘纹身师" [ref=e1268]
+            - generic [ref=e1271]: 图8
+        - link "武汉招聘纹身师" [ref=e1273] [cursor=pointer]:
+          - /url: /xinxi/55245.html
+        - generic [ref=e1274]:
+          - generic "会员发布" [ref=e1275]: 
+          - text: 15年老店，客源稳定，不是走量店，不需要营…
+        - generic [ref=e1276]:
+          - strong [ref=e1277]: ￥
+          - text: 9000 - 2万
+        - generic [ref=e1278]: 20小时前
+      - generic [ref=e1279]:
+        - link "太原急招成熟纹身师保底6000 图8" [ref=e1280] [cursor=pointer]:
+          - /url: /xinxi/55244.html
+          - generic [ref=e1281]:
+            - img "太原急招成熟纹身师保底6000" [ref=e1282]
+            - generic [ref=e1285]: 图8
+        - link "太原急招成熟纹身师保底6000" [ref=e1287] [cursor=pointer]:
+          - /url: /xinxi/55244.html
+        - generic [ref=e1288]: 太原急招成熟驻店师傅，长驻有住宿补助，保…
+        - generic [ref=e1289]:
+          - strong [ref=e1290]: ￥
+          - text: 6000 - 1.2万
+        - generic [ref=e1291]: 21小时前
+      - generic [ref=e1292]:
+        - link "纹身师求职 图4" [ref=e1293] [cursor=pointer]:
+          - /url: /xinxi/55242.html
+          - generic [ref=e1294]:
+            - img "纹身师求职" [ref=e1295]
+            - generic [ref=e1298]: 图4
+        - link "纹身师求职" [ref=e1300] [cursor=pointer]:
+          - /url: /xinxi/55242.html
+        - generic [ref=e1301]: 大连人，27岁，想应聘驻店纹身师，无不良嗜…
+        - generic [ref=e1302]: 21小时前
+      - generic [ref=e1303]:
+        - link "深圳招纹身师 图3" [ref=e1304] [cursor=pointer]:
+          - /url: /xinxi/55241.html
+          - generic [ref=e1305]:
+            - img "深圳招纹身师" [ref=e1306]
+            - generic [ref=e1309]: 图3
+        - link "深圳招纹身师" [ref=e1311] [cursor=pointer]:
+          - /url: /xinxi/55241.html
+        - generic [ref=e1312]: 深圳招一位纹身师，做的是低价走量店，偶尔…
+        - generic [ref=e1313]: 23小时前
+      - generic [ref=e1314]:
+        - link "福州招一位纹身师 图7" [ref=e1315] [cursor=pointer]:
+          - /url: /xinxi/55240.html
+          - generic [ref=e1316]:
+            - img "福州招一位纹身师" [ref=e1317]
+            - generic [ref=e1320]: 图7
+        - link "福州招一位纹身师" [ref=e1322] [cursor=pointer]:
+          - /url: /xinxi/55240.html
+        - generic [ref=e1323]: 福州招一位纹身师，做的是低价走量店，偶尔…
+        - generic [ref=e1324]:
+          - strong [ref=e1325]: ￥
+          - text: 1万 - 2万
+        - generic [ref=e1326]: 1天前
+      - generic [ref=e1327]:
+        - link "苏州纹身店招、 连锁经营9家店铺 招聘纹身师傅 图1" [ref=e1328] [cursor=pointer]:
+          - /url: /xinxi/9303.html
+          - generic [ref=e1329]:
+            - img "苏州纹身店招、 连锁经营9家店铺 招聘纹身师傅" [ref=e1330]
+            - generic [ref=e1333]: 图1
+        - link "苏州纹身店招、 连锁经营9家店铺 招聘纹身师傅" [ref=e1335] [cursor=pointer]:
+          - /url: /xinxi/9303.html
+        - generic [ref=e1336]: 因为 店太多 招能管理的纹身师傅更好、工资…
+        - generic [ref=e1337]:
+          - strong [ref=e1338]: ￥
+          - text: 6000 - 1万
+        - generic [ref=e1339]: 1天前
+      - generic [ref=e1340]:
+        - link "喀什走量店招聘纹身师店长 图3" [ref=e1341] [cursor=pointer]:
+          - /url: /xinxi/55235.html
+          - generic [ref=e1342]:
+            - img "喀什走量店招聘纹身师店长" [ref=e1343]
+            - generic [ref=e1346]: 图3
+        - link "喀什走量店招聘纹身师店长" [ref=e1348] [cursor=pointer]:
+          - /url: /xinxi/55235.html
+        - generic [ref=e1349]:
+          - generic "会员发布" [ref=e1350]: 
+          - text: 提供住宿，不需要出房租水电，活稳定 自己…
+        - generic [ref=e1351]:
+          - strong [ref=e1352]: ￥
+          - text: 6000 - 1.5万
+        - generic [ref=e1353]: 1天前
+      - generic [ref=e1354]:
+        - link "东莞长安招聘纹身师 图6" [ref=e1355] [cursor=pointer]:
+          - /url: /xinxi/55234.html
+          - generic [ref=e1356]:
+            - img "东莞长安招聘纹身师" [ref=e1357]
+            - generic [ref=e1360]: 图6
+        - link "东莞长安招聘纹身师" [ref=e1362] [cursor=pointer]:
+          - /url: /xinxi/55234.html
+        - generic [ref=e1363]: 东莞招聘纹身师，要求线实雾匀会构图，新手…
+        - generic [ref=e1364]:
+          - strong [ref=e1365]: ￥
+          - text: 1.2万 - 2.6万
+        - generic [ref=e1366]: 1天前
+      - generic [ref=e1367]:
+        - link "东莞招聘纹身师 图4" [ref=e1368] [cursor=pointer]:
+          - /url: /xinxi/55233.html
+          - generic [ref=e1369]:
+            - img "东莞招聘纹身师" [ref=e1370]
+            - generic [ref=e1373]: 图4
+        - link "东莞招聘纹身师" [ref=e1375] [cursor=pointer]:
+          - /url: /xinxi/55233.html
+        - generic [ref=e1376]:
+          - generic "会员发布" [ref=e1377]: 
+          - text: 东莞招纹身师，走量店，眼高手低的勿扰，人…
+        - generic [ref=e1378]: 1天前
+      - generic [ref=e1379]:
+        - link "乌鲁木齐走量店招聘纹身师 图3" [ref=e1380] [cursor=pointer]:
+          - /url: /xinxi/55231.html
+          - generic [ref=e1381]:
+            - img "乌鲁木齐走量店招聘纹身师" [ref=e1382]
+            - generic [ref=e1385]: 图3
+        - link "乌鲁木齐走量店招聘纹身师" [ref=e1387] [cursor=pointer]:
+          - /url: /xinxi/55231.html
+        - generic [ref=e1388]:
+          - generic "会员发布" [ref=e1389]: 
+          - text: 提供住宿，不需要出房租水电，活稳定，接受…
+        - generic [ref=e1390]:
+          - strong [ref=e1391]: ￥
+          - text: 5000 - 1.2万
+        - generic [ref=e1392]: 1天前
+      - generic [ref=e1393]:
+        - link "南京亚帝纹身招聘精英纹身师 图3" [ref=e1394] [cursor=pointer]:
+          - /url: /xinxi/50419.html
+          - generic [ref=e1395]:
+            - img "南京亚帝纹身招聘精英纹身师" [ref=e1396]
+            - generic [ref=e1399]: 图3
+        - link "南京亚帝纹身招聘精英纹身师" [ref=e1401] [cursor=pointer]:
+          - /url: /xinxi/50419.html
+        - generic [ref=e1402]: 南京帝纹馆招聘精英纹身师，近我者富 23周…
+        - generic [ref=e1403]:
+          - strong [ref=e1404]: ￥
+          - text: 1.3万 - 2.3万
+        - generic [ref=e1405]: 1天前
+      - generic [ref=e1406]:
+        - link "山东青岛 招聘成手纹身师或者兼职打野师傅 图2" [ref=e1407] [cursor=pointer]:
+          - /url: /xinxi/51025.html
+          - generic [ref=e1408]:
+            - img "山东青岛 招聘成手纹身师或者兼职打野师傅" [ref=e1409]
+            - generic [ref=e1412]: 图2
+        - link "山东青岛 招聘成手纹身师或者兼职打野师傅" [ref=e1414] [cursor=pointer]:
+          - /url: /xinxi/51025.html
+        - generic [ref=e1415]: 山东青岛招聘成手纹身师，或者兼职打野师傅…
+        - generic [ref=e1416]:
+          - strong [ref=e1417]: ￥
+          - text: 1.5万 - 2万
+        - generic [ref=e1418]: 1天前
+      - generic [ref=e1419]:
+        - link "广东深圳招聘纹身师和穿孔师傅 图1" [ref=e1420] [cursor=pointer]:
+          - /url: /xinxi/53634.html
+          - generic [ref=e1421]:
+            - img "广东深圳招聘纹身师和穿孔师傅" [ref=e1422]
+            - generic [ref=e1425]: 图1
+        - link "广东深圳招聘纹身师和穿孔师傅" [ref=e1427] [cursor=pointer]:
+          - /url: /xinxi/53634.html
+        - generic [ref=e1428]: 深圳招聘纹身师穿孔师 地址深圳龙华 10年老…
+        - generic [ref=e1429]:
+          - strong [ref=e1430]: ￥
+          - text: 1万 - 2万
+        - generic [ref=e1431]: 1天前
+      - generic [ref=e1432]:
+        - link "广东深圳招聘穿孔师女 图4" [ref=e1433] [cursor=pointer]:
+          - /url: /xinxi/42042.html
+          - generic [ref=e1434]:
+            - img "广东深圳招聘穿孔师女" [ref=e1435]
+            - generic [ref=e1438]: 图4
+        - link "广东深圳招聘穿孔师女" [ref=e1440] [cursor=pointer]:
+          - /url: /xinxi/42042.html
+        - generic [ref=e1441]: 深圳招聘女穿孔师，要求技术成熟，并且熟练…
+        - generic [ref=e1442]:
+          - strong [ref=e1443]: ￥
+          - text: 5000 - 1.5万
+        - generic [ref=e1444]: 4月20日
+    - list [ref=e1446]:
+      - listitem [ref=e1447]: 第1/45页
+      - listitem [ref=e1448]: "1"
+      - listitem [ref=e1449]:
+        - link "2" [ref=e1450] [cursor=pointer]:
+          - /url: /xinxi/?p=2
+      - listitem [ref=e1451]:
+        - link "3" [ref=e1452] [cursor=pointer]:
+          - /url: /xinxi/?p=3
+      - listitem [ref=e1453]:
+        - link "4" [ref=e1454] [cursor=pointer]:
+          - /url: /xinxi/?p=4
+      - listitem [ref=e1455]:
+        - link "5" [ref=e1456] [cursor=pointer]:
+          - /url: /xinxi/?p=5
+      - listitem [ref=e1457]:
+        - link "6" [ref=e1458] [cursor=pointer]:
+          - /url: /xinxi/?p=6
+      - listitem [ref=e1459]:
+        - link "7" [ref=e1460] [cursor=pointer]:
+          - /url: /xinxi/?p=7
+      - listitem [ref=e1461]:
+        - link "8" [ref=e1462] [cursor=pointer]:
+          - /url: /xinxi/?p=8
+      - listitem [ref=e1463]:
+        - link "9" [ref=e1464] [cursor=pointer]:
+          - /url: /xinxi/?p=9
+      - listitem [ref=e1465]:
+        - link "10" [ref=e1466] [cursor=pointer]:
+          - /url: /xinxi/?p=10
+      - listitem [ref=e1467]:
+        - link "11" [ref=e1468] [cursor=pointer]:
+          - /url: /xinxi/?p=11
+      - listitem [ref=e1469]:
+        - link "12" [ref=e1470] [cursor=pointer]:
+          - /url: /xinxi/?p=12
+      - listitem [ref=e1471]:
+        - link "下一页" [ref=e1472] [cursor=pointer]:
+          - /url: /xinxi/?p=2
+  - generic [ref=e1474]:
+    - generic [ref=e1475]:
+      - emphasis [ref=e1476]
+      - text: 便民电话 与 同城服务
+      - generic [ref=e1477]:
+        - link "我要发布" [ref=e1478] [cursor=pointer]:
+          - /url: /post/
+        - text: "|"
+        - link "查看更多" [ref=e1479] [cursor=pointer]:
+          - /url: /bm/
+    - list
+  - generic [ref=e1482]:
+    - generic [ref=e1483]:
+      - emphasis [ref=e1484]
+      - text: 友情链接Link
+    - list [ref=e1486]:
+      - listitem [ref=e1487]:
+        - link "济南纹身" [ref=e1488] [cursor=pointer]:
+          - /url: http://jinan.sccoo.cn
+      - listitem [ref=e1489]:
+        - link "厦门纹身" [ref=e1490] [cursor=pointer]:
+          - /url: http://xiamen.sccoo.cn
+      - listitem [ref=e1491]:
+        - link "岳阳纹身" [ref=e1492] [cursor=pointer]:
+          - /url: http://yueyang.sccoo.cn
+      - listitem [ref=e1493]:
+        - link "杭州纹身" [ref=e1494] [cursor=pointer]:
+          - /url: http://hangzhou.sccoo.cn
+      - listitem [ref=e1495]:
+        - link "成都纹身" [ref=e1496] [cursor=pointer]:
+          - /url: http://chengdu.sccoo.cn
+      - listitem [ref=e1497]:
+        - link "重庆纹身" [ref=e1498] [cursor=pointer]:
+          - /url: http://chongqing.sccoo.cn
+      - listitem [ref=e1499]:
+        - link "武汉纹身" [ref=e1500] [cursor=pointer]:
+          - /url: http://wuhan.sccoo.cn
+      - listitem [ref=e1501]:
+        - link "西安纹身" [ref=e1502] [cursor=pointer]:
+          - /url: http://xian.sccoo.cn
+      - listitem [ref=e1503]:
+        - link "苏州纹身" [ref=e1504] [cursor=pointer]:
+          - /url: http://suzhou.sccoo.cn
+      - listitem [ref=e1505]:
+        - link "天津纹身" [ref=e1506] [cursor=pointer]:
+          - /url: http://tianjin.sccoo.cn
+      - listitem [ref=e1507]:
+        - link "南京纹身" [ref=e1508] [cursor=pointer]:
+          - /url: http://nanjing.sccoo.cn
+      - listitem [ref=e1509]:
+        - link "长沙纹身" [ref=e1510] [cursor=pointer]:
+          - /url: http://changsha.sccoo.cn
+      - listitem [ref=e1511]:
+        - link "东莞纹身" [ref=e1512] [cursor=pointer]:
+          - /url: http://dongguan.sccoo.cn
+      - listitem [ref=e1513]:
+        - link "青岛纹身" [ref=e1514] [cursor=pointer]:
+          - /url: http://qingdao.sccoo.cn
+      - listitem [ref=e1515]:
+        - link "沈阳纹身" [ref=e1516] [cursor=pointer]:
+          - /url: http://shenyang.sccoo.cn
+      - listitem [ref=e1517]:
+        - link "宁波纹身" [ref=e1518] [cursor=pointer]:
+          - /url: http://ningbo.sccoo.cn
+      - listitem [ref=e1519]:
+        - link "昆明纹身" [ref=e1520] [cursor=pointer]:
+          - /url: http://kunming.sccoo.cn
+      - listitem [ref=e1521]:
+        - link "深圳纹身" [ref=e1522] [cursor=pointer]:
+          - /url: http://shenzhen.sccoo.cn
+      - listitem [ref=e1523]:
+        - link "广州纹身" [ref=e1524] [cursor=pointer]:
+          - /url: http://guangzhou.sccoo.cn
+      - listitem [ref=e1525]:
+        - link "上海纹身" [ref=e1526] [cursor=pointer]:
+          - /url: http://shanghai.sccoo.cn
+      - listitem [ref=e1527]:
+        - link "无锡纹身" [ref=e1528] [cursor=pointer]:
+          - /url: http://wuxi.sccoo.cn
+      - listitem [ref=e1529]:
+        - link "佛山纹身" [ref=e1530] [cursor=pointer]:
+          - /url: http://foshan.sccoo.cn
+      - listitem [ref=e1531]:
+        - link "合肥纹身" [ref=e1532] [cursor=pointer]:
+          - /url: http://hefei.sccoo.cn
+      - listitem [ref=e1533]:
+        - link "大连纹身" [ref=e1534] [cursor=pointer]:
+          - /url: http://dalian.sccoo.cn
+      - listitem [ref=e1535]:
+        - link "福州纹身" [ref=e1536] [cursor=pointer]:
+          - /url: http://fuzhou.sccoo.cn
+      - listitem [ref=e1537]:
+        - link "防城港纹身" [ref=e1538] [cursor=pointer]:
+          - /url: http://fangchenggang.sccoo.cn
+      - listitem [ref=e1539]:
+        - link "乌鲁木齐纹身" [ref=e1540] [cursor=pointer]:
+          - /url: http://wulumuqi.sccoo.cn
+      - listitem [ref=e1541]:
+        - link "龙岩纹身" [ref=e1542] [cursor=pointer]:
+          - /url: http://feiyu.sccoo.cn
+      - listitem [ref=e1543]:
+        - link "赣州纹身" [ref=e1544] [cursor=pointer]:
+          - /url: http://ganzhou.sccoo.cn
+      - listitem [ref=e1545]:
+        - link "扬州纹身" [ref=e1546] [cursor=pointer]:
+          - /url: http://yangzhou.sccoo.cn
+      - listitem [ref=e1547]:
+        - link "惠州纹身" [ref=e1548] [cursor=pointer]:
+          - /url: http://huizhou.sccoo.cn
+      - listitem [ref=e1549]:
+        - link "南昌纹身" [ref=e1550] [cursor=pointer]:
+          - /url: http://nanchang.sccoo.cn
+      - listitem [ref=e1551]:
+        - link "洛阳纹身" [ref=e1552] [cursor=pointer]:
+          - /url: http://luoyang.sccoo.cn
+      - listitem [ref=e1553]:
+        - link "兰州纹身" [ref=e1554] [cursor=pointer]:
+          - /url: http://lanzhou.sccoo.cn
+      - listitem [ref=e1555]:
+        - link "唐山纹身" [ref=e1556] [cursor=pointer]:
+          - /url: http://tangshan.sccoo.cn
+      - listitem [ref=e1557]:
+        - link "常熟纹身" [ref=e1558] [cursor=pointer]:
+          - /url: http://changshu.sccoo.cn
+      - listitem [ref=e1559]:
+        - link "安顺纹身" [ref=e1560] [cursor=pointer]:
+          - /url: http://anshun.sccoo.cn
+      - listitem [ref=e1561]:
+        - link "义乌纹身" [ref=e1562] [cursor=pointer]:
+          - /url: http://yiwu.sccoo.cn
+      - listitem [ref=e1563]:
+        - link "衢州纹身" [ref=e1564] [cursor=pointer]:
+          - /url: http://quzhou.sccoo.cn
+      - listitem [ref=e1565]:
+        - link "株洲纹身" [ref=e1566] [cursor=pointer]:
+          - /url: http://zhuzhou.sccoo.cn
+      - listitem [ref=e1567]:
+        - link "湘潭纹身" [ref=e1568] [cursor=pointer]:
+          - /url: http://xiangtan.sccoo.cn
+      - listitem [ref=e1569]:
+        - link "徐州纹身" [ref=e1570] [cursor=pointer]:
+          - /url: http://xuzhou.sccoo.cn
+      - listitem [ref=e1571]:
+        - link "昆山纹身" [ref=e1572] [cursor=pointer]:
+          - /url: http://kunshan.sccoo.cn
+      - listitem [ref=e1573]:
+        - link "昆明纹身" [ref=e1574] [cursor=pointer]:
+          - /url: http://kunming.sccoo.cn
+      - listitem [ref=e1575]:
+        - link "淄博纹身" [ref=e1576] [cursor=pointer]:
+          - /url: http://zibo.sccoo.cn
+      - listitem [ref=e1577]:
+        - link "郑州纹身" [ref=e1578] [cursor=pointer]:
+          - /url: http://zhengzhou.sccoo.cn
+      - listitem [ref=e1579]:
+        - link "济南纹身" [ref=e1580] [cursor=pointer]:
+          - /url: http://www.hailintattoo.cn
+      - listitem [ref=e1581]:
+        - link "云服务器教程网" [ref=e1582] [cursor=pointer]:
+          - /url: http://www.wmsee.cn
+      - listitem [ref=e1583]:
+        - link "金华纹身" [ref=e1584] [cursor=pointer]:
+          - /url: http://jinhua.sccoo.cn
+      - listitem [ref=e1585]:
+        - link "九江纹身" [ref=e1586] [cursor=pointer]:
+          - /url: http://jiujiang.sccoo.cn
+      - listitem [ref=e1587]:
+        - link "任丘纹身" [ref=e1588] [cursor=pointer]:
+          - /url: http://renqiu.sccoo.cn
+  - generic [ref=e1590]:
+    - generic [ref=e1591]:
+      - generic [ref=e1592]: 关于我们
+      - list [ref=e1593]:
+        - listitem [ref=e1594]:
+          - link "关于我们" [ref=e1595] [cursor=pointer]:
+            - /url: /about/about.html
+        - listitem [ref=e1596]:
+          - link "联系我们" [ref=e1597] [cursor=pointer]:
+            - /url: /about/contact.html
+        - listitem [ref=e1598]:
+          - link "广告服务" [ref=e1599] [cursor=pointer]:
+            - /url: /about/guanggao.html
+        - listitem [ref=e1600]:
+          - link "友情链接" [ref=e1601] [cursor=pointer]:
+            - /url: /about/links.html
+        - listitem [ref=e1602]:
+          - link "合作加盟" [ref=e1603] [cursor=pointer]:
+            - /url: /about/join.html
+    - generic [ref=e1604]:
+      - generic [ref=e1605]: 商家服务
+      - list [ref=e1606]:
+        - listitem [ref=e1607]:
+          - link "商家入驻" [ref=e1608] [cursor=pointer]:
+            - /url: /login/?jump=/user/biz
+        - listitem [ref=e1609]:
+          - link "企业建站服务" [ref=e1610] [cursor=pointer]:
+            - /url: /login/?jump=/user/mywebsite
+    - generic [ref=e1611]:
+      - generic [ref=e1612]: 信息服务
+      - list [ref=e1613]:
+        - listitem [ref=e1614]:
+          - link "发布信息" [ref=e1615] [cursor=pointer]:
+            - /url: /post/
+        - listitem [ref=e1616]:
+          - link "信息置顶/加红" [ref=e1617] [cursor=pointer]:
+            - /url: /about/infopay.html
+        - listitem [ref=e1618]:
+          - link "删除信息" [ref=e1619] [cursor=pointer]:
+            - /url: /about/infodel.html
+    - generic [ref=e1620]:
+      - list:
+        - listitem [ref=e1622]: Q Q： 4883699
+        - listitem [ref=e1623]: 微信： sccoocn
+        - listitem [ref=e1624]:
+          - img "客服微信二维码" [ref=e1625]
+    - generic [ref=e1626]:
+      - list [ref=e1627]:
+        - listitem [ref=e1628]:
+          - img "公众号二维码" [ref=e1629]
+      - generic [ref=e1630]: 微信公众号
+    - generic [ref=e1631]:
+      - list [ref=e1632]:
+        - listitem [ref=e1633]:
+          - img "微信小程序二维码" [ref=e1634]
+      - generic [ref=e1635]: 微信小程序
+    - generic [ref=e1636]:
+      - text: Copyright © 2026
+      - link "“秀酷纹身之家”" [ref=e1637] [cursor=pointer]:
+        - /url: https://www.sccoo.cn
+      - text: 版权所有 | ICP证：
+      - link "湘ICP备18003118号-5" [ref=e1638] [cursor=pointer]:
+        - /url: https://beian.miit.gov.cn
+      - text: "|"
+      - link "湘公网安备 43060202000114号" [ref=e1640] [cursor=pointer]:
+        - /url: "http://www.beian.gov.cn/portal/registerSystemInfo?\n\nrecordcode=43060202000114"
+        - img
+        - paragraph [ref=e1641]: 湘公网安备 43060202000114号
+      - text: 网页内的所有信息均为用户自由发布，交易时请注意识别信息的虚假，交易风险自负！网站内容如有侵犯您权益请联系我们删除，举报信息、删除信息联系客服

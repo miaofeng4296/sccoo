@@ -1,0 +1,165 @@
+<h2>🗄️ 数据库设计</h2>
+<p class="subtitle">PostgreSQL + Prisma ORM — 核心表结构</p>
+
+<div class="section">
+  <h3>核心实体关系图</h3>
+  <div class="mockup">
+    <div class="mockup-header">数据库 ER 图（核心表）</div>
+    <div class="mockup-body">
+      <pre style="font-size:12px;line-height:1.4;background:#1e293b;color:#e2e8f0;padding:16px;border-radius:8px;overflow-x:auto;">
+
+  ┌──────────────────┐      ┌──────────────────┐      ┌──────────────────┐
+  │     users        │      │     cities       │      │   categories     │
+  ├──────────────────┤      ├──────────────────┤      ├──────────────────┤
+  │ id               │      │ id               │      │ id               │
+  │ email            │      │ name             │      │ name             │
+  │ phone            │      │ slug             │      │ slug             │
+  │ password_hash    │      │ subdomain        │      │ parent_id        │
+  │ name             │      │ parent_id        │      │ sort_order       │
+  │ avatar           │      │ sort_order       │      │ post_count       │
+  │ role (USER/ADMIN)│      │ is_active        │      │ icon             │
+  │ wechat_unionid   │      └──────────────────┘      └──────────────────┘
+  │ qq_openid        │                                    │
+  │ created_at       │      ┌──────────────────┐           │
+  └──────────────────┘      │     posts        │           │
+         │                  ├──────────────────┤           │
+         │ 1 ──── N         │ id               │◄──────────┘
+         ▼                  │ title            │
+  ┌──────────────────┐      │ content          │      ┌──────────────────┐
+  │   businesses     │      │ type             │      │   post_images    │
+  ├──────────────────┤      │ category_id      │──────►├──────────────────┤
+  │ id               │      │ city_id          │ 1:N  │ id               │
+  │ user_id          │      │ user_id          │      │ post_id          │
+  │ name             │      │ business_id      │      │ url              │
+  │ logo             │      │ price_min        │      │ sort_order       │
+  │ phone            │      │ price_max        │      └──────────────────┘
+  │ address          │      │ is_pinned        │
+  │ city_id          │      │ pin_type         │      ┌──────────────────┐
+  │ description      │      │ pin_expires_at   │      │    favorites     │
+  │ website          │      │ view_count       │      ├──────────────────┤
+  │ is_verified      │      │ status           │      │ id               │
+  └──────────────────┘      │ expires_at       │      │ user_id          │
+         │                  │ created_at        │      │ post_id          │
+         │ 1 ──── N         │ updated_at        │      │ created_at       │
+         ▼                  └──────────────────┘      └──────────────────┘
+  ┌──────────────────┐
+  │    artists       │      ┌──────────────────┐      ┌──────────────────┐
+  ├──────────────────┤      │    articles      │      │   qa_questions   │
+  │ id               │      ├──────────────────┤      ├──────────────────┤
+  │ user_id          │      │ id               │      │ id               │
+  │ name             │      │ title            │      │ title            │
+  │ avatar           │      │ content          │      │ content          │
+  │ city_id          │      │ category_id      │      │ user_id          │
+  │ business_id      │      │ cover_image      │      │ view_count       │
+  │ specialty        │      │ author           │      │ answer_count     │
+  │ experience_years │      │ view_count       │      │ is_resolved      │
+  └──────────────────┘      │ is_published     │      │ created_at       │
+                            │ created_at       │      └──────────────────┘
+                            └──────────────────┘             │
+                                                             │ 1 ──── N
+                            ┌──────────────────┐             ▼
+                            │     banners      │      ┌──────────────────┐
+                            ├──────────────────┤      │   qa_answers     │
+                            │ id               │      ├──────────────────┤
+                            │ title            │      │ id               │
+                            │ image_url        │      │ question_id      │
+                            │ link_url         │      │ content          │
+                            │ sort_order       │      │ user_id          │
+                            └──────────────────┘      │ is_accepted      │
+                                                      │ created_at       │
+                                                      └──────────────────┘</pre>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>📋 核心表说明</h3>
+
+  <div class="section">
+    <h4>1. users — 用户表</h4>
+    <table style="width:100%;border-collapse:collapse;">
+      <tr style="background:#f8fafc;">
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #e2e8f0;">字段</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #e2e8f0;">类型</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #e2e8f0;">说明</th>
+      </tr>
+      <tr><td style="padding:6px;">email, phone, password_hash</td><td style="padding:6px;">VARCHAR</td><td style="padding:6px;">邮箱/手机号登录 + 密码哈希</td></tr>
+      <tr style="background:#f8fafc;"><td style="padding:6px;">wechat_unionid, qq_openid</td><td style="padding:6px;">VARCHAR</td><td style="padding:6px;">微信/QQ 登录预留，可空</td></tr>
+      <tr><td style="padding:6px;">role</td><td style="padding:6px;">ENUM</td><td style="padding:6px;">USER（普通用户）| ADMIN（管理员）</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h4>2. posts — 分类信息表（核心）</h4>
+    <table style="width:100%;border-collapse:collapse;">
+      <tr style="background:#f8fafc;">
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #e2e8f0;">字段</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #e2e8f0;">类型</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #e2e8f0;">说明</th>
+      </tr>
+      <tr><td style="padding:6px;">type</td><td style="padding:6px;">ENUM</td><td style="padding:6px;">JOB / SEEK / SHOP_TRANSFER / SECONDHAND / TRAINING / MODEL / BOOKING / SERVICE</td></tr>
+      <tr style="background:#f8fafc;"><td style="padding:6px;">category_id</td><td style="padding:6px;">FK</td><td style="padding:6px;">关联分类，可扩展到子分类</td></tr>
+      <tr><td style="padding:6px;">city_id</td><td style="padding:6px;">FK</td><td style="padding:6px;">所属城市</td></tr>
+      <tr style="background:#f8fafc;"><td style="padding:6px;">price_min, price_max</td><td style="padding:6px;">INT</td><td style="padding:6px;">薪资范围/转让价格</td></tr>
+      <tr><td style="padding:6px;">is_pinned, pin_type, pin_expires_at</td><td style="padding:6px;">BOOLEAN/ENUM/DATE</td><td style="padding:6px;">付费置顶：LARGE_TOP / MEDIUM_TOP / SMALL_TOP + 过期时间</td></tr>
+      <tr style="background:#f8fafc;"><td style="padding:6px;">status</td><td style="padding:6px;">ENUM</td><td style="padding:6px;">PENDING / PUBLISHED / REJECTED / EXPIRED</td></tr>
+      <tr><td style="padding:6px;">expires_at</td><td style="padding:6px;">DATE</td><td style="padding:6px;">信息有效期，过期自动下架</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h4>3. businesses / artists — 商家和纹身师黄页</h4>
+    <p>商家（纹身店）和纹身师是独立的表，<strong>businesses</strong> 存储店铺信息（名称/Logo/电话/地址），<strong>artists</strong> 存储纹身师信息（可关联到店）。</p>
+  </div>
+
+  <div class="section">
+    <h4>4. articles — 新闻资讯</h4>
+    <p>文章支持分类（公告/知识/趣闻/大师），通过 <code>category_id</code> 关联。使用 Markdown 编辑器（如 TipTap）。</p>
+  </div>
+
+  <div class="section">
+    <h4>5. qa_questions / qa_answers — 纹身问答</h4>
+    <p>简化的问答系统：用户提问 → 回答 → 标记最佳答案。类似 Stack Overflow 但更简单。</p>
+  </div>
+
+  <div class="section">
+    <h4>6. payments — 支付订单（预留）</h4>
+    <table style="width:100%;border-collapse:collapse;">
+      <tr style="background:#f8fafc;">
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #e2e8f0;">字段</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #e2e8f0;">说明</th>
+      </tr>
+      <tr><td style="padding:6px;">order_no, amount, pay_method, status</td><td style="padding:6px;">订单号/金额/支付方式/状态</td></tr>
+      <tr style="background:#f8fafc;"><td style="padding:6px;">post_id, user_id, pin_type, pin_days</td><td style="padding:6px;">关联的信息/用户/置顶类型/天数</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="section">
+  <h3>📊 数据量预估</h3>
+  <div class="options">
+    <div class="option" data-choice="scale">
+      <div class="content">
+        <p>参考原站数据量：<strong>45页信息列表 × 每页约40条 ≈ 1800+条活跃信息</strong>，<strong>100+ 纹身店</strong>，<strong>100+ 篇文章</strong></p>
+        <p>PostgreSQL 单表百万级以下完全无压力。初期无需分库分表，<strong>合理加索引即可</strong>。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>🔑 关键索引策略</h3>
+  <div class="mockup">
+    <div class="mockup-body">
+      <pre style="font-size:13px;background:#1e293b;color:#a5f3fc;padding:12px;border-radius:8px;">
+-- 高频查询索引
+posts(city_id, type, status, created_at DESC)    -- 城市+类型筛选
+posts(category_id, status)                        -- 分类筛选
+posts(user_id, status)                            -- 用户信息管理
+posts(is_pinned, pin_expires_at)                  -- 置顶排序
+businesses(city_id, is_verified)                  -- 城市商家查询
+articles(category_id, is_published, created_at)   -- 文章列表
+qa_questions(is_resolved, created_at DESC)        -- 问答列表</pre>
+    </div>
+  </div>
+</div>

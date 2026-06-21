@@ -1,0 +1,161 @@
+<h2>sccoo.cn 网站结构分析</h2>
+<p class="subtitle">秀酷纹身之家 — 纹身行业垂直分类信息门户</p>
+
+<div class="section">
+  <h3>🏠 整体定位</h3>
+  <p>纹身行业的 <strong>58同城/赶集网</strong>，集分类信息 + 黄页大全 + 新闻资讯 + 问答社区于一体</p>
+</div>
+
+<h3>📦 核心功能模块</h3>
+
+<div class="cards" data-multiselect>
+  <div class="card" data-choice="module1" onclick="toggleSelect(this)">
+    <div class="card-body">
+      <h3>👤 用户系统</h3>
+      <p>注册/登录、QQ登录、微信登录、个人中心、收藏、发布管理</p>
+    </div>
+  </div>
+  <div class="card" data-choice="module2" onclick="toggleSelect(this)">
+    <div class="card-body">
+      <h3>📋 分类信息</h3>
+      <p>招聘求职、店铺转让、二手设备、纹身培训、纹身模特预约、周边服务</p>
+    </div>
+  </div>
+  <div class="card" data-choice="module3" onclick="toggleSelect(this)">
+    <div class="card-body">
+      <h3>🏪 商家大全</h3>
+      <p>纹身店黄页 + 纹身师黄页，按城市分类，含电话/地址/Logo</p>
+    </div>
+  </div>
+  <div class="card" data-choice="module4" onclick="toggleSelect(this)">
+    <div class="card-body">
+      <h3>📰 新闻资讯</h3>
+      <p>行业新闻、纹身知识、趣闻、公告，文章发布系统</p>
+    </div>
+  </div>
+  <div class="card" data-choice="module5" onclick="toggleSelect(this)">
+    <div class="card-body">
+      <h3>❓ 纹身问答</h3>
+      <p>问答社区，用户提问、回答</p>
+    </div>
+  </div>
+  <div class="card" data-choice="module6" onclick="toggleSelect(this)">
+    <div class="card-body">
+      <h3>💰 付费置顶</h3>
+      <p>超大格/大格/小格置顶，不同价格不同曝光，有效期管理</p>
+    </div>
+  </div>
+  <div class="card" data-choice="module7" onclick="toggleSelect(this)">
+    <div class="card-body">
+      <h3>🏙️ 城市分站</h3>
+      <p>30+城市子域名，按省份筛选信息</p>
+    </div>
+  </div>
+  <div class="card" data-choice="module8" onclick="toggleSelect(this)">
+    <div class="card-body">
+      <h3>📱 多端覆盖</h3>
+      <p>PC端 + 移动H5 + 微信公众号 + 微信小程序</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>🖥️ PC 端首页布局</h3>
+  <div class="mockup">
+    <div class="mockup-header">PC 端 — 经典三栏+顶部导航</div>
+    <div class="mockup-body">
+      <div class="mock-nav">天气 | 注册/登录/QQ登录/微信登录 | 收藏/手机版/微信平台</div>
+      <div style="display:flex;align-items:center;gap:16px;margin:12px 0;">
+        <div class="placeholder" style="width:200px;height:60px;">Logo</div>
+        <div class="mock-input" style="flex:1;" placeholder="搜索框"></div>
+        <div style="display:flex;gap:8px;">
+          <button class="mock-button">发布信息</button>
+          <button class="mock-button">商家入驻</button>
+        </div>
+      </div>
+      <div class="mock-nav">首页 | 招聘求职 | 我行我秀 | 纹身店转让 | 二手转让 | 纹身问答 | 我要纹身 | 纹身培训 | 纹身店大全 | 纹身师大全</div>
+      <div class="mock-nav" style="font-size:12px;">快速导航：本站公告 | 纹身大师 | 纹身资讯 | 百度推广 | 周边服务 | 加入微信群 | 加入QQ群</div>
+      <div style="display:flex;gap:12px;margin-top:12px;">
+        <div style="flex:2;">
+          <div class="placeholder" style="height:200px;">Banner 轮播图</div>
+          <div class="placeholder" style="height:150px;margin-top:8px;">新闻资讯列表</div>
+        </div>
+        <div style="flex:1;">
+          <div class="placeholder" style="height:180px;">网站公告</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:12px;margin-top:12px;">
+        <div style="flex:1;">
+          <div class="placeholder" style="height:200px;">热门商家（纹身店Logo墙）</div>
+        </div>
+      </div>
+      <div style="margin-top:12px;">
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;">
+          <span class="label">分类：</span>
+          <span class="label">全部</span><span class="label">我行我秀</span><span class="label">我要招聘</span><span class="label">我要求职</span>
+          <span class="label">纹身店转让</span><span class="label">纹身模特</span><span class="label">预约纹身</span>
+          <span class="label">纹身培训</span><span class="label">二手设备</span><span class="label">周边服务</span>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;">
+          <span class="label">地区：</span>
+          <span class="label">全部</span><span class="label">直辖市</span><span class="label">山东</span><span class="label">江苏</span>
+          <span class="label">浙江</span><span class="label">广东</span><span class="label">湖南</span><span class="label">湖北</span>
+          <span class="label">四川</span><span class="label">...+30省</span>
+        </div>
+      </div>
+      <div class="placeholder" style="height:400px;margin-top:8px;">分类信息列表（置顶信息 + 普通信息 + 分页）<br/>每条含：图片缩略图/标题/描述/薪资/有效期</div>
+      <div style="display:flex;gap:12px;margin-top:12px;">
+        <div style="flex:1;">
+          <div class="placeholder" style="height:120px;">便民电话与同城服务</div>
+        </div>
+      </div>
+      <div class="placeholder" style="height:80px;margin-top:8px;">友情链接（40+城市分站链接）</div>
+      <div class="placeholder" style="height:120px;margin-top:8px;">页脚：关于我们/商家服务/信息服务/联系方式/二维码/版权信息</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>📱 移动端布局差异</h3>
+  <div class="split">
+    <div class="mockup" style="max-width:375px;">
+      <div class="mockup-header">移动端（375px）</div>
+      <div class="mockup-body">
+        <div class="mock-nav" style="font-size:11px;">Logo | 城市选择 | 发布</div>
+        <div class="mock-input" style="margin:8px 0;" placeholder="搜索"></div>
+        <div style="display:flex;gap:4px;flex-wrap:wrap;font-size:10px;">
+          <span class="label">首页</span><span class="label">招聘</span><span class="label">求职</span>
+          <span class="label">转让</span><span class="label">培训</span><span class="label">更多</span>
+        </div>
+        <div class="placeholder" style="height:120px;">轮播Banner</div>
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin:8px 0;">
+          <span class="label">图标导航：招聘/求职/转让/培训/问答/商家</span>
+        </div>
+        <div class="placeholder" style="height:200px;">信息列表（单列、卡片式）</div>
+        <div class="placeholder" style="height:60px;">底部导航栏</div>
+      </div>
+    </div>
+    <div class="mockup" style="max-width:375px;">
+      <div class="mockup-header">微信小程序端</div>
+      <div class="mockup-body">
+        <div class="mock-nav">小程序顶部导航</div>
+        <div class="mock-input" style="margin:8px 0;" placeholder="搜索"></div>
+        <div style="display:flex;gap:4px;flex-wrap:wrap;">
+          <span class="label">轮播Banner</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;margin:8px 0;">
+          <div class="placeholder" style="height:40px;">招聘</div>
+          <div class="placeholder" style="height:40px;">求职</div>
+          <div class="placeholder" style="height:40px;">转让</div>
+          <div class="placeholder" style="height:40px;">培训</div>
+          <div class="placeholder" style="height:40px;">问答</div>
+          <div class="placeholder" style="height:40px;">商家</div>
+        </div>
+        <div class="placeholder" style="height:300px;">信息流列表</div>
+        <div style="display:flex;justify-content:space-around;margin-top:8px;">
+          <span class="label">首页</span><span class="label">发布</span><span class="label">消息</span><span class="label">我的</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

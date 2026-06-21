@@ -1,0 +1,206 @@
+<h2>📄 页面功能分解</h2>
+<p class="subtitle">8 大模块 × 25+ 页面 × 微信小程序</p>
+
+<div class="section">
+  <h3>模块一：🏠 首页与导航</h3>
+  <div class="mockup">
+    <div class="mockup-header">主站首页 / — 最复杂的页面</div>
+    <div class="mockup-body">
+      <table style="width:100%;border-collapse:collapse;">
+        <tr style="background:#f8fafc;"><th style="padding:8px;text-align:left;">区域</th><th style="padding:8px;text-align:left;">功能</th></tr>
+        <tr><td style="padding:6px;">顶部工具栏</td><td style="padding:6px;">天气、登录状态、注册/登录/QQ/微信入口</td></tr>
+        <tr style="background:#f8fafc;"><td style="padding:6px;">Header</td><td style="padding:6px;">Logo、搜索框+热门搜索词、发布信息按钮、商家入驻按钮</td></tr>
+        <tr><td style="padding:6px;">主导航</td><td style="padding:6px;">10个分类入口：首页/招聘求职/我行我秀/转让/二手/问答/预约/培训/店大全/师大全</td></tr>
+        <tr style="background:#f8fafc;"><td style="padding:6px;">快速导航</td><td style="padding:6px;">公告/纹身大师/资讯/周边服务/微信群/QQ群</td></tr>
+        <tr><td style="padding:6px;">Banner轮播</td><td style="padding:6px;">3-5张广告图轮播，后台可配置</td></tr>
+        <tr style="background:#f8fafc;"><td style="padding:6px;">新闻区块</td><td style="padding:6px;">最新文章列表 + 头条推荐</td></tr>
+        <tr><td style="padding:6px;">网站公告</td><td style="padding:6px;">公告文字 + 联系方式</td></tr>
+        <tr style="background:#f8fafc;"><td style="padding:6px;">热门商家</td><td style="padding:6px;">纹身店Logo墙 + 名称 + 电话</td></tr>
+        <tr><td style="padding:6px;">分类+地区筛选</td><td style="padding:6px;">分类Tab切换 + 省份列表 + 显示模式切换（网格/列表）</td></tr>
+        <tr style="background:#f8fafc;"><td style="padding:6px;">信息列表</td><td style="padding:6px;">置顶信息（大/小格）+ 普通信息 + 分页（45页）</td></tr>
+        <tr><td style="padding:6px;">便民服务</td><td style="padding:6px;">同城电话/服务推荐</td></tr>
+        <tr style="background:#f8fafc;"><td style="padding:6px;">友情链接</td><td style="padding:6px;">40+城市分站链接</td></tr>
+        <tr><td style="padding:6px;">Footer</td><td style="padding:6px;">关于我们/商家服务/信息服务/联系方式/公众号+小程序二维码/版权/备案号</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>模块二：📋 分类信息系统</h3>
+  <div class="cards">
+    <div class="card">
+      <div class="card-body">
+        <h4>信息列表页</h4>
+        <p><code>/xinxi/</code> 支持：分类筛选、地区筛选、显示模式切换（网格/列表）、关键词搜索、置顶+普通混合排列、分页</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h4>信息详情页</h4>
+        <p><code>/xinxi/[id]</code> 支持：标题/内容/图片轮播/价格/联系方式(部分隐藏需登录)/发布时间/有效期/浏览数/收藏/举报</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h4>发布/编辑信息</h4>
+        <p><code>/post/</code> 支持：选择分类 → 填写表单(标题/内容/图片上传/价格/地区/电话) → 提交审核。编辑时回填数据。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>模块三：🏪 商家黄页系统</h3>
+  <div class="cards">
+    <div class="card">
+      <div class="card-body">
+        <h4>纹身店大全</h4>
+        <p><code>/biz119/</code> 卡片列表，显示Logo/名称/电话/地址。支持城市筛选、搜索。商家可认领/入驻。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h4>商家详情</h4>
+        <p><code>/biz/[id]</code> 商家主页：Logo/名称/电话/地址/描述/图片/地图位置/关联纹身师列表/该店发布的信息</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h4>纹身师大全</h4>
+        <p><code>/biz123/</code> 纹身师列表，显示头像/姓名/专长/年限/所在店。支持城市筛选。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>模块四：📰 新闻资讯</h3>
+  <div class="cards">
+    <div class="card">
+      <div class="card-body">
+        <h4>新闻列表</h4>
+        <p><code>/news/</code> 按分类筛选（公告/知识/趣闻/大师），文章列表含封面/标题/摘要/时间</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h4>文章详情</h4>
+        <p><code>/news/[id]</code> 富文本内容渲染、相关文章推荐、浏览计数</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>模块五：❓ 纹身问答</h3>
+  <div class="cards">
+    <div class="card">
+      <div class="card-body">
+        <h4>问答列表</h4>
+        <p><code>/wenda/</code> 问题列表，显示标题/回答数/是否解决/时间。支持搜索、分类</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h4>问答详情</h4>
+        <p><code>/wenda/[id]</code> 问题内容 + 回答列表 + 最佳答案标记 + 发布回答</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>模块六：👤 用户系统</h3>
+  <div class="cards">
+    <div class="card">
+      <div class="card-body">
+        <h4>注册/登录</h4>
+        <p><code>/reg/</code> <code>/login/</code> 邮箱+手机号注册登录、密码找回、QQ/微信OAuth登录（预留）</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h4>个人中心</h4>
+        <p><code>/user/</code> 个人信息编辑、我的发布（管理/置顶/删除）、我的收藏、消息通知、商家管理（如有）</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>模块七：🔧 管理后台</h3>
+  <div class="cards">
+    <div class="card">
+      <div class="card-body">
+        <h4>仪表盘</h4>
+        <p><code>/admin/</code> 数据概览：今日新增信息/新增用户/待审核数/收入统计</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h4>信息管理</h4>
+        <p>列表+审核(通过/拒绝)+删除+置顶管理+批量操作</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h4>用户管理</h4>
+        <p>用户列表、禁用/启用、角色管理</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h4>商家管理</h4>
+        <p>商家审核、认证、编辑</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h4>文章管理</h4>
+        <p>文章CRUD、富文本编辑器、发布/草稿</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h4>系统配置</h4>
+        <p>Banner管理、分类管理、城市管理、友情链接、SEO设置</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>模块八：📱 微信小程序</h3>
+  <div class="mockup">
+    <div class="mockup-header">小程序页面结构（TabBar 4个Tab）</div>
+    <div class="mockup-body">
+      <table style="width:100%;border-collapse:collapse;">
+        <tr style="background:#f8fafc;"><th style="padding:8px;text-align:left;">Tab</th><th style="padding:8px;text-align:left;">页面</th><th style="padding:8px;text-align:left;">功能</th></tr>
+        <tr><td style="padding:6px;"><strong>首页</strong></td><td style="padding:6px;">信息流</td><td style="padding:6px;">Banner + 分类图标导航 + 城市切换 + 信息列表（上拉加载更多）+ 搜索</td></tr>
+        <tr style="background:#f8fafc;"><td style="padding:6px;"><strong>分类</strong></td><td style="padding:6px;">分类页</td><td style="padding:6px;">全部分类入口 + 地区筛选，点击进入对应信息列表</td></tr>
+        <tr><td style="padding:6px;"><strong>发布</strong></td><td style="padding:6px;">发布页</td><td style="padding:6px;">选择分类 → 填写信息 → 上传图片 → 提交（需登录）</td></tr>
+        <tr style="background:#f8fafc;"><td style="padding:6px;"><strong>消息</strong></td><td style="padding:6px;">消息列表</td><td style="padding:6px;">系统通知、审核结果、互动消息</td></tr>
+        <tr><td style="padding:6px;"><strong>我的</strong></td><td style="padding:6px;">个人中心</td><td style="padding:6px;">登录/个人信息/我的发布/我的收藏/我的商家/设置</td></tr>
+        <tr><td style="padding:6px;">子页</td><td style="padding:6px;">详情页</td><td style="padding:6px;">信息详情、商家详情、新闻详情、问答详情</td></tr>
+        <tr style="background:#f8fafc;"><td style="padding:6px;">子页</td><td style="padding:6px;">列表页</td><td style="padding:6px;">商家列表、纹身师列表、搜索页</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>📊 工作量概览</h3>
+  <table style="width:100%;border-collapse:collapse;">
+    <tr style="background:#f8fafc;"><th style="padding:8px;text-align:left;">模块</th><th style="padding:8px;text-align:left;">页面数</th><th style="padding:8px;text-align:left;">复杂度</th><th style="padding:8px;text-align:left;">预估</th></tr>
+    <tr><td style="padding:6px;">首页与导航</td><td style="padding:6px;">1</td><td style="padding:6px;">⭐⭐⭐⭐⭐</td><td style="padding:6px;">最高复杂度，组件最多</td></tr>
+    <tr style="background:#f8fafc;"><td style="padding:6px;">分类信息系统</td><td style="padding:6px;">4</td><td style="padding:6px;">⭐⭐⭐⭐</td><td style="padding:6px;">核心业务逻辑</td></tr>
+    <tr><td style="padding:6px;">商家黄页</td><td style="padding:6px;">3</td><td style="padding:6px;">⭐⭐⭐</td><td style="padding:6px;">展示为主</td></tr>
+    <tr style="background:#f8fafc;"><td style="padding:6px;">新闻资讯</td><td style="padding:6px;">2</td><td style="padding:6px;">⭐⭐</td><td style="padding:6px;">标准CMS</td></tr>
+    <tr><td style="padding:6px;">纹身问答</td><td style="padding:6px;">2</td><td style="padding:6px;">⭐⭐</td><td style="padding:6px;">简单问答</td></tr>
+    <tr style="background:#f8fafc;"><td style="padding:6px;">用户系统</td><td style="padding:6px;">4</td><td style="padding:6px;">⭐⭐⭐</td><td style="padding:6px;">认证+个人中心</td></tr>
+    <tr><td style="padding:6px;">管理后台</td><td style="padding:6px;">6+</td><td style="padding:6px;">⭐⭐⭐</td><td style="padding:6px;">标准CRUD管理</td></tr>
+    <tr style="background:#f8fafc;"><td style="padding:6px;">微信小程序</td><td style="padding:6px;">8+</td><td style="padding:6px;">⭐⭐⭐⭐</td><td style="padding:6px;">独立开发，API复用</td></tr>
+    <tr><td style="padding:6px;"><strong>合计</strong></td><td style="padding:6px;"><strong>30+</strong></td><td style="padding:6px;"></td><td style="padding:6px;">完整商业项目</td></tr>
+  </table>
+</div>

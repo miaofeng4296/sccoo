@@ -1,0 +1,354 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link [ref=e4] [cursor=pointer]:
+      - /url: tencent://Message/?Uin=4883699&websiteName=www.sccoo.cn=&Menu=yes
+    - generic [ref=e7]:
+      - generic:
+        - iframe [ref=e9]:
+          - link "今天： 06/21 星期日 多云17~29℃ | 明天： 多云20~30℃" [ref=f3e2] [cursor=pointer]:
+            - /url: /services/?s=weather&style=7
+            - strong [ref=f3e3]: 今天：
+            - text: 06/21 星期日
+            - img [ref=f3e4]
+            - strong [ref=f3e5]: 多云
+            - text: 17~29℃ |
+            - strong [ref=f3e6]: 明天：
+            - img [ref=f3e7]
+            - strong [ref=f3e8]: 多云
+            - text: 20~30℃
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link "注册" [ref=e12] [cursor=pointer]:
+              - /url: /reg/
+            - text: /
+            - link "登录" [ref=e13] [cursor=pointer]:
+              - /url: /login/
+          - listitem [ref=e14]
+          - listitem [ref=e15]:
+            - link "QQ登录" [ref=e16] [cursor=pointer]:
+              - /url: /qqlogin/
+            - link "微信登录" [ref=e17] [cursor=pointer]:
+              - /url: /wxLogin/
+        - list [ref=e18]:
+          - listitem [ref=e19]:
+            - link "保存桌面" [ref=e20] [cursor=pointer]:
+              - /url: /services/?s=shortcut
+          - listitem [ref=e21]
+          - listitem [ref=e22]:
+            - link "我的收藏" [ref=e23] [cursor=pointer]:
+              - /url: /user/favorite
+          - listitem [ref=e24]
+          - listitem [ref=e25]:
+            - link "手机版" [ref=e26] [cursor=pointer]:
+              - /url: javascript:void(0);
+              - text: 手机版
+          - listitem [ref=e28]
+          - listitem [ref=e29]:
+            - link "微信平台" [ref=e31] [cursor=pointer]:
+              - /url: /about/weixin.html
+          - listitem [ref=e32]
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - link "秀酷纹身之家" [ref=e36] [cursor=pointer]:
+          - /url: https://www.sccoo.cn/
+          - img "秀酷纹身之家" [ref=e37]
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - generic [ref=e41] [cursor=pointer]: 信息 
+            - textbox [ref=e42]
+            - button "" [ref=e43] [cursor=pointer]
+          - strong [ref=e45]: 热门搜索：
+        - generic [ref=e46]:
+          - link " 发布信息" [ref=e47] [cursor=pointer]:
+            - /url: /post/
+          - link " 商家入驻" [ref=e48] [cursor=pointer]:
+            - /url: /login/?jump=/user/biz
+      - list [ref=e51]:
+        - listitem [ref=e52]:
+          - link "首页" [ref=e53] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e54]:
+          - link "招聘求职" [ref=e55] [cursor=pointer]:
+            - /url: /info122/
+        - listitem [ref=e56]:
+          - link "我行我秀" [ref=e57] [cursor=pointer]:
+            - /url: /info153/
+        - listitem [ref=e58]:
+          - link "纹身店转让" [ref=e59] [cursor=pointer]:
+            - /url: /info4/
+        - listitem [ref=e60]:
+          - link "二手转让" [ref=e61] [cursor=pointer]:
+            - /url: /info1/
+        - listitem [ref=e62]:
+          - link "纹身问答" [ref=e63] [cursor=pointer]:
+            - /url: /wenda/
+        - listitem [ref=e64]:
+          - link "我要纹身" [ref=e65] [cursor=pointer]:
+            - /url: /info149/s150/
+        - listitem [ref=e66]:
+          - link "纹身培训" [ref=e67] [cursor=pointer]:
+            - /url: /info20/
+        - listitem [ref=e68]:
+          - link "纹身店大全" [ref=e69] [cursor=pointer]:
+            - /url: /biz119/s122/
+        - listitem [ref=e70]:
+          - link "纹身师大全" [ref=e71] [cursor=pointer]:
+            - /url: /biz123/
+    - list [ref=e73]:
+      - listitem [ref=e74]:
+        - strong [ref=e75]: 快速导航：
+      - listitem [ref=e76]:
+        - link "本站公告" [ref=e77] [cursor=pointer]:
+          - /url: /news/news_s6_t0_p1.html
+      - listitem [ref=e78]:
+        - link "纹身大师" [ref=e79] [cursor=pointer]:
+          - /url: /news/news_s4_t0_p1.html
+      - listitem [ref=e80]:
+        - link "纹身资讯" [ref=e81] [cursor=pointer]:
+          - /url: /news/news_s1_t0_p1.html
+      - listitem [ref=e82]:
+        - link "纹身店百度推广" [ref=e83] [cursor=pointer]:
+          - /url: /xinxi/2269.html
+      - listitem [ref=e84]:
+        - link "纹身周边服务" [ref=e85] [cursor=pointer]:
+          - /url: /info28/
+      - listitem [ref=e86]:
+        - link "加入微信群>>" [ref=e87] [cursor=pointer]:
+          - /url: /about/join.html
+      - listitem [ref=e88]:
+        - link "加入纹身两千人QQ群>>" [ref=e89] [cursor=pointer]:
+          - /url: http://shang.qq.com/wpa/qunwpa?idkey=cd7afc44347150f56e0e205af900d2db8a56284e5597c45d8f8660deb4d5e421
+    - generic [ref=e90]:
+      - strong [ref=e91]: 当前位置：
+      - link "首页" [ref=e92] [cursor=pointer]:
+        - /url: /
+      - text: "-"
+      - link "全部信息" [ref=e93] [cursor=pointer]:
+        - /url: /xinxi/
+      - text: "-"
+      - link "我要招聘" [ref=e94] [cursor=pointer]:
+        - /url: /info122/
+      - text: "-"
+      - link "招聘纹身师" [ref=e95] [cursor=pointer]:
+        - /url: /info122/s142/
+    - generic [ref=e96]:
+      - generic [ref=e97]:
+        - heading "陕西西安 招聘纹身师 ￥1.2万 - 1.5万" [level=1] [ref=e99]:
+          - text: 陕西西安 招聘纹身师
+          - generic [ref=e100]: ￥1.2万 - 1.5万
+        - generic [ref=e101]:
+          - generic [ref=e102]:
+            - generic [ref=e103]: 2026/6/21 20:00:00
+            - generic [ref=e104]: 浏览：222
+            - generic [ref=e105]: 来自：西安
+          - generic [ref=e106]:
+            - strong [ref=e107]: 操作：
+            - link " 管理" [ref=e108] [cursor=pointer]:
+              - /url: /user/minfo?id=55269
+            - link " 收藏" [ref=e109] [cursor=pointer]:
+              - /url: javascript:fInfoFav('55269')
+            - link " 举报" [ref=e110] [cursor=pointer]:
+              - /url: "#nogo"
+            - link " 生成海报" [ref=e111] [cursor=pointer]:
+              - /url: "#nogo"
+        - generic [ref=e112]:
+          - generic [ref=e113]: 西安店招聘长期纹身师。保底1万，提成制，客源稳定免拓客。提供耗材，独立工位，环境整洁，不压工资。店内没有条条框框，氛围简单，人稳当，干活靠谱即可。要求线直雾匀，擅长新老传统，作品质量过关。寻求长期合作。
+          - generic:
+            - link "陕西西安 招聘纹身师" [ref=e115] [cursor=pointer]:
+              - /url: /upload/2026/6/21/2026062107392964101.jpg
+              - img "陕西西安 招聘纹身师" [ref=e116]
+            - link "陕西西安 招聘纹身师" [ref=e117] [cursor=pointer]:
+              - /url: /upload/2026/6/21/2026062107393055931.jpg
+              - img "陕西西安 招聘纹身师" [ref=e118]
+            - link "陕西西安 招聘纹身师" [ref=e119] [cursor=pointer]:
+              - /url: /upload/2026/6/21/2026062107393258922.jpg
+              - img "陕西西安 招聘纹身师" [ref=e120]
+            - link "陕西西安 招聘纹身师" [ref=e121] [cursor=pointer]:
+              - /url: /upload/2026/6/21/2026062107393379393.jpg
+              - img "陕西西安 招聘纹身师" [ref=e122]
+            - link "陕西西安 招聘纹身师" [ref=e123] [cursor=pointer]:
+              - /url: /upload/2026/6/21/2026062107393528384.jpg
+              - img "陕西西安 招聘纹身师" [ref=e124]
+          - generic [ref=e125]:
+            - generic [ref=e126]:
+              - generic [ref=e127]: 联系方式
+              - generic [ref=e128]:
+                - strong [ref=e129]: 提示：
+                - text: 联系我时，请说明在秀酷纹身之家看到的，谢谢！
+            - list [ref=e130]:
+              - listitem [ref=e131]:
+                - generic [ref=e132]:
+                  - generic [ref=e133]: 
+                  - text: 联系人：
+                - text: (个人)
+              - listitem [ref=e134]:
+                - generic [ref=e135]:
+                  - generic [ref=e136]: 
+                  - text: 所在地：
+                - text: 陕西
+              - listitem [ref=e137]:
+                - generic [ref=e138]:
+                  - generic [ref=e139]: 
+                  - text: 电话：
+                - text: "18082624935"
+              - listitem [ref=e141]:
+                - generic [ref=e142]:
+                  - generic [ref=e143]: 
+                  - text: 微信：
+                - text: "18082624935"
+            - list [ref=e146]:
+              - listitem [ref=e147]:
+                - text: 
+                - generic [ref=e148]: 分享到
+              - listitem [ref=e149] [cursor=pointer]:
+                - img "分享到微信" [ref=e151]
+                - generic [ref=e152]: 微信
+              - listitem [ref=e153] [cursor=pointer]:
+                - img "分享到QQ空间" [ref=e155]
+                - generic [ref=e156]: QQ空间
+              - listitem [ref=e157] [cursor=pointer]:
+                - img "分享到微博" [ref=e159]
+                - generic [ref=e160]: 微博
+        - generic [ref=e161]:
+          - generic [ref=e162]:
+            - emphasis [ref=e163]
+            - text: 快速导航
+          - list [ref=e164]:
+            - listitem [ref=e165]:
+              - link "我要招聘" [ref=e166] [cursor=pointer]:
+                - /url: /info122/
+                - strong [ref=e167]: 我要招聘
+            - listitem [ref=e168]:
+              - link "招聘纹身师" [ref=e169] [cursor=pointer]:
+                - /url: /info122/s142/
+            - listitem [ref=e170]:
+              - link "招聘短期打野" [ref=e171] [cursor=pointer]:
+                - /url: /info122/s171/
+            - listitem [ref=e172]:
+              - link "招聘店长" [ref=e173] [cursor=pointer]:
+                - /url: /info122/s160/
+            - listitem [ref=e174]:
+              - link "招聘客服" [ref=e175] [cursor=pointer]:
+                - /url: /info122/s163/
+            - listitem [ref=e176]:
+              - link "招合伙人" [ref=e177] [cursor=pointer]:
+                - /url: /info122/s164/
+            - listitem [ref=e178]:
+              - link "招网络营销" [ref=e179] [cursor=pointer]:
+                - /url: /info122/s167/
+      - generic [ref=e181]:
+        - generic [ref=e182]: 最新相关信息：
+        - list [ref=e183]:
+          - listitem [ref=e184]:
+            - link "陕西西安 招聘纹身师 陕西西安 招聘纹身师 西安店招聘长期纹身师。保底1万，提成制，.. ￥1.2万" [ref=e185] [cursor=pointer]:
+              - /url: /xinxi/55269.html
+              - img "陕西西安 招聘纹身师" [ref=e187]
+              - generic [ref=e188]:
+                - strong [ref=e189]: 陕西西安 招聘纹身师
+                - text: 西安店招聘长期纹身师。保底1万，提成制，..
+                - text: ￥1.2万
+          - listitem [ref=e190]:
+            - link "湖南衡阳招聘纹身师 湖南衡阳招聘纹身师 衡阳招聘纹身师 ，纹身师工作五年以上，本.. ￥1万" [ref=e191] [cursor=pointer]:
+              - /url: /xinxi/53064.html
+              - img "湖南衡阳招聘纹身师" [ref=e193]
+              - generic [ref=e194]:
+                - strong [ref=e195]: 湖南衡阳招聘纹身师
+                - text: 衡阳招聘纹身师 ，纹身师工作五年以上，本..
+                - text: ￥1万
+          - listitem [ref=e196]:
+            - link "湖北利川网红纹身店 湖北利川网红纹身店 湖北利川网红店急需驻店纹身师 包天走量店.. ￥8000元" [ref=e197] [cursor=pointer]:
+              - /url: /xinxi/55167.html
+              - img "湖北利川网红纹身店" [ref=e199]
+              - generic [ref=e200]:
+                - strong [ref=e201]: 湖北利川网红纹身店
+                - text: 湖北利川网红店急需驻店纹身师 包天走量店..
+                - text: ￥8000元
+          - listitem [ref=e202]:
+            - link "成都 重庆 招聘纹身师 成都 重庆 招聘纹身.. 成都 重庆 招聘纹身师数名 ，要求线实雾.. ￥1万" [ref=e203] [cursor=pointer]:
+              - /url: /xinxi/55189.html
+              - img "成都 重庆 招聘纹身师" [ref=e205]
+              - generic [ref=e206]:
+                - strong [ref=e207]: 成都 重庆 招聘纹身..
+                - text: 成都 重庆 招聘纹身师数名 ，要求线实雾..
+                - text: ￥1万
+          - listitem [ref=e208]:
+            - link "苏州活多包天店包住1.3万以上诚聘成手驻店师傅 苏州活多包天店包住1.. 苏州包天店 包住 招成手驻店师傅 月月.. ￥1.5万" [ref=e209] [cursor=pointer]:
+              - /url: /xinxi/52686.html
+              - img "苏州活多包天店包住1.3万以上诚聘成手驻店师傅" [ref=e211]
+              - generic [ref=e212]:
+                - strong [ref=e213]: 苏州活多包天店包住1..
+                - text: 苏州包天店 包住 招成手驻店师傅 月月..
+                - text: ￥1.5万
+          - listitem [ref=e214]:
+            - link "查看更多" [ref=e215] [cursor=pointer]:
+              - /url: /info122/s142/
+    - generic [ref=e217]:
+      - generic [ref=e218]:
+        - generic [ref=e219]: 关于我们
+        - list [ref=e220]:
+          - listitem [ref=e221]:
+            - link "关于我们" [ref=e222] [cursor=pointer]:
+              - /url: /about/about.html
+          - listitem [ref=e223]:
+            - link "联系我们" [ref=e224] [cursor=pointer]:
+              - /url: /about/contact.html
+          - listitem [ref=e225]:
+            - link "广告服务" [ref=e226] [cursor=pointer]:
+              - /url: /about/guanggao.html
+          - listitem [ref=e227]:
+            - link "友情链接" [ref=e228] [cursor=pointer]:
+              - /url: /about/links.html
+          - listitem [ref=e229]:
+            - link "合作加盟" [ref=e230] [cursor=pointer]:
+              - /url: /about/join.html
+      - generic [ref=e231]:
+        - generic [ref=e232]: 商家服务
+        - list [ref=e233]:
+          - listitem [ref=e234]:
+            - link "商家入驻" [ref=e235] [cursor=pointer]:
+              - /url: /login/?jump=/user/biz
+          - listitem [ref=e236]:
+            - link "企业建站服务" [ref=e237] [cursor=pointer]:
+              - /url: /login/?jump=/user/mywebsite
+      - generic [ref=e238]:
+        - generic [ref=e239]: 信息服务
+        - list [ref=e240]:
+          - listitem [ref=e241]:
+            - link "发布信息" [ref=e242] [cursor=pointer]:
+              - /url: /post/
+          - listitem [ref=e243]:
+            - link "信息置顶/加红" [ref=e244] [cursor=pointer]:
+              - /url: /about/infopay.html
+          - listitem [ref=e245]:
+            - link "删除信息" [ref=e246] [cursor=pointer]:
+              - /url: /about/infodel.html
+      - generic [ref=e247]:
+        - list:
+          - listitem [ref=e249]: Q Q： 4883699
+          - listitem [ref=e250]: 微信： sccoocn
+          - listitem [ref=e251]:
+            - img "客服微信二维码" [ref=e252]
+      - generic [ref=e253]:
+        - list [ref=e254]:
+          - listitem [ref=e255]:
+            - img "公众号二维码" [ref=e256]
+        - generic [ref=e257]: 微信公众号
+      - generic [ref=e258]:
+        - list [ref=e259]:
+          - listitem [ref=e260]:
+            - img "微信小程序二维码" [ref=e261]
+        - generic [ref=e262]: 微信小程序
+      - generic [ref=e263]:
+        - text: Copyright © 2026
+        - link "“秀酷纹身之家”" [ref=e264] [cursor=pointer]:
+          - /url: https://www.sccoo.cn
+        - text: 版权所有 | ICP证：
+        - link "湘ICP备18003118号-5" [ref=e265] [cursor=pointer]:
+          - /url: https://beian.miit.gov.cn
+        - text: "|"
+        - link "湘公网安备 43060202000114号" [ref=e267] [cursor=pointer]:
+          - /url: "http://www.beian.gov.cn/portal/registerSystemInfo?\n\nrecordcode=43060202000114"
+          - img
+          - paragraph [ref=e268]: 湘公网安备 43060202000114号
+        - text: 网页内的所有信息均为用户自由发布，交易时请注意识别信息的虚假，交易风险自负！网站内容如有侵犯您权益请联系我们删除，举报信息、删除信息联系客服
+  - text: 

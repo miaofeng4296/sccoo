@@ -1,0 +1,209 @@
+<h2>🏗️ 系统架构设计</h2>
+<p class="subtitle">Next.js 全栈 + PostgreSQL + Taro 小程序</p>
+
+<div class="section">
+  <h3>整体架构图</h3>
+  <div class="mockup">
+    <div class="mockup-header">系统架构一览</div>
+    <div class="mockup-body">
+      <div style="display:flex;flex-direction:column;gap:16px;font-family:monospace;font-size:13px;">
+
+        <!-- Frontend Layer -->
+        <div style="display:flex;gap:12px;justify-content:center;">
+          <div class="placeholder" style="width:180px;height:60px;background:#e8f4f8;border:2px solid #0284c7;">
+            <strong>🌐 Web 前端</strong><br/>Next.js + React<br/>TailwindCSS + shadcn/ui
+          </div>
+          <div class="placeholder" style="width:180px;height:60px;background:#e8f4f8;border:2px solid #0284c7;">
+            <strong>📱 H5 移动端</strong><br/>Next.js 响应式<br/>同一套代码
+          </div>
+          <div class="placeholder" style="width:180px;height:60px;background:#e8f4f8;border:2px solid #0284c7;">
+            <strong>📲 微信小程序</strong><br/>Taro 3.x<br/>React 语法
+          </div>
+        </div>
+
+        <div style="text-align:center;font-size:20px;">⬇</div>
+
+        <!-- API Layer -->
+        <div style="display:flex;gap:12px;justify-content:center;">
+          <div class="placeholder" style="width:560px;height:60px;background:#fef3c7;border:2px solid #f59e0b;">
+            <strong>🔌 API 层</strong><br/>
+            Next.js API Routes / Route Handlers | tRPC (类型安全RPC) | RESTful 接口
+          </div>
+        </div>
+
+        <div style="text-align:center;font-size:20px;">⬇</div>
+
+        <!-- Service Layer -->
+        <div style="display:flex;gap:12px;justify-content:center;">
+          <div class="placeholder" style="width:180px;height:70px;background:#fce7f3;border:2px solid #db2777;">
+            <strong>👤 用户服务</strong><br/>认证/授权<br/>JWT + OAuth
+          </div>
+          <div class="placeholder" style="width:180px;height:70px;background:#fce7f3;border:2px solid #db2777;">
+            <strong>📋 信息服务</strong><br/>分类信息CRUD<br/>搜索/筛选
+          </div>
+          <div class="placeholder" style="width:180px;height:70px;background:#fce7f3;border:2px solid #db2777;">
+            <strong>💰 支付服务</strong><br/>置顶付费<br/>预留接口
+          </div>
+        </div>
+
+        <div style="text-align:center;font-size:20px;">⬇</div>
+
+        <!-- Data Layer -->
+        <div style="display:flex;gap:12px;justify-content:center;">
+          <div class="placeholder" style="width:200px;height:60px;background:#dcfce7;border:2px solid #16a34a;">
+            <strong>🐘 PostgreSQL</strong><br/>主数据库<br/>Prisma ORM
+          </div>
+          <div class="placeholder" style="width:200px;height:60px;background:#dcfce7;border:2px solid #16a34a;">
+            <strong>⚡ Redis</strong><br/>缓存/Session<br/>可选
+          </div>
+          <div class="placeholder" style="width:150px;height:60px;background:#dcfce7;border:2px solid #16a34a;">
+            <strong>📦 OSS</strong><br/>图片存储<br/>阿里云/腾讯云
+          </div>
+        </div>
+
+        <div style="text-align:center;font-size:20px;">⬇</div>
+
+        <!-- DevOps -->
+        <div style="display:flex;gap:12px;justify-content:center;">
+          <div class="placeholder" style="width:560px;height:50px;background:#f3e8ff;border:2px solid #9333ea;">
+            <strong>🚀 部署</strong><br/>
+            初期：Cloudflare Pages(前端) + Supabase(数据库) | 后期：阿里云/腾讯云
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>📦 技术栈明细</h3>
+  <table style="width:100%;border-collapse:collapse;">
+    <tr style="background:#f8fafc;">
+      <th style="padding:10px;text-align:left;border-bottom:2px solid #e2e8f0;">层</th>
+      <th style="padding:10px;text-align:left;border-bottom:2px solid #e2e8f0;">技术</th>
+      <th style="padding:10px;text-align:left;border-bottom:2px solid #e2e8f0;">说明</th>
+    </tr>
+    <tr>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">框架</td>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;"><strong>Next.js 14+</strong> (App Router)</td>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">SSR/SSG/ISR，SEO友好</td>
+    </tr>
+    <tr style="background:#f8fafc;">
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">UI框架</td>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;"><strong>TailwindCSS + shadcn/ui</strong></td>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">现代原子化CSS + 可定制组件库</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">状态管理</td>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">React Query + Zustand</td>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">服务端状态 + 客户端状态</td>
+    </tr>
+    <tr style="background:#f8fafc;">
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">API</td>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">Next.js API Routes + tRPC</td>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">端到端类型安全</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">ORM</td>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;"><strong>Prisma</strong></td>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">类型安全数据库操作</td>
+    </tr>
+    <tr style="background:#f8fafc;">
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">数据库</td>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;"><strong>PostgreSQL</strong></td>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">主数据库，初期用Supabase免费版</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">认证</td>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">NextAuth.js v5</td>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">邮箱/QQ/微信/手机号登录</td>
+    </tr>
+    <tr style="background:#f8fafc;">
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">小程序</td>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;"><strong>Taro 3.x</strong> + React</td>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">一套React代码编译到微信小程序</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">图片存储</td>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">OSS (预留接口)</td>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">初期可用本地存储/Supabase Storage</td>
+    </tr>
+    <tr style="background:#f8fafc;">
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">搜索</td>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">PostgreSQL Full Text Search</td>
+      <td style="padding:8px;border-bottom:1px solid #e2e8f0;">初期够用，后期可换Elasticsearch</td>
+    </tr>
+  </table>
+</div>
+
+<div class="section">
+  <h3>🗂️ 项目结构</h3>
+  <div class="mockup">
+    <div class="mockup-header">Monorepo 结构 (pnpm workspace)</div>
+    <div class="mockup-body">
+      <pre style="font-size:13px;line-height:1.6;background:#1e293b;color:#e2e8f0;padding:16px;border-radius:8px;">
+📦 sccoo/
+├── 📁 apps/
+│   ├── 📁 web/              # Next.js 主站 (PC + H5)
+│   │   ├── 📁 src/
+│   │   │   ├── 📁 app/      # App Router 页面
+│   │   │   ├── 📁 components/
+│   │   │   ├── 📁 lib/      # 工具函数
+│   │   │   └── 📁 styles/
+│   │   └── 📄 next.config.js
+│   └── 📁 miniapp/          # Taro 微信小程序
+│       ├── 📁 src/
+│       │   ├── 📁 pages/
+│       │   ├── 📁 components/
+│       │   └── 📁 utils/
+│       └── 📄 app.config.ts
+├── 📁 packages/
+│   ├── 📁 shared/           # 共享类型、常量、工具
+│   ├── 📁 db/               # Prisma schema + 数据库操作
+│   ├── 📁 api/              # tRPC routers (前后端共享)
+│   └── 📁 ui/               # 共享 UI 组件
+├── 📁 docs/                 # 文档
+├── 📄 package.json
+├── 📄 pnpm-workspace.yaml
+└── 📄 turbo.json            # Turborepo 构建加速
+      </pre>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>🔑 关键设计决策</h3>
+  <div class="options">
+    <div class="option" data-choice="decision1" onclick="toggleSelect(this)">
+      <div class="content">
+        <h4>🎯 子域名路由</h4>
+        <p>Next.js Middleware 检测 <code>Host</code> header，提取城市标识，注入到请求上下文。所有页面自动根据城市过滤数据。</p>
+        <p><small>例：jinan.sccoo.cn → 自动展示济南地区的招聘/转让/培训信息</small></p>
+      </div>
+    </div>
+    <div class="option" data-choice="decision2" onclick="toggleSelect(this)">
+      <div class="content">
+        <h4>🔐 第三方登录预留</h4>
+        <p>OAuth 流程预留给 QQ/微信，先实现邮箱+手机号注册登录。NextAuth.js v5 的 Provider 机制天然支持后续扩展。</p>
+      </div>
+    </div>
+    <div class="option" data-choice="decision3" onclick="toggleSelect(this)">
+      <div class="content">
+        <h4>💳 支付预留</h4>
+        <p>付费置顶功能前端+后端逻辑完整实现，支付环节抽象为接口，初期支持"手动确认"模式（管理员后台确认），后续接入微信/支付宝。</p>
+      </div>
+    </div>
+    <div class="option" data-choice="decision4" onclick="toggleSelect(this)">
+      <div class="content">
+        <h4>📱 PC + H5 同一套代码</h4>
+        <p>Next.js 响应式设计 + TailwindCSS breakpoints，桌面端三栏布局，平板/手机自动切换为单栏卡片的移动布局。</p>
+      </div>
+    </div>
+    <div class="option" data-choice="decision5" onclick="toggleSelect(this)">
+      <div class="content">
+        <h4>📲 小程序独立开发</h4>
+        <p>Taro 独立项目，通过 API 共享后端。小程序UI需要符合微信规范（如底部tabBar、原生导航栏），不适合直接复用Web组件。</p>
+      </div>
+    </div>
+  </div>
+</div>

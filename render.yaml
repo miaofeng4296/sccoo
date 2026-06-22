@@ -2,8 +2,14 @@ services:
   - type: web
     name: sccoo
     env: node
-    buildCommand: cd apps/web && pnpm install && npx prisma generate --schema=../../packages/db/prisma/schema.prisma && pnpm build
-    startCommand: cd apps/web && pnpm start
+    plan: free
+    buildCommand: |
+      npm install -g pnpm
+      pnpm install
+      npx prisma generate --schema=packages/db/prisma/schema.prisma
+      npx prisma db push --schema=packages/db/prisma/schema.prisma --accept-data-loss
+      cd apps/web && npx next build
+    startCommand: cd apps/web && npx next start -p $PORT
     envVars:
       - key: DATABASE_URL
         fromDatabase:
@@ -13,6 +19,8 @@ services:
         generateValue: true
       - key: NEXTAUTH_URL
         value: https://sccoo.onrender.com
+      - key: NODE_VERSION
+        value: 20.x
 
 databases:
   - name: sccoo-db

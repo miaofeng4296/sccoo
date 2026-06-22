@@ -73,7 +73,12 @@ export default async function AdminDashboard() {
         <Link href="/admin/posts"><Button variant="outline" className="w-full">信息管理</Button></Link>
         <Link href="/admin/users"><Button variant="outline" className="w-full">用户管理</Button></Link>
         <Link href="/admin/articles"><Button variant="outline" className="w-full">文章管理</Button></Link>
+        <Link href="/admin/businesses"><Button variant="outline" className="w-full">商家认证</Button></Link>
         <Link href="/admin/payments"><Button variant="outline" className="w-full">支付管理</Button></Link>
+        <Link href="/admin/banners"><Button variant="outline" className="w-full">Banner</Button></Link>
+        <Link href="/admin/categories"><Button variant="outline" className="w-full">分类管理</Button></Link>
+        <Link href="/admin/cities"><Button variant="outline" className="w-full">城市管理</Button></Link>
+        <Link href="/admin/notifications"><Button variant="outline" className="w-full">系统通知</Button></Link>
         <Link href="/"><Button variant="outline" className="w-full">返回首页</Button></Link>
       </div>
 

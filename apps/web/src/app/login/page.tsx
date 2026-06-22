@@ -89,11 +89,16 @@ export default function LoginPage() {
             QQ/微信登录即将开放
           </p>
         </CardContent>
-        <CardFooter className="justify-center">
+        <CardFooter className="flex-col gap-2 justify-center">
           <p className="text-sm text-gray-600">
             还没有账号？{' '}
             <Link href="/reg/" className="text-red-600 hover:underline font-medium">
               立即注册
+            </Link>
+          </p>
+          <p className="text-sm text-gray-500">
+            <Link href="/forgot-password" className="hover:text-red-600 transition-colors">
+              忘记密码？
             </Link>
           </p>
         </CardFooter>

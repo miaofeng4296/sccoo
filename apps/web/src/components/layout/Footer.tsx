@@ -21,8 +21,8 @@ export function Footer() {
           <div>
             <h4 className="text-white font-bold mb-3">商家服务</h4>
             <ul className="space-y-1.5">
-              <li><Link href="/login/?jump=/user/biz" className="hover:text-white transition-colors">商家入驻</Link></li>
-              <li><Link href="/login/?jump=/user/mywebsite" className="hover:text-white transition-colors">企业建站服务</Link></li>
+              <li><Link href="/biz/join" className="hover:text-white transition-colors">商家入驻</Link></li>
+              <li><Link href="/biz123/join" className="hover:text-white transition-colors">纹身师入驻</Link></li>
             </ul>
           </div>
 

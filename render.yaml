@@ -3,12 +3,11 @@ services:
     name: sccoo
     runtime: node
     plan: free
-    rootDir: .
     buildCommand: |
-      npm install -g pnpm@9
+      corepack enable
       pnpm install --no-frozen-lockfile
-      cd packages/db && npx prisma generate && cd ../..
-      cd apps/web && npx next build && cd ../..
+      cd packages/db && npx prisma generate && npx prisma db push --accept-data-loss && cd ../..
+      cd apps/web && NODE_OPTIONS="--max-old-space-size=384" npx next build && cd ../..
     startCommand: cd apps/web && npx next start -p $PORT
     envVars:
       - key: DATABASE_URL

@@ -6,13 +6,13 @@ import { cn } from '@/lib/utils';
 
 const navItems = [
   { href: '/', label: '首页' },
-  { href: '/info122/', label: '招聘求职' },
-  { href: '/info153/', label: '我行我秀' },
-  { href: '/info4/', label: '纹身店转让' },
-  { href: '/info1/', label: '二手转让' },
+  { href: '/info/122/', label: '招聘求职' },
+  { href: '/info/153/', label: '我行我秀' },
+  { href: '/info/4/', label: '纹身店转让' },
+  { href: '/info/1/', label: '二手转让' },
   { href: '/wenda/', label: '纹身问答' },
-  { href: '/info149/', label: '我要纹身' },
-  { href: '/info20/', label: '纹身培训' },
+  { href: '/info/149/', label: '我要纹身' },
+  { href: '/info/20/', label: '纹身培训' },
   { href: '/biz119/', label: '纹身店大全' },
   { href: '/biz123/', label: '纹身师大全' },
 ];

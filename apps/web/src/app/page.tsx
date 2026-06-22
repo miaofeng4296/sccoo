@@ -66,13 +66,13 @@ export default async function HomePage() {
       {/* Category Quick Links */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
         {[
-          { href: '/info122/', label: '招聘求职', color: 'bg-blue-50 text-blue-700 hover:bg-blue-100' },
-          { href: '/info153/', label: '我行我秀', color: 'bg-purple-50 text-purple-700 hover:bg-purple-100' },
-          { href: '/info4/', label: '纹身店转让', color: 'bg-orange-50 text-orange-700 hover:bg-orange-100' },
-          { href: '/info1/', label: '二手设备', color: 'bg-green-50 text-green-700 hover:bg-green-100' },
+          { href: '/info/122/', label: '招聘求职', color: 'bg-blue-50 text-blue-700 hover:bg-blue-100' },
+          { href: '/info/153/', label: '我行我秀', color: 'bg-purple-50 text-purple-700 hover:bg-purple-100' },
+          { href: '/info/4/', label: '纹身店转让', color: 'bg-orange-50 text-orange-700 hover:bg-orange-100' },
+          { href: '/info/1/', label: '二手设备', color: 'bg-green-50 text-green-700 hover:bg-green-100' },
           { href: '/wenda/', label: '纹身问答', color: 'bg-teal-50 text-teal-700 hover:bg-teal-100' },
-          { href: '/info149/', label: '我要纹身', color: 'bg-pink-50 text-pink-700 hover:bg-pink-100' },
-          { href: '/info20/', label: '纹身培训', color: 'bg-amber-50 text-amber-700 hover:bg-amber-100' },
+          { href: '/info/149/', label: '我要纹身', color: 'bg-pink-50 text-pink-700 hover:bg-pink-100' },
+          { href: '/info/20/', label: '纹身培训', color: 'bg-amber-50 text-amber-700 hover:bg-amber-100' },
           { href: '/biz119/', label: '纹身店大全', color: 'bg-indigo-50 text-indigo-700 hover:bg-indigo-100' },
           { href: '/biz123/', label: '纹身师大全', color: 'bg-rose-50 text-rose-700 hover:bg-rose-100' },
           { href: '/post/', label: '发布信息', color: 'bg-red-50 text-red-700 hover:bg-red-100 font-bold' },

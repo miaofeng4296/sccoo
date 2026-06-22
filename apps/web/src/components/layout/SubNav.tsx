@@ -1,11 +1,11 @@
 import Link from 'next/link';
 
 const quickLinks = [
-  { href: '/news/news_s6_t0_p1.html', label: '本站公告' },
-  { href: '/news/news_s4_t0_p1.html', label: '纹身大师' },
-  { href: '/news/news_s1_t0_p1.html', label: '纹身资讯' },
-  { href: '/info28/', label: '纹身周边服务' },
-  { href: '/about/join.html', label: '加入微信群' },
+  { href: '/news/', label: '本站公告' },
+  { href: '/news/', label: '纹身大师' },
+  { href: '/news/', label: '纹身资讯' },
+  { href: '/info/28/', label: '纹身周边服务' },
+  { href: '/about/join', label: '加入微信群' },
   { href: '#', label: '加入纹身两千人QQ群' },
 ];
 

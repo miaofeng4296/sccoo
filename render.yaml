@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: sccoo
+    env: node
+    buildCommand: cd apps/web && pnpm install && npx prisma generate --schema=../../packages/db/prisma/schema.prisma && pnpm build
+    startCommand: cd apps/web && pnpm start
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: sccoo-db
+          property: connectionString
+      - key: NEXTAUTH_SECRET
+        generateValue: true
+      - key: NEXTAUTH_URL
+        value: https://sccoo.onrender.com
+
+databases:
+  - name: sccoo-db
+    plan: free

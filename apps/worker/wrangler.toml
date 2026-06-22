@@ -1,0 +1,6 @@
+name = "sccoo-proxy"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+[vars]
+TUNNEL_URL = "choir-priority-gather-cave.trycloudflare.com"

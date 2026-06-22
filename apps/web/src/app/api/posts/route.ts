@@ -2,6 +2,20 @@ import { NextResponse } from 'next/server';
 import { auth } from '@/lib/auth';
 import { prisma } from '@sccoo/db';
 
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const id = searchParams.get('id');
+  if (id) {
+    const post = await prisma.post.findUnique({
+      where: { id: parseInt(id) },
+      select: { id: true, title: true, isPinned: true },
+    });
+    if (!post) return NextResponse.json({ error: 'Not found' }, { status: 404 });
+    return NextResponse.json(post);
+  }
+  return NextResponse.json({ error: 'id required' }, { status: 400 });
+}
+
 export async function POST(request: Request) {
   try {
     const session = await auth();

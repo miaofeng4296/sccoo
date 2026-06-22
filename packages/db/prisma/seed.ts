@@ -154,9 +154,38 @@ async function main() {
     await prisma.article.create({ data: a });
   }
 
+  // Create QA questions and answers
+  const q1 = await prisma.qaQuestion.create({
+    data: { title: '新手学纹身应该从哪里开始？', content: '我完全没有美术基础，想学纹身，不知道从哪里入门比较好？需要先学画画吗？去哪里学习比较正规？', userId: user1.id, viewCount: 1560, answerCount: 2, isResolved: true },
+  });
+  await prisma.qaAnswer.create({ data: { questionId: q1.id, content: '建议先从基础素描开始学起，至少要掌握基本的线条和明暗关系。然后可以找一个正规的纹身培训机构或者拜师学艺。推荐去大型纹身店当学徒，虽然前几个月没有收入，但能学到真功夫。', userId: admin.id, isAccepted: true } });
+  await prisma.qaAnswer.create({ data: { questionId: q1.id, content: '美术基础确实很重要，但不是必须从专业绘画学起。你可以先在网上看免费教程，练习画简单的图案。同时可以找当地的纹身店问问能不能当学徒。', userId: user2.id } });
+
+  const q2 = await prisma.qaQuestion.create({
+    data: { title: '纹身店转让需要注意什么？', content: '我看中了一家正在转让的纹身店，想问下接手之前需要检查哪些东西？怎么判断客源是否真实？转让合同要注意什么？', userId: user2.id, viewCount: 892, answerCount: 1 },
+  });
+  await prisma.qaAnswer.create({ data: { questionId: q2.id, content: '1. 一定要查店铺的营业执照、卫生许可证是否在有效期内；2. 要求查看近6个月的营业流水和客源记录；3. 确认租赁合同剩余年限和租金涨幅条款；4. 设备清单要逐项核对；5. 最好在转让合同里约定前店主半年内不得在附近开店。', userId: admin.id, isAccepted: true } });
+
+  const q3 = await prisma.qaQuestion.create({
+    data: { title: '纹身恢复期间可以喝酒吗？', content: '刚纹完身第三天，朋友约喝酒，请问可以喝吗？会不会影响纹身恢复？', userId: user1.id, viewCount: 3200, answerCount: 3, isResolved: true },
+  });
+  await prisma.qaAnswer.create({ data: { questionId: q3.id, content: '绝对不可以！纹身恢复期间（至少2周内）禁止饮酒。酒精会扩张血管，导致纹身部位出血增多，色素可能被冲淡，严重影响纹身效果。还会延缓伤口愈合。', userId: admin.id, isAccepted: true } });
+  await prisma.qaAnswer.create({ data: { questionId: q3.id, content: '补充一点：除了不能喝酒，还要避免辛辣食物、海鲜等发物，保持纹身部位清洁干燥，按时涂抹修复膏。', userId: user2.id } });
+
+  const q4 = await prisma.qaQuestion.create({
+    data: { title: '纹身师一般月收入多少？', content: '我想转行做纹身师，但不知道这个行业收入怎么样？驻店和自开店的区别大吗？', userId: user2.id, viewCount: 4500, answerCount: 2 },
+  });
+  await prisma.qaAnswer.create({ data: { questionId: q4.id, content: '驻店纹身师收入差别很大：新手期（1-2年）月收入3000-8000，成熟期（3-5年）8000-20000，资深师傅（5年以上）20000-50000+。自开店的话前期投入大，但盈利空间也更大，做好了月入10万不是问题。关键还是要看技术水平和客源。', userId: admin.id } });
+  await prisma.qaAnswer.create({ data: { questionId: q4.id, content: '我说点实在的：这个行业两极分化严重。技术好、会营销的师傅赚得多，但也有很多纹身师月薪不到5000。建议先当2-3年学徒，把技术练好再说收入。', userId: user1.id } });
+
+  const q5 = await prisma.qaQuestion.create({
+    data: { title: '遮盖旧纹身需要多少钱？', content: '手臂上有个10cm左右的旧纹身想遮盖掉，大概需要多少钱？有什么注意事项？', userId: user1.id, viewCount: 2100, answerCount: 1, isResolved: true },
+  });
+  await prisma.qaAnswer.create({ data: { questionId: q5.id, content: '遮盖纹身通常比新纹身贵30%-100%，10cm的旧纹身遮盖费用一般在1500-5000元之间，具体看图案复杂度和遮盖难度。注意事项：1. 不是所有纹身都能完美遮盖，深色旧图需要更大的深色区域；2. 遮盖通常需要比原图大2-3倍；3. 建议先咨询有遮盖经验的师傅，看看是否可行。', userId: admin.id, isAccepted: true } });
+
   // Create banners
-  await prisma.banner.create({ data: { title: '纹身店线上获客', imageUrl: '/banners/banner1.jpg', linkUrl: '/xinxi/2269.html', sortOrder: 0 } });
-  await prisma.banner.create({ data: { title: '加入纹身师微信群', imageUrl: '/banners/banner2.jpg', linkUrl: '/about/join.html', sortOrder: 1 } });
+  await prisma.banner.create({ data: { title: '纹身店线上获客', imageUrl: '/banners/banner1.jpg', linkUrl: '/xinxi/', sortOrder: 0 } });
+  await prisma.banner.create({ data: { title: '加入纹身师微信群', imageUrl: '/banners/banner2.jpg', linkUrl: '/about/join', sortOrder: 1 } });
 
   console.log('Seed data created successfully!');
   console.log('Admin login: admin@sccoo.cn / 123456');

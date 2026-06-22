@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useSession } from 'next-auth/react';
 import Link from 'next/link';
@@ -15,10 +15,17 @@ import { toast } from 'sonner';
 
 const postTypes = Object.entries(POST_TYPE_LABELS);
 
+interface City { id: number; name: string; }
+interface Category { id: number; name: string; slug: string; }
+
 export default function PostCreatePage() {
   const { data: session } = useSession();
   const router = useRouter();
   const [loading, setLoading] = useState(false);
+  const [cities, setCities] = useState<City[]>([]);
+  const [categories, setCategories] = useState<Category[]>([]);
+  const [imageUrls, setImageUrls] = useState<string[]>([]);
+  const [uploading, setUploading] = useState(false);
   const [form, setForm] = useState({
     title: '',
     content: '',
@@ -32,14 +39,36 @@ export default function PostCreatePage() {
     contactWechat: '',
   });
 
-  // Simple city list (matches seed data subdomains)
-  const cities = [
-    { id: 1, name: '北京' }, { id: 2, name: '上海' }, { id: 3, name: '天津' }, { id: 4, name: '重庆' },
-    { id: 5, name: '济南' }, { id: 6, name: '青岛' }, { id: 7, name: '南京' }, { id: 8, name: '苏州' },
-    { id: 9, name: '杭州' }, { id: 10, name: '宁波' }, { id: 11, name: '广州' }, { id: 12, name: '深圳' },
-    { id: 13, name: '东莞' }, { id: 14, name: '长沙' }, { id: 15, name: '岳阳' }, { id: 16, name: '武汉' },
-    { id: 17, name: '成都' },
-  ];
+  useEffect(() => {
+    fetch('/api/cities').then(r => r.json()).then(setCities).catch(() => {});
+    fetch('/api/categories').then(r => r.json()).then(setCategories).catch(() => {});
+  }, []);
+
+  async function handleImageUpload(e: React.ChangeEvent<HTMLInputElement>) {
+    const files = e.target.files;
+    if (!files || files.length === 0) return;
+
+    const formData = new FormData();
+    for (let i = 0; i < files.length; i++) {
+      formData.append('images', files[i]!);
+    }
+
+    setUploading(true);
+    try {
+      const res = await fetch('/api/upload', { method: 'POST', body: formData });
+      if (res.ok) {
+        const data = await res.json();
+        setImageUrls(prev => [...prev, ...data.urls].slice(0, 6));
+        toast.success(`成功上传 ${data.urls.length} 张图片`);
+      } else {
+        const err = await res.json();
+        toast.error(err.error || '上传失败');
+      }
+    } catch {
+      toast.error('图片上传失败');
+    }
+    setUploading(false);
+  }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -50,8 +79,8 @@ export default function PostCreatePage() {
       return;
     }
 
-    if (!form.title || !form.content || !form.type || !form.cityId) {
-      toast.error('请填写标题、内容、类型和地区');
+    if (!form.title || !form.content || !form.type || !form.cityId || !form.categoryId) {
+      toast.error('请填写标题、内容、类型、分类和地区');
       return;
     }
 
@@ -65,14 +94,14 @@ export default function PostCreatePage() {
           title: form.title,
           content: form.content,
           type: form.type,
-          categoryId: 2, // Default to job category
+          categoryId: form.categoryId,
           cityId: form.cityId,
           priceMin: form.priceMin ? parseInt(form.priceMin) : undefined,
           priceMax: form.priceMax ? parseInt(form.priceMax) : undefined,
           contactName: form.contactName || undefined,
           contactPhone: form.contactPhone || undefined,
           contactWechat: form.contactWechat || undefined,
-          images: [],
+          images: imageUrls,
           expiresAt: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
         }),
       });
@@ -120,6 +149,21 @@ export default function PostCreatePage() {
                   <SelectContent>
                     {postTypes.map(([value, label]) => (
                       <SelectItem key={value} value={value}>{label}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+
+              {/* Category */}
+              <div className="space-y-2">
+                <Label>信息分类 *</Label>
+                <Select value={form.categoryId ? String(form.categoryId) : ''} onValueChange={(v) => setForm({ ...form, categoryId: parseInt(v ?? '0') })}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="请选择信息分类" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {categories.map((cat) => (
+                      <SelectItem key={cat.id} value={String(cat.id)}>{cat.name}</SelectItem>
                     ))}
                   </SelectContent>
                 </Select>
@@ -211,6 +255,36 @@ export default function PostCreatePage() {
                     onChange={(e) => setForm({ ...form, contactWechat: e.target.value })}
                   />
                 </div>
+              </div>
+
+              {/* Image Upload */}
+              <div className="space-y-2">
+                <Label>图片上传（最多6张，每张≤5MB）</Label>
+                <Input
+                  type="file"
+                  accept="image/*"
+                  multiple
+                  disabled={uploading}
+                  onChange={handleImageUpload}
+                  className="cursor-pointer"
+                />
+                {uploading && <p className="text-xs text-blue-500">上传中...</p>}
+                {imageUrls.length > 0 && (
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {imageUrls.map((url, i) => (
+                      <div key={i} className="relative w-20 h-20 rounded border overflow-hidden bg-gray-100">
+                        <img src={url} alt={`预览 ${i + 1}`} className="w-full h-full object-cover" />
+                        <button
+                          type="button"
+                          className="absolute top-0 right-0 bg-red-500 text-white rounded-bl text-xs px-1"
+                          onClick={() => setImageUrls(prev => prev.filter((_, idx) => idx !== i))}
+                        >
+                          ×
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
 
               <Button type="submit" className="w-full" disabled={loading}>

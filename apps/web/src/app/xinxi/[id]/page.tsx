@@ -149,6 +149,11 @@ export default async function PostDetailPage({ params }: Props) {
           {/* Actions */}
           <Card>
             <CardContent className="py-4 space-y-2">
+              <Link href={`/pay/${post.id}`}>
+                <Button className="w-full" variant="destructive" size="sm">
+                  置顶推广
+                </Button>
+              </Link>
               <Button className="w-full" variant="outline" size="sm">
                 收藏信息
               </Button>

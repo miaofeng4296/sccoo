@@ -72,7 +72,7 @@ export default async function AdminDashboard() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
         <Link href="/admin/posts"><Button variant="outline" className="w-full">信息管理</Button></Link>
         <Link href="/admin/users"><Button variant="outline" className="w-full">用户管理</Button></Link>
-        <Link href="/post/"><Button variant="outline" className="w-full">发布信息</Button></Link>
+        <Link href="/admin/payments"><Button variant="outline" className="w-full">支付管理</Button></Link>
         <Link href="/"><Button variant="outline" className="w-full">返回首页</Button></Link>
       </div>
 

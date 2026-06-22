@@ -9,11 +9,11 @@ export function Footer() {
           <div>
             <h4 className="text-white font-bold mb-3">关于我们</h4>
             <ul className="space-y-1.5">
-              <li><Link href="/about/about.html" className="hover:text-white transition-colors">关于我们</Link></li>
-              <li><Link href="/about/contact.html" className="hover:text-white transition-colors">联系我们</Link></li>
-              <li><Link href="/about/guanggao.html" className="hover:text-white transition-colors">广告服务</Link></li>
-              <li><Link href="/about/links.html" className="hover:text-white transition-colors">友情链接</Link></li>
-              <li><Link href="/about/join.html" className="hover:text-white transition-colors">合作加盟</Link></li>
+              <li><Link href="/about/about" className="hover:text-white transition-colors">关于我们</Link></li>
+              <li><Link href="/about/contact" className="hover:text-white transition-colors">联系我们</Link></li>
+              <li><Link href="/about/guanggao" className="hover:text-white transition-colors">广告服务</Link></li>
+              <li><Link href="/about/links" className="hover:text-white transition-colors">友情链接</Link></li>
+              <li><Link href="/about/join" className="hover:text-white transition-colors">合作加盟</Link></li>
             </ul>
           </div>
 
@@ -31,8 +31,8 @@ export function Footer() {
             <h4 className="text-white font-bold mb-3">信息服务</h4>
             <ul className="space-y-1.5">
               <li><Link href="/post/" className="hover:text-white transition-colors">发布信息</Link></li>
-              <li><Link href="/about/infopay.html" className="hover:text-white transition-colors">信息置顶/加红</Link></li>
-              <li><Link href="/about/infodel.html" className="hover:text-white transition-colors">删除信息</Link></li>
+              <li><Link href="/about/infopay" className="hover:text-white transition-colors">信息置顶/加红</Link></li>
+              <li><Link href="/about/infodel" className="hover:text-white transition-colors">删除信息</Link></li>
             </ul>
           </div>
 

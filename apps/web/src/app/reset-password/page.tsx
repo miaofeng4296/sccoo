@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 // Next.js 16: useSearchParams from next/navigation
 import Link from 'next/link';
@@ -9,7 +9,7 @@ import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
 
-export default function ResetPasswordPage() {
+function ResetForm() {
   const router = useRouter();
   // Simple approach: just use email from URL or manual entry
   const [form, setForm] = useState({ email: '', newPassword: '', confirmPassword: '' });
@@ -64,5 +64,13 @@ export default function ResetPasswordPage() {
         </CardContent>
       </Card>
     </div>
+  );
+}
+
+export default function ResetPasswordPage() {
+  return (
+    <Suspense fallback={<div className="max-w-md mx-auto px-4 py-16 text-center">加载中...</div>}>
+      <ResetForm />
+    </Suspense>
   );
 }

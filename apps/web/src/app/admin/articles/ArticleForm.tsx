@@ -12,7 +12,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { toast } from 'sonner';
 
 interface Category { id: number; name: string; }
-interface InitialData { id?: number; title?: string; content?: string; categoryId?: number; author?: string; coverImage?: string; isPublished?: boolean; }
+interface InitialData { id?: number; title?: string; content?: string; categoryId?: number; author?: string | null; coverImage?: string | null; isPublished?: boolean; }
 
 interface Props {
   categories: Category[];

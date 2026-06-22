@@ -6,7 +6,9 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-import { Eye, MapPin, Phone, Clock, AlertCircle } from 'lucide-react';
+import { Eye, MapPin, Phone, Clock } from 'lucide-react';
+import { FavoriteButton } from './FavoriteButton';
+import { ReportButton } from './ReportButton';
 
 export const revalidate = 60;
 
@@ -70,10 +72,16 @@ export default async function PostDetailPage({ params }: Props) {
             <CardContent className="space-y-4">
               {/* Images */}
               {post.images.length > 0 && (
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {post.images.map((img) => (
-                    <div key={img.id} className="bg-gray-100 rounded-lg h-48 flex items-center justify-center text-gray-400">
-                      [图片: {img.url}]
+                    <div key={img.id} className="bg-gray-100 rounded-lg overflow-hidden">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={img.url}
+                        alt={post.title}
+                        className="w-full h-64 object-contain"
+                        loading="lazy"
+                      />
                     </div>
                   ))}
                 </div>
@@ -154,14 +162,8 @@ export default async function PostDetailPage({ params }: Props) {
                   置顶推广
                 </Button>
               </Link>
-              <Button className="w-full" variant="outline" size="sm">
-                收藏信息
-              </Button>
-              <Link href={`/xinxi/`} className="w-full">
-                <Button className="w-full" variant="ghost" size="sm">
-                  <AlertCircle className="h-4 w-4 mr-1" /> 举报信息
-                </Button>
-              </Link>
+              <FavoriteButton postId={post.id} />
+              <ReportButton postId={post.id} />
             </CardContent>
           </Card>
         </div>

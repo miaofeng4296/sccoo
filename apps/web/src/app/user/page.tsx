@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Separator } from '@/components/ui/separator';
 import { POST_TYPE_LABELS } from '@sccoo/shared';
 import { redirect } from 'next/navigation';
+import { PostActionsClient } from './PostActionsClient';
 
 export default async function UserCenterPage() {
   const session = await auth();
@@ -71,20 +71,23 @@ export default async function UserCenterPage() {
               <p className="text-gray-400 text-sm py-4 text-center">暂无发布信息</p>
             ) : (
               myPosts.map((post) => (
-                <Link key={post.id} href={`/xinxi/${post.id}`}>
-                  <div className="py-3 hover:bg-gray-50 -mx-2 px-2 rounded transition-colors">
-                    <div className="flex items-center gap-2">
-                      <Badge variant="secondary" className="text-xs">
-                        {POST_TYPE_LABELS[post.type] || post.type}
-                      </Badge>
-                      <Badge variant={post.status === 'PUBLISHED' ? 'default' : 'outline'} className="text-xs">
-                        {post.status === 'PUBLISHED' ? '已发布' : post.status === 'PENDING' ? '审核中' : post.status}
-                      </Badge>
-                    </div>
-                    <p className="text-sm font-medium mt-1 line-clamp-1">{post.title}</p>
-                    <p className="text-xs text-gray-400 mt-0.5">{post.createdAt.toLocaleDateString('zh-CN')} · {post.city.name}</p>
+                <div key={post.id} className="py-3 hover:bg-gray-50 -mx-2 px-2 rounded transition-colors">
+                  <div className="flex items-center justify-between gap-2">
+                    <Link href={`/xinxi/${post.id}`} className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2">
+                        <Badge variant="secondary" className="text-xs">
+                          {POST_TYPE_LABELS[post.type] || post.type}
+                        </Badge>
+                        <Badge variant={post.status === 'PUBLISHED' ? 'default' : 'outline'} className="text-xs">
+                          {post.status === 'PUBLISHED' ? '已发布' : post.status === 'PENDING' ? '审核中' : post.status}
+                        </Badge>
+                      </div>
+                      <p className="text-sm font-medium mt-1 line-clamp-1">{post.title}</p>
+                      <p className="text-xs text-gray-400 mt-0.5">{post.createdAt.toLocaleDateString('zh-CN')} · {post.city.name}</p>
+                    </Link>
+                    <PostActionsClient postId={post.id} />
                   </div>
-                </Link>
+                </div>
               ))
             )}
           </CardContent>

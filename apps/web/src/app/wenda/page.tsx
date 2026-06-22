@@ -37,7 +37,7 @@ export default async function QAListPage({ searchParams }: Props) {
           <h1 className="text-2xl font-bold">纹身问答</h1>
           <p className="text-gray-500 mt-1">纹身相关问题交流和解答 · 共 {total} 个问题</p>
         </div>
-        <Link href="/post/"><Button size="sm">我要提问</Button></Link>
+        <Link href="/wenda/ask"><Button size="sm">我要提问</Button></Link>
       </div>
 
       {questions.length === 0 ? (

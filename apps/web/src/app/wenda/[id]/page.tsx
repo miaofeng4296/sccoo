@@ -4,6 +4,7 @@ import { prisma } from '@sccoo/db';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { CheckCircle, Clock, User } from 'lucide-react';
+import { AnswerForm } from './AnswerForm';
 
 export const revalidate = 60;
 
@@ -88,7 +89,10 @@ export default async function QADetailPage({ params }: Props) {
         )}
       </div>
 
-      <div className="text-center">
+      {/* Answer Form */}
+      <AnswerForm questionId={question.id} />
+
+      <div className="text-center mt-6">
         <Link href="/wenda/" className="text-sm text-gray-500 hover:text-red-600">
           &larr; 返回问答列表
         </Link>

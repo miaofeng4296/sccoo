@@ -1,6 +1,11 @@
 # Stage 1: Build
 FROM node:20.18.0-slim AS builder
 
+RUN apt-get update && apt-get install -y \
+    openssl \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack enable && corepack prepare pnpm@9.0.0 --activate

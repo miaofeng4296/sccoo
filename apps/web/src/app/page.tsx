@@ -4,7 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { POST_TYPE_LABELS, PIN_PRICES } from '@sccoo/shared';
 
-// ISR: revalidate every 60 seconds
+// Dynamic rendering — database not available during Docker build
+export const dynamic = 'force-dynamic';
 export const revalidate = 60;
 
 export default async function HomePage() {

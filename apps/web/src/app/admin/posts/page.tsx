@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '@/components/ui/pagination';
 import { PostActionsClient } from './PostActionsClient';
 
+export const dynamic = 'force-dynamic';
 export const revalidate = 0; // No cache for admin
 
 interface Props {

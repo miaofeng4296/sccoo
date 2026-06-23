@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '@/components/ui/pagination';
 import { MapPin } from 'lucide-react';
 
+export const dynamic = 'force-dynamic';
 export const revalidate = 60;
 
 interface Props {

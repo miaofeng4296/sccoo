@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { CheckCircle, Clock, User } from 'lucide-react';
 import { AnswerForm } from './AnswerForm';
 
+export const dynamic = 'force-dynamic';
 export const revalidate = 60;
 
 interface Props {

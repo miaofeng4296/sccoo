@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Phone, MapPin, Globe, Calendar, Verified, User, ChevronRight } from 'lucide-react';
 import { POST_TYPE_LABELS } from '@sccoo/shared';
 
+export const dynamic = 'force-dynamic';
 export const revalidate = 60;
 
 interface Props {

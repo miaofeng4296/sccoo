@@ -10,6 +10,7 @@ import { Eye, MapPin, Phone, Clock } from 'lucide-react';
 import { FavoriteButton } from './FavoriteButton';
 import { ReportButton } from './ReportButton';
 
+export const dynamic = 'force-dynamic';
 export const revalidate = 60;
 
 interface Props {

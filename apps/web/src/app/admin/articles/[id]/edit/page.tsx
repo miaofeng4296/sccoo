@@ -3,6 +3,8 @@ import { prisma } from '@sccoo/db';
 import { notFound, redirect } from 'next/navigation';
 import { ArticleForm } from '../../ArticleForm';
 
+export const dynamic = 'force-dynamic';
+
 interface Props {
   params: Promise<{ id: string }>;
 }

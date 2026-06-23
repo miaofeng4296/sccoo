@@ -8,6 +8,8 @@ import { POST_TYPE_LABELS } from '@sccoo/shared';
 import { redirect } from 'next/navigation';
 import { PostActionsClient } from './PostActionsClient';
 
+export const dynamic = 'force-dynamic';
+
 export default async function UserCenterPage() {
   const session = await auth();
   if (!session?.user) redirect('/login/?jump=/user/');

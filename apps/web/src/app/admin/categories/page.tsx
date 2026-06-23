@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { CategoryForm } from './CategoryForm';
 
+export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
 export default async function AdminCategoriesPage() {

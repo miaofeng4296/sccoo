@@ -25,6 +25,9 @@ RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
 # Copy source
 COPY . .
 
+# Set dummy DATABASE_URL for Prisma client generation (real URL at runtime)
+ENV DATABASE_URL=postgresql://placeholder:placeholder@placeholder:5432/placeholder
+
 # Generate Prisma client
 RUN cd packages/db && npx prisma generate && cd ../..
 

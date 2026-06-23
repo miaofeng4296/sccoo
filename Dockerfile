@@ -55,9 +55,6 @@ COPY --from=builder /app/packages ./packages
 COPY --from=builder /app/apps ./apps
 COPY --from=builder /app/package.json /app/pnpm-workspace.yaml /app/pnpm-lock.yaml ./
 
-# Ensure Prisma client is available
-COPY --from=builder /app/node_modules/.pnpm/@prisma+client* /app/node_modules/.pnpm/ 2>/dev/null || true
-
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 

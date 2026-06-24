@@ -54,15 +54,15 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-gray-50">
-        <TopBar />
-        <Header />
-        <MainNav />
-        <SubNav />
-        <main className="flex-1">
-          <SessionProvider>{children}</SessionProvider>
-        </main>
-        <Toaster richColors />
-        <Footer />
+        <SessionProvider>
+          <TopBar />
+          <Header />
+          <MainNav />
+          <SubNav />
+          <main className="flex-1">{children}</main>
+          <Toaster richColors />
+          <Footer />
+        </SessionProvider>
       </body>
     </html>
   );

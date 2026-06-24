@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { prisma } from '@sccoo/db';
@@ -9,12 +10,33 @@ import { Separator } from '@/components/ui/separator';
 import { Eye, MapPin, Phone, Clock } from 'lucide-react';
 import { FavoriteButton } from './FavoriteButton';
 import { ReportButton } from './ReportButton';
+import { CommentSection } from '@/components/comments/CommentSection';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 60;
 
 interface Props {
   params: Promise<{ id: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id } = await params;
+  const post = await prisma.post.findUnique({
+    where: { id: parseInt(id) },
+    select: { title: true, content: true, images: { take: 1, select: { url: true } } },
+  });
+  if (!post) return { title: '信息不存在 - 秀酷纹身之家' };
+  const baseUrl = process.env.NEXTAUTH_URL || 'https://www.sccoo.cn';
+  return {
+    title: `${post.title} - 秀酷纹身之家`,
+    description: post.content.slice(0, 160),
+    openGraph: {
+      title: post.title,
+      description: post.content.slice(0, 160),
+      url: `${baseUrl}/xinxi/${id}`,
+      images: post.images[0]?.url ? [{ url: post.images[0].url }] : [],
+    },
+  };
 }
 
 export default async function PostDetailPage({ params }: Props) {
@@ -169,6 +191,10 @@ export default async function PostDetailPage({ params }: Props) {
           </Card>
         </div>
       </div>
+
+      {/* Comments */}
+      <Separator className="my-8" />
+      <CommentSection targetType="post" targetId={post.id} />
 
       {/* Back Link */}
       <div className="mt-6 text-center">

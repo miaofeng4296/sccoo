@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { prisma } from '@sccoo/db';
@@ -11,6 +12,20 @@ export const revalidate = 60;
 
 interface Props {
   params: Promise<{ id: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id } = await params;
+  const biz = await prisma.business.findUnique({
+    where: { id: parseInt(id) },
+    select: { name: true, description: true },
+  });
+  if (!biz) return { title: '商家不存在 - 秀酷纹身之家' };
+  return {
+    title: `${biz.name} - 秀酷纹身之家`,
+    description: biz.description?.slice(0, 160) || `查看${biz.name}的详细信息`,
+    openGraph: { title: biz.name, description: biz.description?.slice(0, 160) || '' },
+  };
 }
 
 export default async function BusinessDetailPage({ params }: Props) {

@@ -16,14 +16,27 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: '参数错误' }, { status: 400 });
     }
 
-    // Store report as a special QA question in admin category or just log it
-    // For simplicity, we log reports via a simple mechanism - set post status flag
-    // In production, you'd have a reports table
+    // Check if already reported by this user
+    const existing = await prisma.report.findFirst({
+      where: { postId, userId: session.user.id as string },
+    });
 
-    console.log(`[REPORT] User ${session.user.id} reported post ${postId}: ${reason || '无原因'}`);
+    if (existing) {
+      return NextResponse.json({ success: true, message: '您已举报过该信息，我们会尽快处理' });
+    }
+
+    await prisma.report.create({
+      data: {
+        postId,
+        userId: session.user.id as string,
+        reason: reason || null,
+        status: 'PENDING',
+      },
+    });
 
     return NextResponse.json({ success: true, message: '举报已提交，我们会尽快处理' });
-  } catch {
+  } catch (error) {
+    console.error('Report error:', error);
     return NextResponse.json({ error: '举报提交失败' }, { status: 500 });
   }
 }

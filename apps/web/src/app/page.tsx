@@ -3,6 +3,7 @@ import { prisma } from '@sccoo/db';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { POST_TYPE_LABELS, PIN_PRICES } from '@sccoo/shared';
+import { BannerCarousel } from '@/components/home/BannerCarousel';
 
 // Dynamic rendering — database not available during Docker build
 export const dynamic = 'force-dynamic';
@@ -10,7 +11,7 @@ export const revalidate = 60;
 
 export default async function HomePage() {
   // Fetch data in parallel
-  const [pinnedPosts, recentPosts, hotBusinesses, articles, banners] = await Promise.all([
+  const [pinnedPosts, recentPosts, hotBusinesses, articles, banners, links] = await Promise.all([
     // Pinned posts
     prisma.post.findMany({
       where: { status: 'PUBLISHED', isPinned: true },
@@ -43,18 +44,19 @@ export default async function HomePage() {
       orderBy: { sortOrder: 'asc' },
       take: 5,
     }),
+    // Friend links
+    prisma.link.findMany({
+      where: { isActive: true },
+      orderBy: { sortOrder: 'asc' },
+      take: 20,
+    }),
   ]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-6 space-y-8">
       {/* Banner / Hero */}
       {banners.length > 0 ? (
-        <div className="bg-gradient-to-r from-red-500 to-red-700 rounded-xl h-48 md:h-64 flex items-center justify-center text-white relative overflow-hidden">
-          <div className="text-center z-10 px-4">
-            <h1 className="text-2xl md:text-4xl font-bold mb-2">欢迎来到秀酷纹身之家</h1>
-            <p className="text-red-100">纹身行业信息平台 — 招聘求职 · 店铺转让 · 二手交易 · 培训学习</p>
-          </div>
-        </div>
+        <BannerCarousel banners={banners} />
       ) : (
         <div className="bg-gradient-to-r from-red-500 to-red-700 rounded-xl h-48 md:h-64 flex items-center justify-center text-white">
           <div className="text-center">
@@ -239,6 +241,30 @@ export default async function HomePage() {
           )}
         </div>
       </div>
+
+      {/* Friend Links */}
+      {links.length > 0 && (
+        <Card className="mt-6">
+          <CardHeader>
+            <CardTitle className="text-lg">友情链接</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="flex flex-wrap gap-3">
+              {links.map((link) => (
+                <a
+                  key={link.id}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-600 hover:text-red-600 transition-colors"
+                >
+                  {link.title}
+                </a>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      )}
     </div>
   );
 }
